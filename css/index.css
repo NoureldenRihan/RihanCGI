@@ -1,0 +1,15 @@
+body {
+  padding: 10px;
+}
+
+.Logo {
+  padding: 5px;
+  min-width: 7%;
+  max-width: 9%;
+  min-height: 7%;
+  max-height: 9%;
+}
+
+.answer {
+  font-size: medium;
+}
