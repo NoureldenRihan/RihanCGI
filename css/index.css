@@ -4,12 +4,98 @@ body {
 
 .Logo {
   padding: 5px;
-  min-width: 7%;
+  min-width: 9%;
   max-width: 9%;
-  min-height: 7%;
+  min-height: 9%;
   max-height: 9%;
 }
 
 .answer {
   font-size: medium;
+}
+
+.headtitle {
+  text-align: center;
+  color: #38b6ff;
+}
+
+.headtitle b {
+  font-family: Graduate, serif;
+  font-size: 50pt;
+}
+
+.section_div {
+  padding: 40px;
+  margin: auto;
+  color: #002486;
+}
+
+.about,
+.ease_of_use,
+.socialMedia {
+  background: linear-gradient(to bottom, white 20%, #38b6ff 120%);
+}
+
+.section_div_title {
+  text-align: center;
+}
+
+.footer_nav {
+  text-align: center;
+}
+
+.footer_nav a {
+  text-decoration: none;
+  color: #38b6ff;
+}
+
+.product_title {
+  color: #38b6ff;
+  text-align: center;
+}
+
+.thumbnail {
+  max-width: 100%;
+  display: block;
+  overflow: auto;
+}
+
+.product_area {
+  padding: 15px;
+}
+
+.options_btn {
+  padding: 5px 50px;
+  margin: auto;
+  font-size: 15pt;
+}
+
+.noDecor {
+  text-decoration: none;
+  color: white;
+}
+
+.noDecor:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.viewProductImage {
+  display: block;
+  overflow: hidden;
+  margin: auto;
+}
+
+.productPrice {
+  font-size: 40pt;
+  color: #38b6ff;
+  font-weight: bolder;
+}
+
+.linkblue {
+  color: #002486;
+}
+
+.socialMedia {
+  text-align: center;
 }
