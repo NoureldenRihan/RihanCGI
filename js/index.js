@@ -5,6 +5,7 @@
 let marketplace = $("#marketplace").html();
 let gridLayout = `col-xs-12 col-md-6 col-lg-3`;
 let catalog = {};
+let totalProductNum = 0;
 
 // function CreateProduct takes a name and preview .PNG
 //and creates a template including the name, .PNG and a button for previewing the product
@@ -35,23 +36,197 @@ function createProduct(
   </div>
   <br/>`;
   marketplace += template;
+  totalProductNum += 1;
+  $("#totalProductNum").html(totalProductNum);
 }
 
 // function backToMarketplace clears the marketplace, recreates all available products and recreates the marketplace
 function backToMarketplace() {
   marketplace = ``;
-  // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-  // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-  // Create Your Products Below Here
+  createProduct(
+    "HRDS203",
+    "Hard Surface <br/> 203",
+    "../product_Data/HRDS203/HS Symbol 1.png",
+    "../product_Data/HRDS203/HS Symbol 1.exr",
+    "../product_Data/HRDS203/HS Symbol 1.zip",
+    "Hard Surface Shape",
+    0
+  );
+  createProduct(
+    "HRDS291",
+    "Hard Surface <br/> 291",
+    "../product_Data/HRDS291/HS Symbol 4.png",
+    "../product_Data/HRDS291/HS Symbol 4.exr",
+    "../product_Data/HRDS291/HS Symbol 4.zip",
+    "Hard Surface Shape",
+    0
+  );
+  createProduct(
+    "HRDS120",
+    "Hard Surface <br/> 120",
+    "../product_Data/HRDS120/HS Symbol 5.png",
+    "../product_Data/HRDS120/HS Symbol 5.exr",
+    "../product_Data/HRDS120/HS Symbol 5.zip",
+    "Hard Surface Shape",
+    0
+  );
+  createProduct(
+    "HDRS222",
+    "Hard Surface <br/> 222",
+    "../product_Data/HDRS222/HS Symbol 9.png",
+    "../product_Data/HDRS222/HS Symbol 9.exr",
+    "../product_Data/HDRS222/HS Symbol 9.zip",
+    "Hard Surface Shape",
+    0
+  );
+  createProduct(
+    "HRDS102",
+    "Hard Surface <br/> 102",
+    "../product_Data/HRDS102/HS Symbol 3.png",
+    "../product_Data/HRDS102/HS Symbol 3.exr",
+    "../product_Data/HRDS102/HS Symbol 3.zip",
+    "Hard SUrface Shape",
+    0
+  );
+  createProduct(
+    "HDRS223",
+    "Hard Surface <br/> 223",
+    "../product_Data/HDRS223/HS Symbol 10.png",
+    "../product_Data/HDRS223/HS Symbol 10.exr",
+    "../product_Data/HDRS223/HS Symbol 10.zip",
+    "Hard Surface Shape",
+    0
+  );
+  createProduct(
+    "HDRS111",
+    "Hard Surface <br/> 111",
+    "../product_Data/HRDS111/HS Symbol 7.png",
+    "../product_Data/HRDS111/HS Symbol 7.exr",
+    "../product_Data/HRDS111/HS Symbol 7.zip",
+    "Hard Surface Shape",
+    0
+  );
+  createProduct(
+    "HDRS112",
+    "Hard Surface <br/> 112",
+    "../product_Data/HDRS112/HS Symbol 8.png",
+    "../product_Data/HDRS112/HS Symbol 8.exr",
+    "../product_Data/HDRS112/HS Symbol 8.zip",
+    "Hard Surface Shape",
+    0
+  );
+  createProduct(
+    "HRDS227",
+    "Hard Surface <br/> 227",
+    "../product_Data/HRDS227/HS Symbol 6.png",
+    "../product_Data/HRDS227/HS Symbol 6.exr",
+    "../product_Data/HRDS227/HS Symbol 6.zip",
+    "Hard Surface Shape",
+    0
+  );
+  createProduct(
+    "HRDS230",
+    "Hard Surface <br/> 230",
+    "../product_Data/HRDS230/HS Symbol 2.png",
+    "../product_Data/HRDS230/HS Symbol 2.exr",
+    "../product_Data/HRDS230/HS Symbol 2.zip",
+    "Hard Surface Shape",
+    0
+  );
   createProduct(
     "APHRO00",
-    "Aphrodite Symbol",
+    "Aphrodite <br/> Symbol",
     "../product_Data/APHRO00/Aphrodite.png",
     "../product_Data/APHRO00/Aphrodite.exr",
     "../product_Data/APHRO00/Aphrodite.zip",
     "Ancient Greek Symbol",
     0
   );
+  createProduct(
+    "APOLL05",
+    "Apollo <br/> Symbol",
+    "../product_Data/APOLL05/Apollo.png",
+    "../product_Data/APOLL05/Apollo.exr",
+    "../product_Data/APOLL05/Apollo.zip",
+    "Ancient Greek Symbol",
+    0
+  );
+  createProduct(
+    "ATHENA7",
+    "Athena <br/> Symbol",
+    "../product_Data/ATHENA7/Athena.png",
+    "../product_Data/ATHENA7/Athena.exr",
+    "../product_Data/ATHENA7/Athena.zip",
+    "Ancient Greek Symbol",
+    0
+  );
+  createProduct(
+    "ARES802",
+    "Ares <br/> Symbol",
+    "../product_Data/ARES802/Ares.png",
+    "../product_Data/ARES802/Ares.exr",
+    "../product_Data/ARES802/Ares.zip",
+    "Ancient Greek Symbol",
+    0
+  );
+  createProduct(
+    "DEMET07",
+    "Demeter <br/> Symbol",
+    "../product_Data/DEMET07/Demeter.png",
+    "../product_Data/DEMET07/Demeter.exr",
+    "../product_Data/DEMET07/Demeter.zip",
+    "Ancient Greek Symbol",
+    0
+  );
+  createProduct(
+    "DIONY00",
+    "Dionysus <br/> Symbol",
+    "../product_Data/DIONY00/Dionysus.png",
+    "../product_Data/DIONY00/Dionysus.exr",
+    "../product_Data/DIONY00/Dionysus.zip",
+    "Ancient Greek Symbol",
+    0
+  );
+  createProduct(
+    "ZEUS100",
+    "Zues <br/> Symbol",
+    "../product_Data/ZEUS100/Zeus.png",
+    "../product_Data/ZEUS100/Zeus.exr",
+    "../product_Data/ZEUS100/Zeus.zip",
+    "Ancient Greek Symbol",
+    0
+  );
+  createProduct(
+    "POSEID0N",
+    "Poseidon <br/> Symbol",
+    "../product_Data/POSEID0N/Poseidon.png",
+    "../product_Data/POSEID0N/Poseidon.exr",
+    "../product_Data/POSEID0N/Poseidon.zip",
+    "Ancient Greek Symbol",
+    0
+  );
+  createProduct(
+    "HERMES6",
+    "Hermes <br/> Symbol",
+    "../product_Data/HERMES6/Hermes.png",
+    "../product_Data/HERMES6/Hermes.exr",
+    "../product_Data/HERMES6/Hermes.zip",
+    "Ancient Greek Symbol",
+    0
+  );
+  createProduct(
+    "HEPHA47",
+    "Hephaestus <br/> Symbol",
+    "../product_Data/HEPHA47/Hephaestus.png",
+    "../product_Data/HEPHA47/Hephaestus.exr",
+    "../product_Data/HEPHA47/Hephaestus.zip",
+    "Ancient Greek Symbol",
+    0
+  );
+  // Create Your Products Above Here
+  // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  console.log();
   $("#marketplace").html(marketplace);
 }
 
