@@ -43,6 +43,15 @@ function backToMarketplace() {
   // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
   // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
   // Create Your Products Below Here
+  createProduct(
+    "APHRO00",
+    "Aphrodite Symbol",
+    "../product_Data/APHRO00/Aphrodite.png",
+    "../product_Data/APHRO00/Aphrodite.exr",
+    "../product_Data/APHRO00/Aphrodite.zip",
+    "Ancient Greek Symbol",
+    0
+  );
   $("#marketplace").html(marketplace);
 }
 
