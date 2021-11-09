@@ -15,6 +15,7 @@ function createProduct(
   product_Prv,
   product_Phq,
   product_zip,
+  download_name,
   product_desc = "No Description.",
   product_price = 0,
   purchase_link = "No Link"
@@ -26,6 +27,7 @@ function createProduct(
     preview: product_Prv,
     hq: product_Phq,
     zip: product_zip,
+    download_title: download_name,
     link: purchase_link,
   };
   let template;
@@ -49,6 +51,7 @@ function backToMarketplace() {
     "../product_Data/HRDS203/HS Symbol 1.png",
     "../product_Data/HRDS203/HS Symbol 1.exr",
     "../product_Data/HRDS203/HS Symbol 1.zip",
+    "Hard Surface 203",
     "Hard Surface Shape",
     0
   );
@@ -58,6 +61,7 @@ function backToMarketplace() {
     "../product_Data/HRDS291/HS Symbol 4.png",
     "../product_Data/HRDS291/HS Symbol 4.exr",
     "../product_Data/HRDS291/HS Symbol 4.zip",
+    "Hard Surface 291",
     "Hard Surface Shape",
     0
   );
@@ -67,6 +71,7 @@ function backToMarketplace() {
     "../product_Data/HRDS120/HS Symbol 5.png",
     "../product_Data/HRDS120/HS Symbol 5.exr",
     "../product_Data/HRDS120/HS Symbol 5.zip",
+    "Hard Surface 120",
     "Hard Surface Shape",
     0
   );
@@ -76,6 +81,7 @@ function backToMarketplace() {
     "../product_Data/HDRS222/HS Symbol 9.png",
     "../product_Data/HDRS222/HS Symbol 9.exr",
     "../product_Data/HDRS222/HS Symbol 9.zip",
+    "Hard Surface 222",
     "Hard Surface Shape",
     0
   );
@@ -85,6 +91,7 @@ function backToMarketplace() {
     "../product_Data/HRDS102/HS Symbol 3.png",
     "../product_Data/HRDS102/HS Symbol 3.exr",
     "../product_Data/HRDS102/HS Symbol 3.zip",
+    "Hard Surface 102",
     "Hard SUrface Shape",
     0
   );
@@ -94,6 +101,7 @@ function backToMarketplace() {
     "../product_Data/HDRS223/HS Symbol 10.png",
     "../product_Data/HDRS223/HS Symbol 10.exr",
     "../product_Data/HDRS223/HS Symbol 10.zip",
+    "Hard Surface 223",
     "Hard Surface Shape",
     0
   );
@@ -103,6 +111,7 @@ function backToMarketplace() {
     "../product_Data/HRDS111/HS Symbol 7.png",
     "../product_Data/HRDS111/HS Symbol 7.exr",
     "../product_Data/HRDS111/HS Symbol 7.zip",
+    "Hard Surface 111",
     "Hard Surface Shape",
     0
   );
@@ -112,6 +121,7 @@ function backToMarketplace() {
     "../product_Data/HDRS112/HS Symbol 8.png",
     "../product_Data/HDRS112/HS Symbol 8.exr",
     "../product_Data/HDRS112/HS Symbol 8.zip",
+    "Hard Surface 112",
     "Hard Surface Shape",
     0
   );
@@ -121,6 +131,7 @@ function backToMarketplace() {
     "../product_Data/HRDS227/HS Symbol 6.png",
     "../product_Data/HRDS227/HS Symbol 6.exr",
     "../product_Data/HRDS227/HS Symbol 6.zip",
+    "Hard Surface 227",
     "Hard Surface Shape",
     0
   );
@@ -130,6 +141,7 @@ function backToMarketplace() {
     "../product_Data/HRDS230/HS Symbol 2.png",
     "../product_Data/HRDS230/HS Symbol 2.exr",
     "../product_Data/HRDS230/HS Symbol 2.zip",
+    "Hard Surface 230",
     "Hard Surface Shape",
     0
   );
@@ -139,6 +151,7 @@ function backToMarketplace() {
     "../product_Data/APHRO00/Aphrodite.png",
     "../product_Data/APHRO00/Aphrodite.exr",
     "../product_Data/APHRO00/Aphrodite.zip",
+    "Aphrodite Symbol",
     "Ancient Greek Symbol",
     0
   );
@@ -148,6 +161,7 @@ function backToMarketplace() {
     "../product_Data/APOLL05/Apollo.png",
     "../product_Data/APOLL05/Apollo.exr",
     "../product_Data/APOLL05/Apollo.zip",
+    "Apollo Symbol",
     "Ancient Greek Symbol",
     0
   );
@@ -157,6 +171,7 @@ function backToMarketplace() {
     "../product_Data/ATHENA7/Athena.png",
     "../product_Data/ATHENA7/Athena.exr",
     "../product_Data/ATHENA7/Athena.zip",
+    "Athena Symbol",
     "Ancient Greek Symbol",
     0
   );
@@ -166,6 +181,7 @@ function backToMarketplace() {
     "../product_Data/ARES802/Ares.png",
     "../product_Data/ARES802/Ares.exr",
     "../product_Data/ARES802/Ares.zip",
+    "Ares Symbol",
     "Ancient Greek Symbol",
     0
   );
@@ -175,6 +191,7 @@ function backToMarketplace() {
     "../product_Data/DEMET07/Demeter.png",
     "../product_Data/DEMET07/Demeter.exr",
     "../product_Data/DEMET07/Demeter.zip",
+    "Demeter Symbol",
     "Ancient Greek Symbol",
     0
   );
@@ -184,6 +201,7 @@ function backToMarketplace() {
     "../product_Data/DIONY00/Dionysus.png",
     "../product_Data/DIONY00/Dionysus.exr",
     "../product_Data/DIONY00/Dionysus.zip",
+    "Dionysus Symbol",
     "Ancient Greek Symbol",
     0
   );
@@ -193,6 +211,7 @@ function backToMarketplace() {
     "../product_Data/ZEUS100/Zeus.png",
     "../product_Data/ZEUS100/Zeus.exr",
     "../product_Data/ZEUS100/Zeus.zip",
+    "Zues Symbol",
     "Ancient Greek Symbol",
     0
   );
@@ -202,6 +221,7 @@ function backToMarketplace() {
     "../product_Data/POSEID0N/Poseidon.png",
     "../product_Data/POSEID0N/Poseidon.exr",
     "../product_Data/POSEID0N/Poseidon.zip",
+    "Poseidon Symbol",
     "Ancient Greek Symbol",
     0
   );
@@ -211,6 +231,7 @@ function backToMarketplace() {
     "../product_Data/HERMES6/Hermes.png",
     "../product_Data/HERMES6/Hermes.exr",
     "../product_Data/HERMES6/Hermes.zip",
+    "Hermes Symbol",
     "Ancient Greek Symbol",
     0
   );
@@ -220,6 +241,7 @@ function backToMarketplace() {
     "../product_Data/HEPHA47/Hephaestus.png",
     "../product_Data/HEPHA47/Hephaestus.exr",
     "../product_Data/HEPHA47/Hephaestus.zip",
+    "Hephaestus Symbol",
     "Ancient Greek Symbol",
     0
   );
@@ -239,15 +261,18 @@ function viewProduct(product_id) {
   let itemInCatalog = catalog[product_id];
   let price = itemInCatalog.price;
 
+  // reseting total product Number to 0 so that when re-rendering the template the numbers are accurate.
+  totalProductNum = 0;
+
   // Checking if price is Free or not
   // According to it the suitable template is rendered
   if (price == 0) {
     finalPrice = "Free";
     downloadTemplate = `
     <div class="btns">
-      <a href="${itemInCatalog.preview}" download="${itemInCatalog.name}.png" ><button class="btn btn-success options_btn">PNG</button></a>
-      <a href="${itemInCatalog.hq}" download="${itemInCatalog.name}.exr" ><button class="btn btn-success options_btn">EXR</button></a>
-      <a href="${itemInCatalog.zip}" download="${itemInCatalog.name}.zip" ><button class="btn btn-success options_btn">ZIP</button></a>
+      <a href="${itemInCatalog.preview}" download="${itemInCatalog.download_title}.png" ><button class="btn btn-success options_btn">PNG</button></a>
+      <a href="${itemInCatalog.hq}" download="${itemInCatalog.download_title}.exr" ><button class="btn btn-success options_btn">EXR</button></a>
+      <a href="${itemInCatalog.zip}" download="${itemInCatalog.download_title}.zip" ><button class="btn btn-success options_btn">ZIP</button></a>
     </div>`;
   } else {
     finalPrice = `${price}$`;
