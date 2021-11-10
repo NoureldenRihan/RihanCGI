@@ -47,6 +47,26 @@ function createProduct(
 function backToMarketplace() {
   marketplace = ``;
   createProduct(
+    "TERR291",
+    "Rock & Terrain <br/> 291",
+    "../product_Data/TERR291/Terrain 1.png",
+    "../product_Data/TERR291/Terrain 1.exr",
+    "../product_Data/TERR291/Terrain 1.zip",
+    "Rock & Terrain 291",
+    "Rock & Terrain Brush",
+    0
+  );
+  createProduct(
+    "TERR700",
+    "Rock & Terrain <br/> 700",
+    "../product_Data/TERR700/Terrain 2.png",
+    "../product_Data/TERR700/Terrain 2.exr",
+    "../product_Data/TERR700/Terrain 2.zip",
+    "Rock & Terrain 700",
+    "Rock & Terrain Brush",
+    0
+  );
+  createProduct(
     "SCRT001",
     "Scratch <br/> 001",
     "../product_Data/SCRT001/Scratch 1.png",
