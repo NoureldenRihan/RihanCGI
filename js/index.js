@@ -57,6 +57,116 @@ function backToMarketplace() {
     0
   );
   createProduct(
+    "VIKG001",
+    "Vikings <br/> Axe",
+    "../product_Data/VIKG001/Axe.png",
+    "../product_Data/VIKG001/Axe.exr",
+    "../product_Data/VIKG001/Axe.zip",
+    "Vikings Axe",
+    "Vikings Axe Symbol",
+    0
+  );
+  createProduct(
+    "VIKG911",
+    "Vikings <br/> Wolf",
+    "../product_Data/VIKG911/Wolf.png",
+    "../product_Data/VIKG911/Wolf.exr",
+    "../product_Data/VIKG911/Wolf.zip",
+    "Vikings Wolf",
+    "Vikings Wolf Symbol",
+    0
+  );
+  createProduct(
+    "VIKG444",
+    "Vikings <br/> 444",
+    "../product_Data/VIKG444/Symbol 5.png",
+    "../product_Data/VIKG444/Symbol 5.exr",
+    "../product_Data/VIKG444/Symbol 5.zip",
+    "Vikings 444",
+    "Vikings Symbol",
+    0
+  );
+  createProduct(
+    "VIKG200",
+    "Vikings <br/> Bird",
+    "../product_Data/VIKG200/Bird.png",
+    "../product_Data/VIKG200/Bird.exr",
+    "../product_Data/VIKG200/Bird.zip",
+    "Vikings Bird",
+    "Vikings Bird Symbol",
+    0
+  );
+  createProduct(
+    "VIKG999",
+    "Vikings <br/> Dragon",
+    "../product_Data/VIKG999/Dragon.png",
+    "../product_Data/VIKG999/Dragon.exr",
+    "../product_Data/VIKG999/Dragon.zip",
+    "Vikings Dragon",
+    "Vikings Dragon Symbol",
+    0
+  );
+  createProduct(
+    "VIKG611",
+    "Vikings <br/> 611",
+    "../product_Data/VIKG611/Symbol 7.png",
+    "../product_Data/VIKG611/Symbol 7.exr",
+    "../product_Data/VIKG611/Symbol 7.zip",
+    "Vikings 611",
+    "Vikings Symbol",
+    0
+  );
+  createProduct(
+    "VIKG909",
+    "Vikings <br/> Tree",
+    "../product_Data/VIKG909/Tree.png",
+    "../product_Data/VIKG909/Tree.exr",
+    "../product_Data/VIKG909/Tree.zip",
+    "Vikings Tree",
+    "Vikings Tree Symbol",
+    0
+  );
+  createProduct(
+    "VIKG333",
+    "Vikings <br/> 333",
+    "../product_Data/VIKG333/Symbol 1.png",
+    "../product_Data/VIKG333/Symbol 1.exr",
+    "../product_Data/VIKG333/Symbol 1.zip",
+    "Vikings 333",
+    "Vikings Symbol",
+    0
+  );
+  createProduct(
+    "VIKG881",
+    "Vikings <br/> 881",
+    "../product_Data/VIKG881/Symbol 6.png",
+    "../product_Data/VIKG881/Symbol 6.exr",
+    "../product_Data/VIKG881/Symbol 6.zip",
+    "Vikings 881",
+    "Vikings Symbol",
+    0
+  );
+  createProduct(
+    "VIKG555",
+    "Vikings <br/> 555",
+    "../product_Data/VIKG555/Symbol 2.png",
+    "../product_Data/VIKG555/Symbol 2.exr",
+    "../product_Data/VIKG555/Symbol 2.zip",
+    "Vikings 555",
+    "Vikings Symbol",
+    0
+  );
+  createProduct(
+    "VIKG678",
+    "Vikings <br/> 678",
+    "../product_Data/VIKG678/Symbol 4.png",
+    "../product_Data/VIKG678/Symbol 4.exr",
+    "../product_Data/VIKG678/Symbol 4.zip",
+    "Vikings 678",
+    "Vikings Symbol",
+    0
+  );
+  createProduct(
     "HRDS203",
     "Hard Surface <br/> 203",
     "../product_Data/HRDS203/HS Symbol 1.png",
