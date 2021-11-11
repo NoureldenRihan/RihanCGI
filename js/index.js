@@ -47,6 +47,56 @@ function createProduct(
 function backToMarketplace() {
   marketplace = ``;
   createProduct(
+    "CARV190",
+    "Circle Carving <br/> 190",
+    "../product_Data/CARV190/Circle Carve 3.jpg",
+    "../product_Data/CARV190/Circle Carve 3.exr",
+    "../product_Data/CARV190/Circle Carve 3.zip",
+    "Circle Carving 190",
+    "Carvings",
+    0
+  );
+  createProduct(
+    "CARV003",
+    "Circle Carving <br/> 003",
+    "../product_Data/CARV003/Circle Carve 5.jpg",
+    "../product_Data/CARV003/Circle Carve 5.exr",
+    "../product_Data/CARV003/Circle Carve 5.zip",
+    "Circle Carving 003",
+    "Carvings",
+    0
+  );
+  createProduct(
+    "CARV009",
+    "Circle Carving <br/> 009",
+    "../product_Data/CARV009/Circle Carve 4.jpg",
+    "../product_Data/CARV009/Circle Carve 4.exr",
+    "../product_Data/CARV009/Circle Carve 4.zip",
+    "Circle Carving 009",
+    "Carvings",
+    0
+  );
+  createProduct(
+    "CARV100",
+    "Square Carving <br/> 100",
+    "../product_Data/CARV100/Square Carve2.jpg",
+    "../product_Data/CARV100/Square Carve2.exr",
+    "../product_Data/CARV100/Square Carve2.zip",
+    "Square Carving 100",
+    "Carvings",
+    0
+  );
+  createProduct(
+    "CARV333",
+    "Circle Carving <br/> 333",
+    "../product_Data/CARV333/Circle Carve.jpg",
+    "../product_Data/CARV333/Circle Carve.exr",
+    "../product_Data/CARV333/Circle Carve.zip",
+    "Circle Carving 333",
+    "Carvings",
+    0
+  );
+  createProduct(
     "TERR291",
     "Rock & Terrain <br/> 291",
     "../product_Data/TERR291/Terrain 1.jpg",
