@@ -33,7 +33,7 @@ function createProduct(
   };
   let template;
   template = `<div class="${gridLayout} product_area card"> 
-  <img class="thumbnail card" src="${product_Prv}" alt="${product_name}" />
+  <img class="thumbnail card" src="${product_Prv}" alt="${product_name}" loading="lazy" />
   <h1 class="product_title">${product_name}</h1>
   <button class="btn btn-primary" onclick="viewProduct('${product_id}');">Check Texture!</button>
   </div>
@@ -49,7 +49,7 @@ function backToMarketplace() {
   createProduct(
     "TERR291",
     "Rock & Terrain <br/> 291",
-    "../product_Data/TERR291/Terrain 1.png",
+    "../product_Data/TERR291/Terrain 1.jpg",
     "../product_Data/TERR291/Terrain 1.exr",
     "../product_Data/TERR291/Terrain 1.zip",
     "Rock & Terrain 291",
@@ -59,7 +59,7 @@ function backToMarketplace() {
   createProduct(
     "TERR700",
     "Rock & Terrain <br/> 700",
-    "../product_Data/TERR700/Terrain 2.png",
+    "../product_Data/TERR700/Terrain 2.jpg",
     "../product_Data/TERR700/Terrain 2.exr",
     "../product_Data/TERR700/Terrain 2.zip",
     "Rock & Terrain 700",
@@ -69,7 +69,7 @@ function backToMarketplace() {
   createProduct(
     "SCRT001",
     "Scratch <br/> 001",
-    "../product_Data/SCRT001/Scratch 1.png",
+    "../product_Data/SCRT001/Scratch 1.jpg",
     "../product_Data/SCRT001/Scratch 1.exr",
     "../product_Data/SCRT001/Scratch 1.zip",
     "Scratch 001",
@@ -79,7 +79,7 @@ function backToMarketplace() {
   createProduct(
     "VIKG001",
     "Vikings <br/> Axe",
-    "../product_Data/VIKG001/Axe.png",
+    "../product_Data/VIKG001/Axe.jpg",
     "../product_Data/VIKG001/Axe.exr",
     "../product_Data/VIKG001/Axe.zip",
     "Vikings Axe",
@@ -89,7 +89,7 @@ function backToMarketplace() {
   createProduct(
     "VIKG911",
     "Vikings <br/> Wolf",
-    "../product_Data/VIKG911/Wolf.png",
+    "../product_Data/VIKG911/Wolf.jpg",
     "../product_Data/VIKG911/Wolf.exr",
     "../product_Data/VIKG911/Wolf.zip",
     "Vikings Wolf",
@@ -99,7 +99,7 @@ function backToMarketplace() {
   createProduct(
     "VIKG444",
     "Vikings <br/> 444",
-    "../product_Data/VIKG444/Symbol 5.png",
+    "../product_Data/VIKG444/Symbol 5.jpg",
     "../product_Data/VIKG444/Symbol 5.exr",
     "../product_Data/VIKG444/Symbol 5.zip",
     "Vikings 444",
@@ -109,7 +109,7 @@ function backToMarketplace() {
   createProduct(
     "VIKG200",
     "Vikings <br/> Bird",
-    "../product_Data/VIKG200/Bird.png",
+    "../product_Data/VIKG200/Bird.jpg",
     "../product_Data/VIKG200/Bird.exr",
     "../product_Data/VIKG200/Bird.zip",
     "Vikings Bird",
@@ -119,7 +119,7 @@ function backToMarketplace() {
   createProduct(
     "VIKG999",
     "Vikings <br/> Dragon",
-    "../product_Data/VIKG999/Dragon.png",
+    "../product_Data/VIKG999/Dragon.jpg",
     "../product_Data/VIKG999/Dragon.exr",
     "../product_Data/VIKG999/Dragon.zip",
     "Vikings Dragon",
@@ -129,7 +129,7 @@ function backToMarketplace() {
   createProduct(
     "VIKG611",
     "Vikings <br/> 611",
-    "../product_Data/VIKG611/Symbol 7.png",
+    "../product_Data/VIKG611/Symbol 7.jpg",
     "../product_Data/VIKG611/Symbol 7.exr",
     "../product_Data/VIKG611/Symbol 7.zip",
     "Vikings 611",
@@ -139,7 +139,7 @@ function backToMarketplace() {
   createProduct(
     "VIKG909",
     "Vikings <br/> Tree",
-    "../product_Data/VIKG909/Tree.png",
+    "../product_Data/VIKG909/Tree.jpg",
     "../product_Data/VIKG909/Tree.exr",
     "../product_Data/VIKG909/Tree.zip",
     "Vikings Tree",
@@ -149,7 +149,7 @@ function backToMarketplace() {
   createProduct(
     "VIKG333",
     "Vikings <br/> 333",
-    "../product_Data/VIKG333/Symbol 1.png",
+    "../product_Data/VIKG333/Symbol 1.jpg",
     "../product_Data/VIKG333/Symbol 1.exr",
     "../product_Data/VIKG333/Symbol 1.zip",
     "Vikings 333",
@@ -159,7 +159,7 @@ function backToMarketplace() {
   createProduct(
     "VIKG881",
     "Vikings <br/> 881",
-    "../product_Data/VIKG881/Symbol 6.png",
+    "../product_Data/VIKG881/Symbol 6.jpg",
     "../product_Data/VIKG881/Symbol 6.exr",
     "../product_Data/VIKG881/Symbol 6.zip",
     "Vikings 881",
@@ -169,7 +169,7 @@ function backToMarketplace() {
   createProduct(
     "VIKG555",
     "Vikings <br/> 555",
-    "../product_Data/VIKG555/Symbol 2.png",
+    "../product_Data/VIKG555/Symbol 2.jpg",
     "../product_Data/VIKG555/Symbol 2.exr",
     "../product_Data/VIKG555/Symbol 2.zip",
     "Vikings 555",
@@ -179,7 +179,7 @@ function backToMarketplace() {
   createProduct(
     "VIKG678",
     "Vikings <br/> 678",
-    "../product_Data/VIKG678/Symbol 4.png",
+    "../product_Data/VIKG678/Symbol 4.jpg",
     "../product_Data/VIKG678/Symbol 4.exr",
     "../product_Data/VIKG678/Symbol 4.zip",
     "Vikings 678",
@@ -189,7 +189,7 @@ function backToMarketplace() {
   createProduct(
     "HRDS203",
     "Hard Surface <br/> 203",
-    "../product_Data/HRDS203/HS Symbol 1.png",
+    "../product_Data/HRDS203/HS Symbol 1.jpg",
     "../product_Data/HRDS203/HS Symbol 1.exr",
     "../product_Data/HRDS203/HS Symbol 1.zip",
     "Hard Surface 203",
@@ -199,7 +199,7 @@ function backToMarketplace() {
   createProduct(
     "HRDS291",
     "Hard Surface <br/> 291",
-    "../product_Data/HRDS291/HS Symbol 4.png",
+    "../product_Data/HRDS291/HS Symbol 4.jpg",
     "../product_Data/HRDS291/HS Symbol 4.exr",
     "../product_Data/HRDS291/HS Symbol 4.zip",
     "Hard Surface 291",
@@ -209,7 +209,7 @@ function backToMarketplace() {
   createProduct(
     "HRDS120",
     "Hard Surface <br/> 120",
-    "../product_Data/HRDS120/HS Symbol 5.png",
+    "../product_Data/HRDS120/HS Symbol 5.jpg",
     "../product_Data/HRDS120/HS Symbol 5.exr",
     "../product_Data/HRDS120/HS Symbol 5.zip",
     "Hard Surface 120",
@@ -219,7 +219,7 @@ function backToMarketplace() {
   createProduct(
     "HRDS222",
     "Hard Surface <br/> 222",
-    "../product_Data/HRDS222/HS Symbol 9.png",
+    "../product_Data/HRDS222/HS Symbol 9.jpg",
     "../product_Data/HRDS222/HS Symbol 9.exr",
     "../product_Data/HRDS222/HS Symbol 9.zip",
     "Hard Surface 222",
@@ -229,7 +229,7 @@ function backToMarketplace() {
   createProduct(
     "HRDS102",
     "Hard Surface <br/> 102",
-    "../product_Data/HRDS102/HS Symbol 3.png",
+    "../product_Data/HRDS102/HS Symbol 3.jpg",
     "../product_Data/HRDS102/HS Symbol 3.exr",
     "../product_Data/HRDS102/HS Symbol 3.zip",
     "Hard Surface 102",
@@ -239,7 +239,7 @@ function backToMarketplace() {
   createProduct(
     "HRDS223",
     "Hard Surface <br/> 223",
-    "../product_Data/HRDS223/HS Symbol 10.png",
+    "../product_Data/HRDS223/HS Symbol 10.jpg",
     "../product_Data/HRDS223/HS Symbol 10.exr",
     "../product_Data/HRDS223/HS Symbol 10.zip",
     "Hard Surface 223",
@@ -249,7 +249,7 @@ function backToMarketplace() {
   createProduct(
     "HRDS111",
     "Hard Surface <br/> 111",
-    "../product_Data/HRDS111/HS Symbol 7.png",
+    "../product_Data/HRDS111/HS Symbol 7.jpg",
     "../product_Data/HRDS111/HS Symbol 7.exr",
     "../product_Data/HRDS111/HS Symbol 7.zip",
     "Hard Surface 111",
@@ -259,7 +259,7 @@ function backToMarketplace() {
   createProduct(
     "HRDS112",
     "Hard Surface <br/> 112",
-    "../product_Data/HRDS112/HS Symbol 8.png",
+    "../product_Data/HRDS112/HS Symbol 8.jpg",
     "../product_Data/HRDS112/HS Symbol 8.exr",
     "../product_Data/HRDS112/HS Symbol 8.zip",
     "Hard Surface 112",
@@ -269,7 +269,7 @@ function backToMarketplace() {
   createProduct(
     "HRDS099",
     "Hard Surface <br/> 099",
-    "../product_Data/HRDS099/HS Symbol 1.png",
+    "../product_Data/HRDS099/HS Symbol 1.jpg",
     "../product_Data/HRDS099/HS Symbol 1.exr",
     "../product_Data/HRDS099/HS Symbol 1.zip",
     "Hard Surface 099",
@@ -279,7 +279,7 @@ function backToMarketplace() {
   createProduct(
     "HRDS224",
     "Hard Surface <br/> 224",
-    "../product_Data/HRDS224/HS Symbol 2.png",
+    "../product_Data/HRDS224/HS Symbol 2.jpg",
     "../product_Data/HRDS224/HS Symbol 2.exr",
     "../product_Data/HRDS224/HS Symbol 2.zip",
     "Hard Surface 224",
@@ -289,7 +289,7 @@ function backToMarketplace() {
   createProduct(
     "HRDS033",
     "Hard Surface <br/> 033",
-    "../product_Data/HRDS033/HS Symbol 3.png",
+    "../product_Data/HRDS033/HS Symbol 3.jpg",
     "../product_Data/HRDS033/HS Symbol 3.exr",
     "../product_Data/HRDS033/HS Symbol 3.zip",
     "Hard Surface 033",
@@ -299,7 +299,7 @@ function backToMarketplace() {
   createProduct(
     "HRDS444",
     "Hard Surface <br/> 444",
-    "../product_Data/HRDS444/HS Symbol 4.png",
+    "../product_Data/HRDS444/HS Symbol 4.jpg",
     "../product_Data/HRDS444/HS Symbol 4.exr",
     "../product_Data/HRDS444/HS Symbol 4.zip",
     "Hard Surface 444",
@@ -309,7 +309,7 @@ function backToMarketplace() {
   createProduct(
     "HRDS199",
     "Hard Surface <br/> 199",
-    "../product_Data/HRDS199/HS Symbol 5.png",
+    "../product_Data/HRDS199/HS Symbol 5.jpg",
     "../product_Data/HRDS199/HS Symbol 5.exr",
     "../product_Data/HRDS199/HS Symbol 5.zip",
     "Hard Surface 199",
@@ -319,7 +319,7 @@ function backToMarketplace() {
   createProduct(
     "HRDS656",
     "Hard Surface <br/> 656",
-    "../product_Data/HRDS656/HS Symbol 6.png",
+    "../product_Data/HRDS656/HS Symbol 6.jpg",
     "../product_Data/HRDS656/HS Symbol 6.exr",
     "../product_Data/HRDS656/HS Symbol 6.zip",
     "Hard Surface 656",
@@ -329,7 +329,7 @@ function backToMarketplace() {
   createProduct(
     "HRDS717",
     "Hard Surface <br/> 717",
-    "../product_Data/HRDS717/HS Symbol 7.png",
+    "../product_Data/HRDS717/HS Symbol 7.jpg",
     "../product_Data/HRDS717/HS Symbol 7.exr",
     "../product_Data/HRDS717/HS Symbol 7.zip",
     "Hard Surface 717",
@@ -339,7 +339,7 @@ function backToMarketplace() {
   createProduct(
     "HRDS888",
     "Hard Surface <br/> 888",
-    "../product_Data/HRDS888/HS Symbol 8.png",
+    "../product_Data/HRDS888/HS Symbol 8.jpg",
     "../product_Data/HRDS888/HS Symbol 8.exr",
     "../product_Data/HRDS888/HS Symbol 8.zip",
     "Hard Surface 888",
@@ -349,7 +349,7 @@ function backToMarketplace() {
   createProduct(
     "HRDS975",
     "Hard Surface <br/> 975",
-    "../product_Data/HRDS975/HS Symbol 9.png",
+    "../product_Data/HRDS975/HS Symbol 9.jpg",
     "../product_Data/HRDS975/HS Symbol 9.exr",
     "../product_Data/HRDS975/HS Symbol 9.zip",
     "Hard Surface 975",
@@ -359,7 +359,7 @@ function backToMarketplace() {
   createProduct(
     "HRDS021",
     "Hard Surface <br/> 021",
-    "../product_Data/HRDS021/HS Symbol 10.png",
+    "../product_Data/HRDS021/HS Symbol 10.jpg",
     "../product_Data/HRDS021/HS Symbol 10.exr",
     "../product_Data/HRDS021/HS Symbol 10.zip",
     "Hard Surface 021",
@@ -369,7 +369,7 @@ function backToMarketplace() {
   createProduct(
     "HRDS227",
     "Hard Surface <br/> 227",
-    "../product_Data/HRDS227/HS Symbol 6.png",
+    "../product_Data/HRDS227/HS Symbol 6.jpg",
     "../product_Data/HRDS227/HS Symbol 6.exr",
     "../product_Data/HRDS227/HS Symbol 6.zip",
     "Hard Surface 227",
@@ -379,7 +379,7 @@ function backToMarketplace() {
   createProduct(
     "HRDS230",
     "Hard Surface <br/> 230",
-    "../product_Data/HRDS230/HS Symbol 2.png",
+    "../product_Data/HRDS230/HS Symbol 2.jpg",
     "../product_Data/HRDS230/HS Symbol 2.exr",
     "../product_Data/HRDS230/HS Symbol 2.zip",
     "Hard Surface 230",
@@ -389,7 +389,7 @@ function backToMarketplace() {
   createProduct(
     "GREK300",
     "Aphrodite <br/> Symbol",
-    "../product_Data/GREK300/Aphrodite.png",
+    "../product_Data/GREK300/Aphrodite.jpg",
     "../product_Data/GREK300/Aphrodite.exr",
     "../product_Data/GREK300/Aphrodite.zip",
     "Aphrodite Symbol",
@@ -399,7 +399,7 @@ function backToMarketplace() {
   createProduct(
     "GREK050",
     "Apollo <br/> Symbol",
-    "../product_Data/GREK050/Apollo.png",
+    "../product_Data/GREK050/Apollo.jpg",
     "../product_Data/GREK050/Apollo.exr",
     "../product_Data/GREK050/Apollo.zip",
     "Apollo Symbol",
@@ -409,7 +409,7 @@ function backToMarketplace() {
   createProduct(
     "GREK000",
     "Athena <br/> Symbol",
-    "../product_Data/GREK000/Athena.png",
+    "../product_Data/GREK000/Athena.jpg",
     "../product_Data/GREK000/Athena.exr",
     "../product_Data/GREK000/Athena.zip",
     "Athena Symbol",
@@ -419,7 +419,7 @@ function backToMarketplace() {
   createProduct(
     "GREK999",
     "Ares <br/> Symbol",
-    "../product_Data/GREK999/Ares.png",
+    "../product_Data/GREK999/Ares.jpg",
     "../product_Data/GREK999/Ares.exr",
     "../product_Data/GREK999/Ares.zip",
     "Ares Symbol",
@@ -429,7 +429,7 @@ function backToMarketplace() {
   createProduct(
     "GREK110",
     "Demeter <br/> Symbol",
-    "../product_Data/GREK110/Demeter.png",
+    "../product_Data/GREK110/Demeter.jpg",
     "../product_Data/GREK110/Demeter.exr",
     "../product_Data/GREK110/Demeter.zip",
     "Demeter Symbol",
@@ -439,7 +439,7 @@ function backToMarketplace() {
   createProduct(
     "GREK080",
     "Dionysus <br/> Symbol",
-    "../product_Data/GREK080/Dionysus.png",
+    "../product_Data/GREK080/Dionysus.jpg",
     "../product_Data/GREK080/Dionysus.exr",
     "../product_Data/GREK080/Dionysus.zip",
     "Dionysus Symbol",
@@ -449,7 +449,7 @@ function backToMarketplace() {
   createProduct(
     "GREK100",
     "Zues <br/> Symbol",
-    "../product_Data/GREK100/Zeus.png",
+    "../product_Data/GREK100/Zeus.jpg",
     "../product_Data/GREK100/Zeus.exr",
     "../product_Data/GREK100/Zeus.zip",
     "Zues Symbol",
@@ -459,7 +459,7 @@ function backToMarketplace() {
   createProduct(
     "GREK222",
     "Poseidon <br/> Symbol",
-    "../product_Data/GREK222/Poseidon.png",
+    "../product_Data/GREK222/Poseidon.jpg",
     "../product_Data/GREK222/Poseidon.exr",
     "../product_Data/GREK222/Poseidon.zip",
     "Poseidon Symbol",
@@ -469,7 +469,7 @@ function backToMarketplace() {
   createProduct(
     "GREK210",
     "Hermes <br/> Symbol",
-    "../product_Data/GREK210/Hermes.png",
+    "../product_Data/GREK210/Hermes.jpg",
     "../product_Data/GREK210/Hermes.exr",
     "../product_Data/GREK210/Hermes.zip",
     "Hermes Symbol",
@@ -479,7 +479,7 @@ function backToMarketplace() {
   createProduct(
     "GREK201",
     "Hephaestus <br/> Symbol",
-    "../product_Data/GREK201/Hephaestus.png",
+    "../product_Data/GREK201/Hephaestus.jpg",
     "../product_Data/GREK201/Hephaestus.exr",
     "../product_Data/GREK201/Hephaestus.zip",
     "Hephaestus Symbol",
@@ -527,7 +527,7 @@ function viewProduct(product_id) {
   <button class="btn btn-warning" onclick="backToMarketplace();">Back</button>
   <br/>
   <br/>
-  <img src="${itemInCatalog.preview}" alt="${itemInCatalog.name}" class="viewProductImage card">
+  <img src="${itemInCatalog.preview}" alt="${itemInCatalog.name}" class="viewProductImage card" loading="lazy">
   <div class="caption">
     <h1 class="product_title">${itemInCatalog.name}</h1>
     <p>Price: <span class="productPrice">${finalPrice}</span></p>
@@ -561,7 +561,7 @@ function search(searchWord) {
     if (catalogkeys[i].includes(searchWord)) {
       let item = catalog[catalogkeys[i]];
       template = `<div class="${gridLayout} product_area card">
-      <img class="thumbnail card" src="${item.preview}" alt="${item.name}" />
+      <img class="thumbnail card" src="${item.preview}" alt="${item.name}" loading="lazy"/>
       <h1 class="product_title">${item.name}</h1>
       <button class="btn btn-primary" onclick="viewProduct('${catalogkeys[i]}');">Check Texture!</button>
       </div>
