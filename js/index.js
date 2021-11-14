@@ -47,6 +47,96 @@ function createProduct(
 function backToMarketplace() {
   marketplace = ``;
   createProduct(
+    "PHAR111",
+    "Eye of Ra <br/> Pharaonic",
+    "../product_Data/PHAR111/Eye of Ra.png",
+    "../product_Data/PHAR111/Eye of Ra.exr",
+    "../product_Data/PHAR111/Eye of Ra.zip",
+    "Eye of Ra",
+    "Pharaonic Symbol",
+    0
+  );
+  createProduct(
+    "PHAR001",
+    "Scarab <br/> Pharaonic",
+    "../product_Data/PHAR001/Scarab.png",
+    "../product_Data/PHAR001/Scarab.exr",
+    "../product_Data/PHAR001/Scarab.zip",
+    "Scarab",
+    "Pharaonic Symbol",
+    0
+  );
+  createProduct(
+    "PHAR999",
+    "Ankh key <br/> Pharaonic",
+    "../product_Data/PHAR999/Ankh Key.png",
+    "../product_Data/PHAR999/Ankh Key.exr",
+    "../product_Data/PHAR999/Ankh Key.zip",
+    "Ankh Key",
+    "Pharaonic Symbol",
+    0
+  );
+  createProduct(
+    "PHAR000",
+    "Lotus <br/> Pharaonic",
+    "../product_Data/PHAR000/Lotus Flower.png",
+    "../product_Data/PHAR000/Lotus Flower.exr",
+    "../product_Data/PHAR000/Lotus Flower.zip",
+    "Lotus",
+    "Pharaonic Symbol",
+    0
+  );
+  createProduct(
+    "PHAR555",
+    "Egyptian Cat <br/> Pharaonic",
+    "../product_Data/PHAR555/Egyptian Cat.png",
+    "../product_Data/PHAR555/Egyptian Cat.exr",
+    "../product_Data/PHAR555/Egyptian Cat.zip",
+    "Egyptian Cat",
+    "Pharaonic Symbol",
+    0
+  );
+  createProduct(
+    "PHAR231",
+    "Snake <br/> Pharaonic",
+    "../product_Data/PHAR231/Snake.png",
+    "../product_Data/PHAR231/Snake.exr",
+    "../product_Data/PHAR231/Snake.zip",
+    "Snake",
+    "Pharaonic Symbol",
+    0
+  );
+  createProduct(
+    "PHAR332",
+    "Pharaonic <br/> 332",
+    "../product_Data/PHAR332/Symbol 1.png",
+    "../product_Data/PHAR332/Symbol 1.exr",
+    "../product_Data/PHAR332/Symbol 1.zip",
+    "Pharaonic Symbol 332",
+    "Pharaonic Symbol",
+    0
+  );
+  createProduct(
+    "PHAR445",
+    "Pharaonic <br/> 445",
+    "../product_Data/PHAR445/Symbol 2.png",
+    "../product_Data/PHAR445/Symbol 2.exr",
+    "../product_Data/PHAR445/Symbol 2.zip",
+    "Pharaonic Symbol 445",
+    "Pharaonic Symbol",
+    0
+  );
+  createProduct(
+    "PHAR654",
+    "Pharaonic <br/> 654",
+    "../product_Data/PHAR654/Symbol 3.png",
+    "../product_Data/PHAR654/Symbol 3.exr",
+    "../product_Data/PHAR654/Symbol 3.zip",
+    "Pharaonic Symbol 654",
+    "Pharaonic Symbol",
+    0
+  );
+  createProduct(
     "HRDS747",
     "Arrow Line <br/> Beveled",
     "../product_Data/HRDS747/Beveled Arrow Line Hard Surface .png",
