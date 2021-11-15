@@ -47,6 +47,36 @@ function createProduct(
 function backToMarketplace() {
   marketplace = ``;
   createProduct(
+    "BLOB033",
+    "Blobs <br/> 033",
+    "../product_Data/BLOB033/Blobs 1.png",
+    "../product_Data/BLOB033/Blobs 1.exr",
+    "../product_Data/BLOB033/Blobs 1.zip",
+    "Blobs 033",
+    "Blobs",
+    0
+  );
+  createProduct(
+    "BLOB088",
+    "Blobs <br/> 088",
+    "../product_Data/BLOB088/Blobs 2.png",
+    "../product_Data/BLOB088/Blobs 2.exr",
+    "../product_Data/BLOB088/Blobs 2.zip",
+    "Blobs 088",
+    "Blobs",
+    0
+  );
+  createProduct(
+    "BLOB100",
+    "Blobs <br/> 100",
+    "../product_Data/BLOB100/Blobs 3.png",
+    "../product_Data/BLOB100/Blobs 3.exr",
+    "../product_Data/BLOB100/Blobs 3.zip",
+    "Blobs 100",
+    "Blobs",
+    0
+  );
+  createProduct(
     "PHAR111",
     "Eye of Ra <br/> Pharaonic",
     "../product_Data/PHAR111/Eye of Ra.png",
