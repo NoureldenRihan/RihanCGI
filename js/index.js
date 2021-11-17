@@ -47,6 +47,26 @@ function createProduct(
 function backToMarketplace() {
   marketplace = ``;
   createProduct(
+    "RIHAN00",
+    "Rihan CGI <br/> Logo 00",
+    "../product_Data/RIHAN00/Mini-Logo.png",
+    "../product_Data/RIHAN00/Mini-Logo.exr",
+    "../product_Data/RIHAN00/Mini-Logo.zip",
+    "RihanCGI Logo 00",
+    "Rihan CGI",
+    0
+  );
+  createProduct(
+    "RIHAN01",
+    "Rihan CGI <br/> Logo 01",
+    "../product_Data/RIHAN01/Main Logo.png",
+    "../product_Data/RIHAN01/Main Logo.exr",
+    "../product_Data/RIHAN01/Main Logo.zip",
+    "RihanCGI Logo 01",
+    "Rihan CGI",
+    0
+  );
+  createProduct(
     "GNRL000",
     "Donut <br/> &nbsp;",
     "../product_Data/GNRL000/Donut .png",
