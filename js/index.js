@@ -47,6 +47,26 @@ function createProduct(
 function backToMarketplace() {
   marketplace = ``;
   createProduct(
+    "HRDS321",
+    "Hard Surface <br/> 321",
+    "../product_Data/HRDS321/Shape 2.png",
+    "../product_Data/HRDS321/Shape 2.exr",
+    "../product_Data/HRDS321/Shape 2.zip",
+    "Hard Surface 321",
+    "Hard Surface",
+    0
+  );
+  createProduct(
+    "HRDS204",
+    "Hard Surface <br/> 204",
+    "../product_Data/HRDS204/Shape 1.png",
+    "../product_Data/HRDS204/Shape 1.exr",
+    "../product_Data/HRDS204/Shape 1.zip",
+    "Hard Surface 204",
+    "Hard Surface",
+    0
+  );
+  createProduct(
     "RIHAN00",
     "Rihan CGI <br/> Logo 00",
     "../product_Data/RIHAN00/Mini-Logo.png",
