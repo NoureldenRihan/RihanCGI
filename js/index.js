@@ -1,6 +1,6 @@
 //Prv ==> Preview (.PNG)
 //Phq ==> High Quality (.EXR)
-//zip ==> Preview + High Quality
+//zip ==> Preview + High Quality (.ZIP)
 
 let marketplace = $("#marketplace").html();
 let gridLayout = `col-xs-12 col-md-6 col-lg-3`;
@@ -46,6 +46,66 @@ function createProduct(
 // function backToMarketplace clears the marketplace, recreates all available products and recreates the marketplace
 function backToMarketplace() {
   marketplace = ``;
+  createProduct(
+    "HRDS986",
+    "Tri-Mid Level <br/> Hard Surface",
+    "../product_Data/HRDS986/Tri-Mid-Hard Surface.png",
+    "../product_Data/HRDS986/Tri-Mid-Hard Surface.exr",
+    "../product_Data/HRDS986/Tri-Mid-Hard Surface.zip",
+    "Tri-Mid Hard Surface",
+    "Hard Surface",
+    0
+  );
+  createProduct(
+    "HRDS066",
+    "Tri-Low Level <br/> Hard Surface",
+    "../product_Data/HRDS066/Tri-Low-Hard Surface.png",
+    "../product_Data/HRDS066/Tri-Low-Hard Surface.exr",
+    "../product_Data/HRDS066/Tri-Low-Hard Surface.zip",
+    "Tri-Low Hard Surface",
+    "Hard Surface",
+    0
+  );
+  createProduct(
+    "HRDS065",
+    "Tri-High Level <br/> Hard Surface",
+    "../product_Data/HRDS065/Tri-High-Hard Surface.png",
+    "../product_Data/HRDS065/Tri-High-Hard Surface.exr",
+    "../product_Data/HRDS065/Tri-High-Hard Surface.zip",
+    "Tri-High Hard Surface",
+    "Hard Surface",
+    0
+  );
+  createProduct(
+    "HRDS063",
+    "Quad-Mid Level <br/> Hard Surface",
+    "../product_Data/HRDS063/Quad-Mid-Hard Surface.png",
+    "../product_Data/HRDS063/Quad-Mid-Hard Surface.exr",
+    "../product_Data/HRDS063/Quad-Mid-Hard Surface.zip",
+    "Quad-Mid Hard Surface",
+    "Hard Surface",
+    0
+  );
+  createProduct(
+    "HRDS064",
+    "Quad-Low Level <br/> Hard Surface",
+    "../product_Data/HRDS064/Quad-Low-Hard Surface.png",
+    "../product_Data/HRDS064/Quad-Low-Hard Surface.exr",
+    "../product_Data/HRDS064/Quad-Low-Hard Surface.zip",
+    "Quad-Low Hard Surface",
+    "Hard Surface",
+    0
+  );
+  createProduct(
+    "HRDS062",
+    "Quad-High Level <br/> Hard Surface",
+    "../product_Data/HRDS062/Quad-High-Hard Surface.png",
+    "../product_Data/HRDS062/Quad-High-Hard Surface.exr",
+    "../product_Data/HRDS062/Quad-High-Hard Surface.zip",
+    "Quad-High Hard Surface",
+    "Hard Surface",
+    0
+  );
   createProduct(
     "HRDS321",
     "Hard Surface <br/> 321",
@@ -820,12 +880,16 @@ function viewProduct(product_id) {
   $("#marketplace").html(marketplace);
 }
 
+// Setting user Search to be upper case to match product Codes and Trims all excess spaces
 function setSearch() {
   let searchTag = $("#userSearch").val();
   searchTag = searchTag.trim().toUpperCase();
   search(searchTag);
 }
 
+// Implementing Search Function where user can type the product Code or some of it and it will preview all products that match this code.
+// if no products found it leaves the products on page and displays a small msg showing that no search result was found.
+// if the user searches while nothing is at the search bar it displays all the products available.
 function search(searchWord) {
   let catalogkeys = Object.keys(catalog);
   let template;
