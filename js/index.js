@@ -47,6 +47,36 @@ function createProduct(
 function backToMarketplace() {
   marketplace = ``;
   createProduct(
+    "HRDS061",
+    "Pent-Mid Level <br/> Hard Surface",
+    "../product_Data/HRDS061/Pent-Mid-Hard Surface.png",
+    "../product_Data/HRDS061/Pent-Mid-Hard Surface.exr",
+    "../product_Data/HRDS061/Pent-Mid-Hard Surface.zip",
+    "Pent-Mid Hard Surface",
+    "Hard Surface",
+    0
+  );
+  createProduct(
+    "HRDS060",
+    "Pent-Low Level <br/> Hard Surface",
+    "../product_Data/HRDS060/Pent-Low-Hard Surface.png",
+    "../product_Data/HRDS060/Pent-Low-Hard Surface.exr",
+    "../product_Data/HRDS060/Pent-Low-Hard Surface.zip",
+    "Pent-Low Hard Surface",
+    "Hard Surface",
+    0
+  );
+  createProduct(
+    "HRDS059",
+    "Pent-High Level <br/> Hard Surface",
+    "../product_Data/HRDS059/Pent-High-Hard Surface.png",
+    "../product_Data/HRDS059/Pent-High-Hard Surface.exr",
+    "../product_Data/HRDS059/Pent-High-Hard Surface.zip",
+    "Pent-High Hard Surface",
+    "Hard Surface",
+    0
+  );
+  createProduct(
     "HRDS986",
     "Tri-Mid Level <br/> Hard Surface",
     "../product_Data/HRDS986/Tri-Mid-Hard Surface.png",
