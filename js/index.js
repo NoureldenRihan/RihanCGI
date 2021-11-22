@@ -47,6 +47,66 @@ function createProduct(
 function backToMarketplace() {
   marketplace = ``;
   createProduct(
+    "HRDS058",
+    "Hex-Mid Level <br/> Hard Surface",
+    "../product_Data/HRDS058/Hex-Mid-Hard Surface.png",
+    "../product_Data/HRDS058/Hex-Mid-Hard Surface.exr",
+    "../product_Data/HRDS058/Hex-Mid-Hard Surface.zip",
+    "Hex-Mid Hard Surface",
+    "Hard Surface",
+    0
+  );
+  createProduct(
+    "HRDS057",
+    "Hex-Low Level <br/> Hard Surface",
+    "../product_Data/HRDS057/Hex-Low-Hard Surface.png",
+    "../product_Data/HRDS057/Hex-Low-Hard Surface.exr",
+    "../product_Data/HRDS057/Hex-Low-Hard Surface.zip",
+    "Hex-Low Hard Surface",
+    "Hard Surface",
+    0
+  );
+  createProduct(
+    "HRDS056",
+    "Hex-High Level <br/> Hard Surface",
+    "../product_Data/HRDS056/Hex-High-Hard Surface.png",
+    "../product_Data/HRDS056/Hex-High-Hard Surface.exr",
+    "../product_Data/HRDS056/Hex-High-Hard Surface.zip",
+    "Hex-High Hard Surface",
+    "Hard Surface",
+    0
+  );
+  createProduct(
+    "HRDS055",
+    "Hept-Mid Level <br/> Hard Surface",
+    "../product_Data/HRDS055/Hept-Mid-Hard Surface.png",
+    "../product_Data/HRDS055/Hept-Mid-Hard Surface.exr",
+    "../product_Data/HRDS055/Hept-Mid-Hard Surface.zip",
+    "Hept-Mid Hard Surface",
+    "Hard Surface",
+    0
+  );
+  createProduct(
+    "HRDS054",
+    "Hept-Low Level <br/> Hard Surface",
+    "../product_Data/HRDS054/Hept-Low-Hard Surface.png",
+    "../product_Data/HRDS054/Hept-Low-Hard Surface.exr",
+    "../product_Data/HRDS054/Hept-Low-Hard Surface.zip",
+    "Hept-Low Hard Surface",
+    "Hard Surface",
+    0
+  );
+  createProduct(
+    "HRDS053",
+    "Hept-High Level <br/> Hard Surface",
+    "../product_Data/HRDS053/Hept-High-Hard Surface.png",
+    "../product_Data/HRDS053/Hept-High-Hard Surface.exr",
+    "../product_Data/HRDS053/Hept-High-Hard Surface.zip",
+    "Hept-High Hard Surface",
+    "Hard Surface",
+    0
+  );
+  createProduct(
     "HRDS061",
     "Pent-Mid Level <br/> Hard Surface",
     "../product_Data/HRDS061/Pent-Mid-Hard Surface.png",
