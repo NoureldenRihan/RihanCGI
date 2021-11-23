@@ -47,6 +47,66 @@ function createProduct(
 function backToMarketplace() {
   marketplace = ``;
   createProduct(
+    "HRDS046",
+    "Non-High Level <br/> Hard Surface",
+    "../product_Data/HRDS046/Non-High-Hard Surface.png",
+    "../product_Data/HRDS046/Non-High-Hard Surface.exr",
+    "../product_Data/HRDS046/Non-High-Hard Surface.zip",
+    "Non-High Hard Surface",
+    "Hard Surface",
+    0
+  );
+  createProduct(
+    "HRDS048",
+    "Non-Low Level <br/> Hard Surface",
+    "../product_Data/HRDS048/Non-Low-Hard Surface.png",
+    "../product_Data/HRDS048/Non-Low-Hard Surface.exr",
+    "../product_Data/HRDS048/Non-Low-Hard Surface.zip",
+    "Non-Low Hard Surface",
+    "Hard Surface",
+    0
+  );
+  createProduct(
+    "HRDS049",
+    "Non-Mid Level <br/> Hard Surface",
+    "../product_Data/HRDS049/Non-Mid-Hard Surface.png",
+    "../product_Data/HRDS049/Non-Mid-Hard Surface.exr",
+    "../product_Data/HRDS049/Non-Mid-Hard Surface.zip",
+    "Non-Mid Hard Surface",
+    "Hard Surface",
+    0
+  );
+  createProduct(
+    "HRDS051",
+    "Oct-Mid Level <br/> Hard Surface",
+    "../product_Data/HRDS051/Oct-Mid-Hard Surface.png",
+    "../product_Data/HRDS051/Oct-Mid-Hard Surface.exr",
+    "../product_Data/HRDS051/Oct-Mid-Hard Surface.zip",
+    "Oct-Mid Hard Surface",
+    "Hard Surface",
+    0
+  );
+  createProduct(
+    "HRDS050",
+    "Oct-High Level <br/> Hard Surface",
+    "../product_Data/HRDS050/Oct-High-Hard Surface.png",
+    "../product_Data/HRDS050/Oct-High-Hard Surface.exr",
+    "../product_Data/HRDS050/Oct-High-Hard Surface.zip",
+    "Oct-High Hard Surface",
+    "Hard Surface",
+    0
+  );
+  createProduct(
+    "HRDS052",
+    "Oct-Low Level <br/> Hard Surface",
+    "../product_Data/HRDS052/Oct-Low-Hard Surface.png",
+    "../product_Data/HRDS052/Oct-Low-Hard Surface.exr",
+    "../product_Data/HRDS052/Oct-Low-Hard Surface.zip",
+    "Oct-Low Hard Surface",
+    "Hard Surface",
+    0
+  );
+  createProduct(
     "HRDS058",
     "Hex-Mid Level <br/> Hard Surface",
     "../product_Data/HRDS058/Hex-Mid-Hard Surface.png",
