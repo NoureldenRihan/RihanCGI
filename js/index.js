@@ -47,6 +47,36 @@ function createProduct(
 function backToMarketplace() {
   marketplace = ``;
   createProduct(
+    "HRDS040",
+    "Circle-High Level <br/> Hard Surface",
+    "../product_Data/HRDS040/Circle-High-Hard Surface.png",
+    "../product_Data/HRDS040/Circle-High-Hard Surface.exr",
+    "../product_Data/HRDS040/Circle-High-Hard Surface.zip",
+    "Circle-High Hard Surface",
+    "Hard Surface",
+    0
+  );
+  createProduct(
+    "HRDS041",
+    "Circle-Low Level <br/> Hard Surface",
+    "../product_Data/HRDS041/Circle-Low-Hard Surface.png",
+    "../product_Data/HRDS041/Circle-Low-Hard Surface.exr",
+    "../product_Data/HRDS041/Circle-Low-Hard Surface.zip",
+    "Circle-Low Hard Surface",
+    "Hard Surface",
+    0
+  );
+  createProduct(
+    "HRDS042",
+    "Circle-Mid Level <br/> Hard Surface",
+    "../product_Data/HRDS042/Circle-Mid-Hard Surface.png",
+    "../product_Data/HRDS042/Circle-Mid-Hard Surface.exr",
+    "../product_Data/HRDS042/Circle-Mid-Hard Surface.zip",
+    "Circle-Mid Hard Surface",
+    "Hard Surface",
+    0
+  );
+  createProduct(
     "HRDS043",
     "Dec-High Level <br/> Hard Surface",
     "../product_Data/HRDS043/Dec-High-Hard Surface.png",
