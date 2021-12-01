@@ -7,6 +7,65 @@ let gridLayout = `col-xs-12 col-md-6 col-lg-3`;
 let catalog = {};
 let totalProductNum = 0;
 
+// function that Creates the NavBar in All Webpages that have a div with id "CreateNavBarHere"
+function createNavBar() {
+  let targetDiv = document.getElementById("CreateNavBarHere");
+  let targetclass = targetDiv.innerHTML;
+  let navBar = `<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <img
+      src="./Images/rihan-cgi-logo-cropped.png"
+      alt="Rihan CGI Logo"
+      class="navbar-brand Logo"
+    />
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link ${
+            targetclass == 1 ? "active" : " "
+          } " aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link ${
+            targetclass == 2 ? "active" : " "
+          }" href="Brush Textures.htm">Brush Textures</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link ${
+              targetclass == 3 ? "active" : " "
+            }" href="Search Guide.html">Search Guide</a>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.patreon.com/RihanCGI"
+            >Patreon</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link ${
+            targetclass == 4 ? "active" : " "
+          }" href="FAQs.htm">FAQs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="PrivacyPolicy.html">Privacy Policy</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>`;
+  targetDiv.innerHTML = navBar;
+}
+
 // function CreateProduct takes a name and preview .PNG
 //and creates a template including the name, .PNG and a button for previewing the product
 function createProduct(
@@ -15,8 +74,8 @@ function createProduct(
   product_Prv,
   product_Phq,
   product_zip,
+  product_normal,
   download_name,
-  //tags,
   product_desc = "No Description.",
   product_price = 0,
   purchase_link = "No Link"
@@ -28,6 +87,7 @@ function createProduct(
     preview: product_Prv,
     hq: product_Phq,
     zip: product_zip,
+    normal: product_normal,
     download_title: download_name,
     link: purchase_link,
   };
@@ -52,6 +112,7 @@ function backToMarketplace() {
     "../product_Data/GNRL002/Shape 2.png",
     "../product_Data/GNRL002/Shape 2.exr",
     "../product_Data/GNRL002/Shape 2.zip",
+    "../product_Data/GNRL002/Shape 2 Normal Map.png",
     "Stitch 002",
     "General",
     0
@@ -62,6 +123,7 @@ function backToMarketplace() {
     "../product_Data/GNRL003/Shape 3.png",
     "../product_Data/GNRL003/Shape 3.exr",
     "../product_Data/GNRL003/Shape 3.zip",
+    "../product_Data/GNRL003/Shape 3 Normal Map.png",
     "Stitch 003",
     "General",
     0
@@ -72,6 +134,7 @@ function backToMarketplace() {
     "../product_Data/GNRL001/Shape 1.png",
     "../product_Data/GNRL001/Shape 1.exr",
     "../product_Data/GNRL001/Shape 1.zip",
+    "../product_Data/GNRL001/Shape 1 Normal Map.png",
     "Lines 001",
     "General",
     0
@@ -82,6 +145,7 @@ function backToMarketplace() {
     "../product_Data/HRDS036/Shape 5.png",
     "../product_Data/HRDS036/Shape 5.exr",
     "../product_Data/HRDS036/Shape 5.zip",
+    "../product_Data/HRDS036/Shape 5 Normal Map.png",
     "Hard Surface 036",
     "Hard Surface ",
     0
@@ -92,6 +156,7 @@ function backToMarketplace() {
     "../product_Data/HRDS037/Shape 4.png",
     "../product_Data/HRDS037/Shape 4.exr",
     "../product_Data/HRDS037/Shape 4.zip",
+    "../product_Data/HRDS037/Shape 4 Normal Map.png",
     "Hard Surface 037",
     "Hard Surface ",
     0
@@ -102,6 +167,7 @@ function backToMarketplace() {
     "../product_Data/HRDS038/Shape 3.png",
     "../product_Data/HRDS038/Shape 3.exr",
     "../product_Data/HRDS038/Shape 3.zip",
+    "../product_Data/HRDS038/Shape 3 Normal Map.png",
     "Hard Surface 038",
     "Hard Surface ",
     0
@@ -112,6 +178,7 @@ function backToMarketplace() {
     "../product_Data/HRDS039/Shape 2.png",
     "../product_Data/HRDS039/Shape 2.exr",
     "../product_Data/HRDS039/Shape 2.zip",
+    "../product_Data/HRDS039/Shape 2 Normal Map.png",
     "Hard Surface 039",
     "Hard Surface ",
     0
@@ -122,6 +189,7 @@ function backToMarketplace() {
     "../product_Data/HRDS035/Shape 1.png",
     "../product_Data/HRDS035/Shape 1.exr",
     "../product_Data/HRDS035/Shape 1.zip",
+    "../product_Data/HRDS035/Shape 1 Normal Map.png",
     "Hard Surface 035",
     "Hard Surface ",
     0
@@ -132,6 +200,7 @@ function backToMarketplace() {
     "../product_Data/HRDS040/Circle-High-Hard Surface.png",
     "../product_Data/HRDS040/Circle-High-Hard Surface.exr",
     "../product_Data/HRDS040/Circle-High-Hard Surface.zip",
+    "../product_Data/HRDS040/Circle-High-Hard Surface Normal Map.png",
     "Circle-High Hard Surface",
     "Hard Surface",
     0
@@ -142,6 +211,7 @@ function backToMarketplace() {
     "../product_Data/HRDS041/Circle-Low-Hard Surface.png",
     "../product_Data/HRDS041/Circle-Low-Hard Surface.exr",
     "../product_Data/HRDS041/Circle-Low-Hard Surface.zip",
+    "../product_Data/HRDS041/Circle-Low-Hard Surface Normal Map.png",
     "Circle-Low Hard Surface",
     "Hard Surface",
     0
@@ -152,6 +222,7 @@ function backToMarketplace() {
     "../product_Data/HRDS042/Circle-Mid-Hard Surface.png",
     "../product_Data/HRDS042/Circle-Mid-Hard Surface.exr",
     "../product_Data/HRDS042/Circle-Mid-Hard Surface.zip",
+    "../product_Data/HRDS042/Circle-Mid-Hard Surface Normal Map.png",
     "Circle-Mid Hard Surface",
     "Hard Surface",
     0
@@ -162,6 +233,7 @@ function backToMarketplace() {
     "../product_Data/HRDS043/Dec-High-Hard Surface.png",
     "../product_Data/HRDS043/Dec-High-Hard Surface.exr",
     "../product_Data/HRDS043/Dec-High-Hard Surface.zip",
+    "../product_Data/HRDS043/Dec-High-Hard Surface Normal Map.png",
     "Dec-High Hard Surface",
     "Hard Surface",
     0
@@ -172,6 +244,7 @@ function backToMarketplace() {
     "../product_Data/HRDS044/Dec-Low-Hard Surface.png",
     "../product_Data/HRDS044/Dec-Low-Hard Surface.exr",
     "../product_Data/HRDS044/Dec-Low-Hard Surface.zip",
+    "../product_Data/HRDS044/Dec-Low-Hard Surface Normal Map.png",
     "Dec-Low Hard Surface",
     "Hard Surface",
     0
@@ -182,6 +255,7 @@ function backToMarketplace() {
     "../product_Data/HRDS045/Dec-Mid-Hard Surface.png",
     "../product_Data/HRDS045/Dec-Mid-Hard Surface.exr",
     "../product_Data/HRDS045/Dec-Mid-Hard Surface.zip",
+    "../product_Data/HRDS045/Dec-Mid-Hard Surface Normal Map.png",
     "Dec-Mid Hard Surface",
     "Hard Surface",
     0
@@ -192,6 +266,7 @@ function backToMarketplace() {
     "../product_Data/HRDS046/Non-High-Hard Surface.png",
     "../product_Data/HRDS046/Non-High-Hard Surface.exr",
     "../product_Data/HRDS046/Non-High-Hard Surface.zip",
+    "../product_Data/HRDS046/Non-High-Hard Surface Normal Map.png",
     "Non-High Hard Surface",
     "Hard Surface",
     0
@@ -202,6 +277,7 @@ function backToMarketplace() {
     "../product_Data/HRDS048/Non-Low-Hard Surface.png",
     "../product_Data/HRDS048/Non-Low-Hard Surface.exr",
     "../product_Data/HRDS048/Non-Low-Hard Surface.zip",
+    "../product_Data/HRDS048/Non-Low-Hard Surface Normal Map.png",
     "Non-Low Hard Surface",
     "Hard Surface",
     0
@@ -212,6 +288,7 @@ function backToMarketplace() {
     "../product_Data/HRDS049/Non-Mid-Hard Surface.png",
     "../product_Data/HRDS049/Non-Mid-Hard Surface.exr",
     "../product_Data/HRDS049/Non-Mid-Hard Surface.zip",
+    "../product_Data/HRDS049/Non-Mid-Hard Surface Normal Map.png",
     "Non-Mid Hard Surface",
     "Hard Surface",
     0
@@ -222,6 +299,7 @@ function backToMarketplace() {
     "../product_Data/HRDS051/Oct-Mid-Hard Surface.png",
     "../product_Data/HRDS051/Oct-Mid-Hard Surface.exr",
     "../product_Data/HRDS051/Oct-Mid-Hard Surface.zip",
+    "../product_Data/HRDS051/Oct-Mid-Hard Surface Normal Map.png",
     "Oct-Mid Hard Surface",
     "Hard Surface",
     0
@@ -232,6 +310,7 @@ function backToMarketplace() {
     "../product_Data/HRDS050/Oct-High-Hard Surface.png",
     "../product_Data/HRDS050/Oct-High-Hard Surface.exr",
     "../product_Data/HRDS050/Oct-High-Hard Surface.zip",
+    "../product_Data/HRDS050/Oct-High-Hard Surface Normal Map.png",
     "Oct-High Hard Surface",
     "Hard Surface",
     0
@@ -242,6 +321,7 @@ function backToMarketplace() {
     "../product_Data/HRDS052/Oct-Low-Hard Surface.png",
     "../product_Data/HRDS052/Oct-Low-Hard Surface.exr",
     "../product_Data/HRDS052/Oct-Low-Hard Surface.zip",
+    "../product_Data/HRDS052/Oct-Low-Hard Surface Normal Map.png",
     "Oct-Low Hard Surface",
     "Hard Surface",
     0
@@ -252,6 +332,7 @@ function backToMarketplace() {
     "../product_Data/HRDS058/Hex-Mid-Hard Surface.png",
     "../product_Data/HRDS058/Hex-Mid-Hard Surface.exr",
     "../product_Data/HRDS058/Hex-Mid-Hard Surface.zip",
+    "../product_Data/HRDS058/Hex-Mid-Hard Surface Normal Map.png",
     "Hex-Mid Hard Surface",
     "Hard Surface",
     0
@@ -262,6 +343,7 @@ function backToMarketplace() {
     "../product_Data/HRDS057/Hex-Low-Hard Surface.png",
     "../product_Data/HRDS057/Hex-Low-Hard Surface.exr",
     "../product_Data/HRDS057/Hex-Low-Hard Surface.zip",
+    "../product_Data/HRDS057/Hex-Low-Hard Surface Normal Map.png",
     "Hex-Low Hard Surface",
     "Hard Surface",
     0
@@ -272,6 +354,7 @@ function backToMarketplace() {
     "../product_Data/HRDS056/Hex-High-Hard Surface.png",
     "../product_Data/HRDS056/Hex-High-Hard Surface.exr",
     "../product_Data/HRDS056/Hex-High-Hard Surface.zip",
+    "../product_Data/HRDS056/Hex-High-Hard Surface Normal Map.png",
     "Hex-High Hard Surface",
     "Hard Surface",
     0
@@ -282,6 +365,7 @@ function backToMarketplace() {
     "../product_Data/HRDS055/Hept-Mid-Hard Surface.png",
     "../product_Data/HRDS055/Hept-Mid-Hard Surface.exr",
     "../product_Data/HRDS055/Hept-Mid-Hard Surface.zip",
+    "../product_Data/HRDS055/Hept-Mid-Hard Surface Normal Map.png",
     "Hept-Mid Hard Surface",
     "Hard Surface",
     0
@@ -292,6 +376,7 @@ function backToMarketplace() {
     "../product_Data/HRDS054/Hept-Low-Hard Surface.png",
     "../product_Data/HRDS054/Hept-Low-Hard Surface.exr",
     "../product_Data/HRDS054/Hept-Low-Hard Surface.zip",
+    "../product_Data/HRDS054/Hept-Low-Hard Surface Normal Map.png",
     "Hept-Low Hard Surface",
     "Hard Surface",
     0
@@ -302,6 +387,7 @@ function backToMarketplace() {
     "../product_Data/HRDS053/Hept-High-Hard Surface.png",
     "../product_Data/HRDS053/Hept-High-Hard Surface.exr",
     "../product_Data/HRDS053/Hept-High-Hard Surface.zip",
+    "../product_Data/HRDS053/Hept-High-Hard Surface Normal Map.png",
     "Hept-High Hard Surface",
     "Hard Surface",
     0
@@ -312,6 +398,7 @@ function backToMarketplace() {
     "../product_Data/HRDS061/Pent-Mid-Hard Surface.png",
     "../product_Data/HRDS061/Pent-Mid-Hard Surface.exr",
     "../product_Data/HRDS061/Pent-Mid-Hard Surface.zip",
+    "../product_Data/HRDS061/Pent-Mid-Hard Surface Normal Map.png",
     "Pent-Mid Hard Surface",
     "Hard Surface",
     0
@@ -322,6 +409,7 @@ function backToMarketplace() {
     "../product_Data/HRDS060/Pent-Low-Hard Surface.png",
     "../product_Data/HRDS060/Pent-Low-Hard Surface.exr",
     "../product_Data/HRDS060/Pent-Low-Hard Surface.zip",
+    "../product_Data/HRDS060/Pent-Low-Hard Surface Normal Map.png",
     "Pent-Low Hard Surface",
     "Hard Surface",
     0
@@ -332,6 +420,7 @@ function backToMarketplace() {
     "../product_Data/HRDS059/Pent-High-Hard Surface.png",
     "../product_Data/HRDS059/Pent-High-Hard Surface.exr",
     "../product_Data/HRDS059/Pent-High-Hard Surface.zip",
+    "../product_Data/HRDS059/Pent-High-Hard Surface Normal Map.png",
     "Pent-High Hard Surface",
     "Hard Surface",
     0
@@ -342,6 +431,7 @@ function backToMarketplace() {
     "../product_Data/HRDS986/Tri-Mid-Hard Surface.png",
     "../product_Data/HRDS986/Tri-Mid-Hard Surface.exr",
     "../product_Data/HRDS986/Tri-Mid-Hard Surface.zip",
+    "../product_Data/HRDS986/Tri-Mid-Hard Surface Normal Map.png",
     "Tri-Mid Hard Surface",
     "Hard Surface",
     0
@@ -352,6 +442,7 @@ function backToMarketplace() {
     "../product_Data/HRDS066/Tri-Low-Hard Surface.png",
     "../product_Data/HRDS066/Tri-Low-Hard Surface.exr",
     "../product_Data/HRDS066/Tri-Low-Hard Surface.zip",
+    "../product_Data/HRDS066/Tri-Low-Hard Surface  Normal Map.png",
     "Tri-Low Hard Surface",
     "Hard Surface",
     0
@@ -362,6 +453,7 @@ function backToMarketplace() {
     "../product_Data/HRDS065/Tri-High-Hard Surface.png",
     "../product_Data/HRDS065/Tri-High-Hard Surface.exr",
     "../product_Data/HRDS065/Tri-High-Hard Surface.zip",
+    "../product_Data/HRDS065/Tri-High-Hard Surface  Normal Map.png",
     "Tri-High Hard Surface",
     "Hard Surface",
     0
@@ -372,6 +464,7 @@ function backToMarketplace() {
     "../product_Data/HRDS063/Quad-Mid-Hard Surface.png",
     "../product_Data/HRDS063/Quad-Mid-Hard Surface.exr",
     "../product_Data/HRDS063/Quad-Mid-Hard Surface.zip",
+    "../product_Data/HRDS063/Quad-Mid-Hard Surface Normal Map.png",
     "Quad-Mid Hard Surface",
     "Hard Surface",
     0
@@ -382,6 +475,7 @@ function backToMarketplace() {
     "../product_Data/HRDS064/Quad-Low-Hard Surface.png",
     "../product_Data/HRDS064/Quad-Low-Hard Surface.exr",
     "../product_Data/HRDS064/Quad-Low-Hard Surface.zip",
+    "../product_Data/HRDS064/Quad-Low-Hard Surface  Normal Map.png",
     "Quad-Low Hard Surface",
     "Hard Surface",
     0
@@ -392,6 +486,7 @@ function backToMarketplace() {
     "../product_Data/HRDS062/Quad-High-Hard Surface.png",
     "../product_Data/HRDS062/Quad-High-Hard Surface.exr",
     "../product_Data/HRDS062/Quad-High-Hard Surface.zip",
+    "../product_Data/HRDS062/Quad-High-Hard Surface Normal Map.png",
     "Quad-High Hard Surface",
     "Hard Surface",
     0
@@ -402,6 +497,7 @@ function backToMarketplace() {
     "../product_Data/HRDS321/Shape 2.png",
     "../product_Data/HRDS321/Shape 2.exr",
     "../product_Data/HRDS321/Shape 2.zip",
+    "../product_Data/HRDS321/Shape 2 Normal Map.png",
     "Hard Surface 321",
     "Hard Surface",
     0
@@ -412,6 +508,7 @@ function backToMarketplace() {
     "../product_Data/HRDS204/Shape 1.png",
     "../product_Data/HRDS204/Shape 1.exr",
     "../product_Data/HRDS204/Shape 1.zip",
+    "../product_Data/HRDS204/Shape 1 Normal Map.png",
     "Hard Surface 204",
     "Hard Surface",
     0
@@ -422,6 +519,7 @@ function backToMarketplace() {
     "../product_Data/RIHAN00/Mini-Logo.png",
     "../product_Data/RIHAN00/Mini-Logo.exr",
     "../product_Data/RIHAN00/Mini-Logo.zip",
+    "../product_Data/RIHAN00/Mini-Logo Normal Map.png",
     "RihanCGI Logo 00",
     "Rihan CGI",
     0
@@ -432,6 +530,7 @@ function backToMarketplace() {
     "../product_Data/RIHAN01/Main Logo.png",
     "../product_Data/RIHAN01/Main Logo.exr",
     "../product_Data/RIHAN01/Main Logo.zip",
+    "../product_Data/RIHAN01/Main Logo Normal Map.png",
     "RihanCGI Logo 01",
     "Rihan CGI",
     0
@@ -442,6 +541,7 @@ function backToMarketplace() {
     "../product_Data/GNRL000/Donut .png",
     "../product_Data/GNRL000/Donut .exr",
     "../product_Data/GNRL000/Donut .zip",
+    "../product_Data/GNRL000/Donut Normal Map.png",
     "Donut",
     "General Textures",
     0
@@ -452,6 +552,7 @@ function backToMarketplace() {
     "../product_Data/BLOB033/Blobs 1.png",
     "../product_Data/BLOB033/Blobs 1.exr",
     "../product_Data/BLOB033/Blobs 1.zip",
+    "../product_Data/BLOB033/Blobs 1 Normal Map.png",
     "Blobs 033",
     "Blobs",
     0
@@ -462,6 +563,7 @@ function backToMarketplace() {
     "../product_Data/BLOB088/Blobs 2.png",
     "../product_Data/BLOB088/Blobs 2.exr",
     "../product_Data/BLOB088/Blobs 2.zip",
+    "../product_Data/BLOB088/Blobs 2 Normal Map.png",
     "Blobs 088",
     "Blobs",
     0
@@ -472,6 +574,7 @@ function backToMarketplace() {
     "../product_Data/BLOB100/Blobs 3.png",
     "../product_Data/BLOB100/Blobs 3.exr",
     "../product_Data/BLOB100/Blobs 3.zip",
+    "../product_Data/BLOB100/Blobs 3 Normal Map.png",
     "Blobs 100",
     "Blobs",
     0
@@ -482,6 +585,7 @@ function backToMarketplace() {
     "../product_Data/PHAR111/Eye of Ra.png",
     "../product_Data/PHAR111/Eye of Ra.exr",
     "../product_Data/PHAR111/Eye of Ra.zip",
+    "../product_Data/PHAR111/Eye of Ra  Normal Map.png",
     "Eye of Ra",
     "Pharaonic Symbol",
     0
@@ -492,6 +596,7 @@ function backToMarketplace() {
     "../product_Data/PHAR001/Scarab.png",
     "../product_Data/PHAR001/Scarab.exr",
     "../product_Data/PHAR001/Scarab.zip",
+    "../product_Data/PHAR001/Scarab  Normal Map.png",
     "Scarab",
     "Pharaonic Symbol",
     0
@@ -502,6 +607,7 @@ function backToMarketplace() {
     "../product_Data/PHAR999/Ankh Key.png",
     "../product_Data/PHAR999/Ankh Key.exr",
     "../product_Data/PHAR999/Ankh Key.zip",
+    "../product_Data/PHAR999/Ankh Key Normal Map.png",
     "Ankh Key",
     "Pharaonic Symbol",
     0
@@ -512,6 +618,7 @@ function backToMarketplace() {
     "../product_Data/PHAR000/Lotus Flower.png",
     "../product_Data/PHAR000/Lotus Flower.exr",
     "../product_Data/PHAR000/Lotus Flower.zip",
+    "../product_Data/PHAR000/Lotus Flower Normal Map.png",
     "Lotus",
     "Pharaonic Symbol",
     0
@@ -522,6 +629,7 @@ function backToMarketplace() {
     "../product_Data/PHAR555/Egyptian Cat.png",
     "../product_Data/PHAR555/Egyptian Cat.exr",
     "../product_Data/PHAR555/Egyptian Cat.zip",
+    "../product_Data/PHAR555/Egyptian Cat Normal Map.png",
     "Egyptian Cat",
     "Pharaonic Symbol",
     0
@@ -532,6 +640,7 @@ function backToMarketplace() {
     "../product_Data/PHAR231/Snake.png",
     "../product_Data/PHAR231/Snake.exr",
     "../product_Data/PHAR231/Snake.zip",
+    "../product_Data/PHAR231/Snake  Normal Map.png",
     "Snake",
     "Pharaonic Symbol",
     0
@@ -542,6 +651,7 @@ function backToMarketplace() {
     "../product_Data/PHAR332/Symbol 1.png",
     "../product_Data/PHAR332/Symbol 1.exr",
     "../product_Data/PHAR332/Symbol 1.zip",
+    "../product_Data/PHAR332/Symbol 1  Normal Map.png",
     "Pharaonic Symbol 332",
     "Pharaonic Symbol",
     0
@@ -552,6 +662,7 @@ function backToMarketplace() {
     "../product_Data/PHAR445/Symbol 2.png",
     "../product_Data/PHAR445/Symbol 2.exr",
     "../product_Data/PHAR445/Symbol 2.zip",
+    "../product_Data/PHAR445/Symbol 2 Normal Map.png",
     "Pharaonic Symbol 445",
     "Pharaonic Symbol",
     0
@@ -562,6 +673,7 @@ function backToMarketplace() {
     "../product_Data/PHAR654/Symbol 3.png",
     "../product_Data/PHAR654/Symbol 3.exr",
     "../product_Data/PHAR654/Symbol 3.zip",
+    "../product_Data/PHAR654/Symbol 3 Normal Map.png",
     "Pharaonic Symbol 654",
     "Pharaonic Symbol",
     0
@@ -572,6 +684,7 @@ function backToMarketplace() {
     "../product_Data/HRDS747/Beveled Arrow Line Hard Surface .png",
     "../product_Data/HRDS747/Beveled Arrow Line Hard Surface .exr",
     "../product_Data/HRDS747/Beveled Arrow Line Hard Surface .zip",
+    "../product_Data/HRDS747/Beveled Arrow Line Hard Surface  Normal Map.png",
     "Beveled Arrow Line",
     "Beveled Arrow Line Hard Surface",
     0
@@ -582,6 +695,7 @@ function backToMarketplace() {
     "../product_Data/HRDS156/Beveled Arrow Hard Surface.png",
     "../product_Data/HRDS156/Beveled Arrow Hard Surface.exr",
     "../product_Data/HRDS156/Beveled Arrow Hard Surface.zip",
+    "../product_Data/HRDS156/Beveled Arrow Hard Surface  Normal Map.png",
     "Beveled Arrow",
     "Beveled Arrow Hard Surface",
     0
@@ -592,6 +706,7 @@ function backToMarketplace() {
     "../product_Data/HRDS442/Arrow Hard Surface.png",
     "../product_Data/HRDS442/Arrow Hard Surface.exr",
     "../product_Data/HRDS442/Arrow Hard Surface.zip",
+    "../product_Data/HRDS442/Arrow Hard Surface Normal Map.png",
     "Non-Beveled Arrow",
     "Non-Beveled Arrow Hard Surface",
     0
@@ -602,6 +717,7 @@ function backToMarketplace() {
     "../product_Data/HRDS332/Beveled Semi Arrow Line Hard Surface .png",
     "../product_Data/HRDS332/Beveled Semi Arrow Line Hard Surface .exr",
     "../product_Data/HRDS332/Beveled Semi Arrow Line Hard Surface .zip",
+    "../product_Data/HRDS332/Beveled Semi Arrow Line Hard Surface  Normal Map.png",
     "Beveled Semi Arrow Line",
     "Beveled Semi Arrow Line Hard Surface",
     0
@@ -612,6 +728,7 @@ function backToMarketplace() {
     "../product_Data/HRDS555/Beveled Semi Arrow Hard Surface .png",
     "../product_Data/HRDS555/Beveled Semi Arrow Hard Surface .exr",
     "../product_Data/HRDS555/Beveled Semi Arrow Hard Surface .zip",
+    "../product_Data/HRDS555/Beveled Semi Arrow Hard Surface  Normal Map.png",
     "Beveled Semi Arrow",
     "Beveled Semi Arrow Hard Surface",
     0
@@ -622,6 +739,7 @@ function backToMarketplace() {
     "../product_Data/HRDS117/Semi Arrow Hard Surface 1.png",
     "../product_Data/HRDS117/Semi Arrow Hard Surface 1.exr",
     "../product_Data/HRDS117/Semi Arrow Hard Surface 1.zip",
+    "../product_Data/HRDS117/Semi Arrow Hard Surface 1 Normal Map.png",
     "Non-Beveled Semi Arrow",
     "Non-Beveled Semi Arrow Hard Surface",
     0
@@ -632,6 +750,7 @@ function backToMarketplace() {
     "../product_Data/CARV190/Circle Carve 3.png",
     "../product_Data/CARV190/Circle Carve 3.exr",
     "../product_Data/CARV190/Circle Carve 3.zip",
+    "",
     "Circle Carving 190",
     "Carvings",
     0
@@ -642,6 +761,7 @@ function backToMarketplace() {
     "../product_Data/CARV003/Circle Carve 5.png",
     "../product_Data/CARV003/Circle Carve 5.exr",
     "../product_Data/CARV003/Circle Carve 5.zip",
+    "",
     "Circle Carving 003",
     "Carvings",
     0
@@ -652,6 +772,7 @@ function backToMarketplace() {
     "../product_Data/CARV009/Circle Carve 4.png",
     "../product_Data/CARV009/Circle Carve 4.exr",
     "../product_Data/CARV009/Circle Carve 4.zip",
+    "",
     "Circle Carving 009",
     "Carvings",
     0
@@ -662,6 +783,7 @@ function backToMarketplace() {
     "../product_Data/CARV100/Square Carve2.png",
     "../product_Data/CARV100/Square Carve2.exr",
     "../product_Data/CARV100/Square Carve2.zip",
+    "",
     "Square Carving 100",
     "Carvings",
     0
@@ -672,6 +794,7 @@ function backToMarketplace() {
     "../product_Data/CARV333/Circle Carve.png",
     "../product_Data/CARV333/Circle Carve.exr",
     "../product_Data/CARV333/Circle Carve.zip",
+    "",
     "Circle Carving 333",
     "Carvings",
     0
@@ -682,6 +805,7 @@ function backToMarketplace() {
     "../product_Data/TERR291/Terrain 1.png",
     "../product_Data/TERR291/Terrain 1.exr",
     "../product_Data/TERR291/Terrain 1.zip",
+    "",
     "Rock & Terrain 291",
     "Rock & Terrain Brush",
     0
@@ -692,6 +816,7 @@ function backToMarketplace() {
     "../product_Data/TERR700/Terrain 2.png",
     "../product_Data/TERR700/Terrain 2.exr",
     "../product_Data/TERR700/Terrain 2.zip",
+    "",
     "Rock & Terrain 700",
     "Rock & Terrain Brush",
     0
@@ -702,6 +827,7 @@ function backToMarketplace() {
     "../product_Data/SCRT001/Scratch 1.png",
     "../product_Data/SCRT001/Scratch 1.exr",
     "../product_Data/SCRT001/Scratch 1.zip",
+    "",
     "Scratch 001",
     "Scratches",
     0
@@ -712,6 +838,7 @@ function backToMarketplace() {
     "../product_Data/VIKG001/Axe.png",
     "../product_Data/VIKG001/Axe.exr",
     "../product_Data/VIKG001/Axe.zip",
+    "../product_Data/VIKG001/Axe Normal Map.png",
     "Vikings Axe",
     "Vikings Axe Symbol",
     0
@@ -722,6 +849,7 @@ function backToMarketplace() {
     "../product_Data/VIKG911/Wolf.png",
     "../product_Data/VIKG911/Wolf.exr",
     "../product_Data/VIKG911/Wolf.zip",
+    "../product_Data/VIKG911/Wolf Normal Map.png",
     "Vikings Wolf",
     "Vikings Wolf Symbol",
     0
@@ -732,6 +860,7 @@ function backToMarketplace() {
     "../product_Data/VIKG444/Symbol 5.png",
     "../product_Data/VIKG444/Symbol 5.exr",
     "../product_Data/VIKG444/Symbol 5.zip",
+    "../product_Data/VIKG444/Symbol 5 Normal Map.png",
     "Vikings 444",
     "Vikings Symbol",
     0
@@ -742,6 +871,7 @@ function backToMarketplace() {
     "../product_Data/VIKG200/Bird.png",
     "../product_Data/VIKG200/Bird.exr",
     "../product_Data/VIKG200/Bird.zip",
+    "../product_Data/VIKG200/Bird Normal Map.png",
     "Vikings Bird",
     "Vikings Bird Symbol",
     0
@@ -752,6 +882,7 @@ function backToMarketplace() {
     "../product_Data/VIKG999/Dragon.png",
     "../product_Data/VIKG999/Dragon.exr",
     "../product_Data/VIKG999/Dragon.zip",
+    "../product_Data/VIKG999/Dragon Normal Map.png",
     "Vikings Dragon",
     "Vikings Dragon Symbol",
     0
@@ -762,6 +893,7 @@ function backToMarketplace() {
     "../product_Data/VIKG611/Symbol 7.png",
     "../product_Data/VIKG611/Symbol 7.exr",
     "../product_Data/VIKG611/Symbol 7.zip",
+    "../product_Data/VIKG611/Symbol 7 Normal Map.png",
     "Vikings 611",
     "Vikings Symbol",
     0
@@ -772,6 +904,7 @@ function backToMarketplace() {
     "../product_Data/VIKG909/Tree.png",
     "../product_Data/VIKG909/Tree.exr",
     "../product_Data/VIKG909/Tree.zip",
+    "../product_Data/VIKG909/Tree Normal Map.png",
     "Vikings Tree",
     "Vikings Tree Symbol",
     0
@@ -782,6 +915,7 @@ function backToMarketplace() {
     "../product_Data/VIKG333/Symbol 1.png",
     "../product_Data/VIKG333/Symbol 1.exr",
     "../product_Data/VIKG333/Symbol 1.zip",
+    "../product_Data/VIKG333/Symbol 1 Normal Map.png",
     "Vikings 333",
     "Vikings Symbol",
     0
@@ -792,6 +926,7 @@ function backToMarketplace() {
     "../product_Data/VIKG881/Symbol 6.png",
     "../product_Data/VIKG881/Symbol 6.exr",
     "../product_Data/VIKG881/Symbol 6.zip",
+    "../product_Data/VIKG881/Symbol 6 Normal Map.png",
     "Vikings 881",
     "Vikings Symbol",
     0
@@ -802,6 +937,7 @@ function backToMarketplace() {
     "../product_Data/VIKG555/Symbol 2.png",
     "../product_Data/VIKG555/Symbol 2.exr",
     "../product_Data/VIKG555/Symbol 2.zip",
+    "../product_Data/VIKG555/Symbol 2 Normal Map.png",
     "Vikings 555",
     "Vikings Symbol",
     0
@@ -812,6 +948,7 @@ function backToMarketplace() {
     "../product_Data/VIKG678/Symbol 4.png",
     "../product_Data/VIKG678/Symbol 4.exr",
     "../product_Data/VIKG678/Symbol 4.zip",
+    "../product_Data/VIKG678/Symbol 4 Normal Map.png",
     "Vikings 678",
     "Vikings Symbol",
     0
@@ -822,6 +959,7 @@ function backToMarketplace() {
     "../product_Data/HRDS203/HS Symbol 1.png",
     "../product_Data/HRDS203/HS Symbol 1.exr",
     "../product_Data/HRDS203/HS Symbol 1.zip",
+    "../product_Data/HRDS203/HS Symbol 1 Normal Map.png",
     "Hard Surface 203",
     "Hard Surface Shape",
     0
@@ -832,6 +970,7 @@ function backToMarketplace() {
     "../product_Data/HRDS291/HS Symbol 4.png",
     "../product_Data/HRDS291/HS Symbol 4.exr",
     "../product_Data/HRDS291/HS Symbol 4.zip",
+    "../product_Data/HRDS291/HS Symbol 4 Normal Map.png",
     "Hard Surface 291",
     "Hard Surface Shape",
     0
@@ -842,6 +981,7 @@ function backToMarketplace() {
     "../product_Data/HRDS120/HS Symbol 5.png",
     "../product_Data/HRDS120/HS Symbol 5.exr",
     "../product_Data/HRDS120/HS Symbol 5.zip",
+    "../product_Data/HRDS120/HS Symbol 5 Normal Map.png",
     "Hard Surface 120",
     "Hard Surface Shape",
     0
@@ -852,6 +992,7 @@ function backToMarketplace() {
     "../product_Data/HRDS222/HS Symbol 9.png",
     "../product_Data/HRDS222/HS Symbol 9.exr",
     "../product_Data/HRDS222/HS Symbol 9.zip",
+    "../product_Data/HRDS222/HS Symbol 9 Normal Map.png",
     "Hard Surface 222",
     "Hard Surface Shape",
     0
@@ -862,6 +1003,7 @@ function backToMarketplace() {
     "../product_Data/HRDS102/HS Symbol 3.png",
     "../product_Data/HRDS102/HS Symbol 3.exr",
     "../product_Data/HRDS102/HS Symbol 3.zip",
+    "../product_Data/HRDS102/HS Symbol 3 Normal Map.png",
     "Hard Surface 102",
     "Hard SUrface Shape",
     0
@@ -872,6 +1014,7 @@ function backToMarketplace() {
     "../product_Data/HRDS223/HS Symbol 10.png",
     "../product_Data/HRDS223/HS Symbol 10.exr",
     "../product_Data/HRDS223/HS Symbol 10.zip",
+    "../product_Data/HRDS223/HS Symbol 10  Normal Map.png",
     "Hard Surface 223",
     "Hard Surface Shape",
     0
@@ -882,6 +1025,7 @@ function backToMarketplace() {
     "../product_Data/HRDS111/HS Symbol 7.png",
     "../product_Data/HRDS111/HS Symbol 7.exr",
     "../product_Data/HRDS111/HS Symbol 7.zip",
+    "../product_Data/HRDS111/HS Symbol 7 Normal Map.png",
     "Hard Surface 111",
     "Hard Surface Shape",
     0
@@ -892,6 +1036,7 @@ function backToMarketplace() {
     "../product_Data/HRDS112/HS Symbol 8.png",
     "../product_Data/HRDS112/HS Symbol 8.exr",
     "../product_Data/HRDS112/HS Symbol 8.zip",
+    "../product_Data/HRDS112/HS Symbol 8  Normal Map.png",
     "Hard Surface 112",
     "Hard Surface Shape",
     0
@@ -902,6 +1047,7 @@ function backToMarketplace() {
     "../product_Data/HRDS099/HS Symbol 1.png",
     "../product_Data/HRDS099/HS Symbol 1.exr",
     "../product_Data/HRDS099/HS Symbol 1.zip",
+    "../product_Data/HRDS099/HS Symbol 1 Normal Map.png",
     "Hard Surface 099",
     "Hard Surface Shape",
     0
@@ -912,6 +1058,7 @@ function backToMarketplace() {
     "../product_Data/HRDS224/HS Symbol 2.png",
     "../product_Data/HRDS224/HS Symbol 2.exr",
     "../product_Data/HRDS224/HS Symbol 2.zip",
+    "../product_Data/HRDS224/HS Symbol 2  Normal Map.png",
     "Hard Surface 224",
     "Hard Surface Shape",
     0
@@ -922,6 +1069,7 @@ function backToMarketplace() {
     "../product_Data/HRDS033/HS Symbol 3.png",
     "../product_Data/HRDS033/HS Symbol 3.exr",
     "../product_Data/HRDS033/HS Symbol 3.zip",
+    "../product_Data/HRDS033/HS Symbol 3 Normal Map.png",
     "Hard Surface 033",
     "Hard Surface Shape",
     0
@@ -932,6 +1080,7 @@ function backToMarketplace() {
     "../product_Data/HRDS444/HS Symbol 4.png",
     "../product_Data/HRDS444/HS Symbol 4.exr",
     "../product_Data/HRDS444/HS Symbol 4.zip",
+    "../product_Data/HRDS444/HS Symbol 4 Normal Map.png",
     "Hard Surface 444",
     "Hard Surface Shape",
     0
@@ -942,6 +1091,7 @@ function backToMarketplace() {
     "../product_Data/HRDS199/HS Symbol 5.png",
     "../product_Data/HRDS199/HS Symbol 5.exr",
     "../product_Data/HRDS199/HS Symbol 5.zip",
+    "../product_Data/HRDS199/HS Symbol 5 Normal Map.png",
     "Hard Surface 199",
     "Hard Surface Shape",
     0
@@ -952,6 +1102,7 @@ function backToMarketplace() {
     "../product_Data/HRDS656/HS Symbol 6.png",
     "../product_Data/HRDS656/HS Symbol 6.exr",
     "../product_Data/HRDS656/HS Symbol 6.zip",
+    "../product_Data/HRDS656/HS Symbol 6 Normal Map.png",
     "Hard Surface 656",
     "Hard Surface Shape",
     0
@@ -962,6 +1113,7 @@ function backToMarketplace() {
     "../product_Data/HRDS717/HS Symbol 7.png",
     "../product_Data/HRDS717/HS Symbol 7.exr",
     "../product_Data/HRDS717/HS Symbol 7.zip",
+    "../product_Data/HRDS717/HS Symbol 7 Normal Map.png",
     "Hard Surface 717",
     "Hard Surface Shape",
     0
@@ -972,6 +1124,7 @@ function backToMarketplace() {
     "../product_Data/HRDS888/HS Symbol 8.png",
     "../product_Data/HRDS888/HS Symbol 8.exr",
     "../product_Data/HRDS888/HS Symbol 8.zip",
+    "../product_Data/HRDS888/HS Symbol 8 Normal Map.png",
     "Hard Surface 888",
     "Hard Surface Shape",
     0
@@ -982,6 +1135,7 @@ function backToMarketplace() {
     "../product_Data/HRDS975/HS Symbol 9.png",
     "../product_Data/HRDS975/HS Symbol 9.exr",
     "../product_Data/HRDS975/HS Symbol 9.zip",
+    "../product_Data/HRDS975/HS Symbol 9  Normal Map.png",
     "Hard Surface 975",
     "Hard Surface Shape",
     0
@@ -992,6 +1146,7 @@ function backToMarketplace() {
     "../product_Data/HRDS021/HS Symbol 10.png",
     "../product_Data/HRDS021/HS Symbol 10.exr",
     "../product_Data/HRDS021/HS Symbol 10.zip",
+    "../product_Data/HRDS021/HS Symbol 10 Normal Map.png",
     "Hard Surface 021",
     "Hard Surface Shape",
     0
@@ -1002,6 +1157,7 @@ function backToMarketplace() {
     "../product_Data/HRDS227/HS Symbol 6.png",
     "../product_Data/HRDS227/HS Symbol 6.exr",
     "../product_Data/HRDS227/HS Symbol 6.zip",
+    "../product_Data/HRDS227/HS Symbol 6  Normal Map.png",
     "Hard Surface 227",
     "Hard Surface Shape",
     0
@@ -1012,6 +1168,7 @@ function backToMarketplace() {
     "../product_Data/HRDS230/HS Symbol 2.png",
     "../product_Data/HRDS230/HS Symbol 2.exr",
     "../product_Data/HRDS230/HS Symbol 2.zip",
+    "../product_Data/HRDS230/HS Symbol 2  Normal Map.png",
     "Hard Surface 230",
     "Hard Surface Shape",
     0
@@ -1022,6 +1179,7 @@ function backToMarketplace() {
     "../product_Data/GREK300/Aphrodite.png",
     "../product_Data/GREK300/Aphrodite.exr",
     "../product_Data/GREK300/Aphrodite.zip",
+    "../product_Data/GREK300/Aphrodite Normal Map.png",
     "Aphrodite Symbol",
     "Ancient Greek Symbol",
     0
@@ -1032,6 +1190,7 @@ function backToMarketplace() {
     "../product_Data/GREK050/Apollo.png",
     "../product_Data/GREK050/Apollo.exr",
     "../product_Data/GREK050/Apollo.zip",
+    "../product_Data/GREK050/Apollo Normal Map.png",
     "Apollo Symbol",
     "Ancient Greek Symbol",
     0
@@ -1042,6 +1201,7 @@ function backToMarketplace() {
     "../product_Data/GREK000/Athena.png",
     "../product_Data/GREK000/Athena.exr",
     "../product_Data/GREK000/Athena.zip",
+    "../product_Data/GREK000/Athena Normal Map.png",
     "Athena Symbol",
     "Ancient Greek Symbol",
     0
@@ -1052,6 +1212,7 @@ function backToMarketplace() {
     "../product_Data/GREK999/Ares.png",
     "../product_Data/GREK999/Ares.exr",
     "../product_Data/GREK999/Ares.zip",
+    "../product_Data/GREK999/Ares Normal Map.png",
     "Ares Symbol",
     "Ancient Greek Symbol",
     0
@@ -1062,6 +1223,7 @@ function backToMarketplace() {
     "../product_Data/GREK110/Demeter.png",
     "../product_Data/GREK110/Demeter.exr",
     "../product_Data/GREK110/Demeter.zip",
+    "../product_Data/GREK110/Demeter Normal Map.png",
     "Demeter Symbol",
     "Ancient Greek Symbol",
     0
@@ -1072,6 +1234,7 @@ function backToMarketplace() {
     "../product_Data/GREK080/Dionysus.png",
     "../product_Data/GREK080/Dionysus.exr",
     "../product_Data/GREK080/Dionysus.zip",
+    "../product_Data/GREK080/Dionysus Normal Map.png",
     "Dionysus Symbol",
     "Ancient Greek Symbol",
     0
@@ -1082,6 +1245,7 @@ function backToMarketplace() {
     "../product_Data/GREK100/Zeus.png",
     "../product_Data/GREK100/Zeus.exr",
     "../product_Data/GREK100/Zeus.zip",
+    "../product_Data/GREK100/Zeus Normal Map.png",
     "Zues Symbol",
     "Ancient Greek Symbol",
     0
@@ -1092,6 +1256,7 @@ function backToMarketplace() {
     "../product_Data/GREK222/Poseidon.png",
     "../product_Data/GREK222/Poseidon.exr",
     "../product_Data/GREK222/Poseidon.zip",
+    "../product_Data/GREK222/Poseidon Normal Map.png",
     "Poseidon Symbol",
     "Ancient Greek Symbol",
     0
@@ -1102,6 +1267,7 @@ function backToMarketplace() {
     "../product_Data/GREK210/Hermes.png",
     "../product_Data/GREK210/Hermes.exr",
     "../product_Data/GREK210/Hermes.zip",
+    "../product_Data/GREK210/Hermes Normal Map.png",
     "Hermes Symbol",
     "Ancient Greek Symbol",
     0
@@ -1112,6 +1278,7 @@ function backToMarketplace() {
     "../product_Data/GREK201/Hephaestus.png",
     "../product_Data/GREK201/Hephaestus.exr",
     "../product_Data/GREK201/Hephaestus.zip",
+    "../product_Data/GREK201/Hephaestus Normal Map.png",
     "Hephaestus Symbol",
     "Ancient Greek Symbol",
     0
@@ -1120,6 +1287,8 @@ function backToMarketplace() {
   // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
   // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
   $("#marketplace").html(marketplace);
+
+  createNavBar();
 }
 
 // function viewProduct gives a more indetail view of a product and the ability to download .PNG and .EXR and .ZIP files
@@ -1140,9 +1309,20 @@ function viewProduct(product_id) {
     finalPrice = "Free";
     downloadTemplate = `
     <div class="btns">
-      <a href="${itemInCatalog.preview}" download="${itemInCatalog.download_title}.png" ><button class="btn btn-success options_btn">PNG</button></a>
-      <a href="${itemInCatalog.hq}" download="${itemInCatalog.download_title}.exr" ><button class="btn btn-success options_btn">EXR</button></a>
-      <a href="${itemInCatalog.zip}" download="${itemInCatalog.download_title}.zip" ><button class="btn btn-success options_btn">ZIP</button></a>
+      <a href="${itemInCatalog.preview}" download="${
+      itemInCatalog.download_title
+    }.png" ><button class="btn btn-success options_btn">PNG</button></a>
+      <a href="${itemInCatalog.hq}" download="${
+      itemInCatalog.download_title
+    }.exr" ><button class="btn btn-success options_btn">EXR</button></a>
+      <a href="${itemInCatalog.normal}" download="${
+      itemInCatalog.download_title
+    }.png" class= "${
+      itemInCatalog.normal == "" ? "hidden" : ""
+    }"><button class="btn btn-success options_btn">Normal Map</button></a>
+      <a href="${itemInCatalog.zip}" download="${
+      itemInCatalog.download_title
+    }.zip" ><button class="btn btn-success options_btn">ZIP</button></a>
     </div>`;
   } else {
     finalPrice = `${price}$`;

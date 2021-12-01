@@ -110,3 +110,7 @@ body {
 .search {
   text-align: center;
 }
+
+.hidden {
+  display: none;
+}
