@@ -107,6 +107,39 @@ function createProduct(
 function backToMarketplace() {
   marketplace = ``;
   createProduct(
+    "HRDS032",
+    "Hard Surface <br /> Shape 032",
+    "../product_Data/HRDS032/Shape 1.png",
+    "../product_Data/HRDS032/Shape 1.exr",
+    "../product_Data/HRDS032/Shape 1.zip",
+    "../product_Data/HRDS032/Shape 1 Normal Map.png",
+    "Shape 032 Hard Surface",
+    "Hard Surface",
+    0
+  );
+  createProduct(
+    "HRDS031",
+    "Hard Surface <br /> Shape 031",
+    "../product_Data/HRDS031/Shape 2.png",
+    "../product_Data/HRDS031/Shape 2.exr",
+    "../product_Data/HRDS031/Shape 2.zip",
+    "../product_Data/HRDS031/Shape 2 Normal Map.png",
+    "Shape 031 Hard Surface",
+    "Hard Surface",
+    0
+  );
+  createProduct(
+    "HRDS030",
+    "Hard Surface <br /> Shape 030",
+    "../product_Data/HRDS030/Shape 3.png",
+    "../product_Data/HRDS030/Shape 3.exr",
+    "../product_Data/HRDS030/Shape 3.zip",
+    "../product_Data/HRDS030/Shape 3 Normal Map.png",
+    "Shape 030 Hard Surface",
+    "Hard Surface",
+    0
+  );
+  createProduct(
     "GNRL002",
     "Stitch <br /> 002",
     "../product_Data/GNRL002/Shape 2.png",
