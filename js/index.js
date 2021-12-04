@@ -107,6 +107,17 @@ function createProduct(
 function backToMarketplace() {
   marketplace = ``;
   createProduct(
+    "HRDS001",
+    "Hard Surface <br /> Shape 001",
+    "../product_Data/HRDS001/Shape 4.png",
+    "../product_Data/HRDS001/Shape 4.exr",
+    "../product_Data/HRDS001/Shape 4.zip",
+    "../product_Data/HRDS001/Shape 4 Normal Map.png",
+    "Hard Surface Shape 001",
+    "Hard Surface",
+    0
+  );
+  createProduct(
     "HRDS032",
     "Hard Surface <br /> Shape 032",
     "../product_Data/HRDS032/Shape 1.png",
