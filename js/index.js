@@ -66,6 +66,15 @@ function createNavBar() {
   targetDiv.innerHTML = navBar;
 }
 
+// function That Creates the Price Filter Buttons
+function createFilterButtons() {
+  let priceButtons = `
+  <button id="PriceAll" class="priceFilterButton btn btn-outline-info" onclick="allOrFreeOrPaid('all');">All</button>
+  <button id="PriceFree" class="priceFilterButton btn btn-outline-info" onclick="allOrFreeOrPaid('free');">Free</button>
+  <button id="PricePaid" class="priceFilterButton btn btn-outline-info" onclick="allOrFreeOrPaid('paid');">Paid</button>`;
+  $("#priceFilter").html(priceButtons);
+}
+
 // function CreateProduct takes a name and preview .PNG
 //and creates a template including the name, .PNG and a button for previewing the product
 function createProduct(
@@ -106,6 +115,39 @@ function createProduct(
 // function backToMarketplace clears the marketplace, recreates all available products and recreates the marketplace
 function backToMarketplace() {
   marketplace = ``;
+  createProduct(
+    "HRDS004",
+    "Hard Surface <br /> Shape 004",
+    "../product_Data/HRDS004/Shape 7.png",
+    "../product_Data/HRDS004/Shape 7.exr",
+    "../product_Data/HRDS004/Shape 7.zip",
+    "../product_Data/HRDS004/Shape 7 Normal Map.png",
+    "Hard Surface Shape 004",
+    "Hard Surface ",
+    0
+  );
+  createProduct(
+    "HRDS003",
+    "Hard Surface <br /> Shape 003",
+    "../product_Data/HRDS003/Shape 5.png",
+    "../product_Data/HRDS003/Shape 5.exr",
+    "../product_Data/HRDS003/Shape 5.zip",
+    "../product_Data/HRDS003/Shape 5 Normal Map.png",
+    "Hard Surface Shape 003",
+    "Hard Surface ",
+    0
+  );
+  createProduct(
+    "HRDS002",
+    "Hard Surface <br /> Shape 002",
+    "../product_Data/HRDS002/Shape 6.png",
+    "../product_Data/HRDS002/Shape 6.exr",
+    "../product_Data/HRDS002/Shape 6.zip",
+    "../product_Data/HRDS002/Shape 6 Normal Map.png",
+    "Hard Surface Shape 002",
+    "Hard Surface ",
+    0
+  );
   createProduct(
     "HRDS001",
     "Hard Surface <br /> Shape 001",
@@ -1331,8 +1373,9 @@ function backToMarketplace() {
   // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
   // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
   $("#marketplace").html(marketplace);
-
+  // Creating Neccesary UI Elements
   createNavBar();
+  createFilterButtons();
 }
 
 // function viewProduct gives a more indetail view of a product and the ability to download .PNG and .EXR and .ZIP files
@@ -1407,6 +1450,7 @@ function setSearch() {
 function search(searchWord) {
   let catalogkeys = Object.keys(catalog);
   let template;
+  resetPriceFilterClass();
   $("#noSearchResult").html(``);
   if (searchWord == "") {
     totalProductNum = 0;
@@ -1434,6 +1478,80 @@ function search(searchWord) {
     let result = `<h3>No Search Result Found</h3>`;
     $("#noSearchResult").html(result);
   }
+}
+
+// funtion that Checks Which Price Filter is Applied & displays the Products that have these requirements applied
+function allOrFreeOrPaid(state_choice) {
+  let catalogkeys = Object.keys(catalog);
+  let template;
+  marketplace = ``;
+  totalProductNum = 0;
+  // Loop
+  for (let i = 0; i < Object.keys(catalog).length; i++) {
+    let item = catalog[catalogkeys[i]];
+    if (state_choice == "free") {
+      priceFilterClass(state_choice);
+      if (item.price <= 0) {
+        template = `<div class="${gridLayout} product_area card">
+      <img class="thumbnail card" src="${item.preview}" alt="${item.name}" loading="lazy"/>
+      <h1 class="product_title">${item.name}</h1>
+      <button class="btn btn-primary" onclick="viewProduct('${catalogkeys[i]}');">Check Texture!</button>
+      </div>
+      <br/>`;
+        marketplace += template;
+        totalProductNum += 1;
+        $("#marketplace").html(marketplace);
+        $("#totalProductNum").html(totalProductNum);
+      }
+    } else if (state_choice == "paid") {
+      priceFilterClass(state_choice);
+      if (item.price > 0) {
+        template = `<div class="${gridLayout} product_area card">
+      <img class="thumbnail card" src="${item.preview}" alt="${item.name}" loading="lazy"/>
+      <h1 class="product_title">${item.name}</h1>
+      <button class="btn btn-primary" onclick="viewProduct('${catalogkeys[i]}');">Check Texture!</button>
+      </div>
+      <br/>`;
+        marketplace += template;
+        totalProductNum += 1;
+        $("#marketplace").html(marketplace);
+        $("#totalProductNum").html(totalProductNum);
+      }
+    } else if (state_choice == "all") {
+      priceFilterClass(state_choice);
+      search("");
+    }
+  }
+  if (totalProductNum == 0) {
+    marketplace = `<h1 class="centerText"> No Products Found </h1>`;
+    $("#marketplace").html(marketplace);
+    $("#totalProductNum").html(totalProductNum);
+  }
+  // endLoop
+}
+
+// It Filters the Price Filter Buttons to Assign a Class for the clicked One and remove it from the others
+function priceFilterClass(state) {
+  if (state == "free") {
+    $("#PriceFree").addClass("btn-info").removeClass("btn-outline-info");
+    $("#PricePaid").removeClass("btn-info").addClass("btn-outline-info");
+    $("#PriceAll").removeClass("btn-info").addClass("btn-outline-info");
+  } else if (state == "paid") {
+    $("#PricePaid").addClass("btn-info").removeClass("btn-outline-info");
+    $("#PriceFree").removeClass("btn-info").addClass("btn-outline-info");
+    $("#PriceAll").removeClass("btn-info").addClass("btn-outline-info");
+  } else if (state == "all") {
+    $("#PriceAll").addClass("btn-info").removeClass("btn-outline-info");
+    $("#PricePaid").removeClass("btn-info").addClass("btn-outline-info");
+    $("#PriceFree").removeClass("btn-info").addClass("btn-outline-info");
+  }
+}
+
+// Resets The Price Filters Class
+function resetPriceFilterClass() {
+  $("#PriceAll").removeClass("btn-info").addClass("btn-outline-info");
+  $("#PriceFree").removeClass("btn-info").addClass("btn-outline-info");
+  $("#PricePaid").removeClass("btn-info").addClass("btn-outline-info");
 }
 
 backToMarketplace();

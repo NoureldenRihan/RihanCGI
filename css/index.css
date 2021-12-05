@@ -114,3 +114,12 @@ body {
 .hidden {
   display: none;
 }
+
+#priceFilter {
+  margin: auto;
+  text-align: center;
+}
+
+.centerText {
+  text-align: center;
+}
