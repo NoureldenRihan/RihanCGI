@@ -118,6 +118,136 @@ function createProduct(
 function backToMarketplace() {
   marketplace = ``;
   createProduct(
+    "HRDS017",
+    "Hard Surface <br /> Shape 017",
+    "../product_Data/HRDS017/Shape 12.png",
+    "../product_Data/HRDS017/Shape 12.exr",
+    "../product_Data/HRDS017/Shape 12.zip",
+    "../product_Data/HRDS017/Shape 12 Normal Map.png",
+    "Hard Surface Shape 017",
+    "Hard Surface ",
+    3,
+    "https://www.artstation.com/a/11287322",
+    (Bundle = true)
+  );
+  createProduct(
+    "HRDS013",
+    "Hard Surface <br /> Shape 013",
+    "../product_Data/HRDS013/Shape 8.png",
+    "../product_Data/HRDS013/Shape 8.exr",
+    "../product_Data/HRDS013/Shape 8.zip",
+    "../product_Data/HRDS013/Shape 8 Normal Map.png",
+    "Hard Surface Shape 013",
+    "Hard Surface ",
+    3,
+    "https://www.artstation.com/a/11287322",
+    (Bundle = true)
+  );
+  createProduct(
+    "HRDS015",
+    "Hard Surface <br /> Shape 015",
+    "../product_Data/HRDS015/Shape 10.png",
+    "../product_Data/HRDS015/Shape 10.exr",
+    "../product_Data/HRDS015/Shape 10.zip",
+    "../product_Data/HRDS015/Shape 10 Normal Map.png",
+    "Hard Surface Shape 015",
+    "Hard Surface",
+    3,
+    "https://www.artstation.com/a/11287322",
+    (Bundle = true)
+  );
+  createProduct(
+    "HRDS010",
+    "Hard Surface <br /> Shape 010",
+    "../product_Data/HRDS010/Shape 3.png",
+    "../product_Data/HRDS010/Shape 3.exr",
+    "../product_Data/HRDS010/Shape 3.zip",
+    "../product_Data/HRDS010/Shape 3 Normal Map.png",
+    "Hard Surface Shape 010",
+    "Hard Surface ",
+    3,
+    "https://www.artstation.com/a/11287322",
+    (Bundle = true)
+  );
+  createProduct(
+    "HRDS016",
+    "Hard Surface <br /> Shape 016",
+    "../product_Data/HRDS016/Shape 11.png",
+    "../product_Data/HRDS016/Shape 11.exr",
+    "../product_Data/HRDS016/Shape 11.zip",
+    "../product_Data/HRDS016/Shape 11 Normal Map.png",
+    "Hard Surface Shape 016",
+    "Hard Surface",
+    3,
+    "https://www.artstation.com/a/11287322",
+    (Bundle = true)
+  );
+  createProduct(
+    "HRDS014",
+    "Hard Surface <br /> Shape 014",
+    "../product_Data/HRDS014/Shape 9.png",
+    "../product_Data/HRDS014/Shape 9.exr",
+    "../product_Data/HRDS014/Shape 9.zip",
+    "../product_Data/HRDS014/Shape 9 Normal Map.png",
+    "Hard Surface Shape 014",
+    "Hard Surface",
+    3,
+    "https://www.artstation.com/a/11287322",
+    (Bundle = true)
+  );
+  createProduct(
+    "HRDS012",
+    "Hard Surface <br /> Shape 012",
+    "../product_Data/HRDS012/Shape 5.png",
+    "../product_Data/HRDS012/Shape 5.exr",
+    "../product_Data/HRDS012/Shape 5.zip",
+    "../product_Data/HRDS012/Shape 5 Normal Map.png",
+    "Hard Surface Shape 012",
+    "Hard Surface ",
+    3,
+    "https://www.artstation.com/a/11287322",
+    (Bundle = true)
+  );
+  createProduct(
+    "HRDS011",
+    "Hard Surface <br /> Shape 011",
+    "../product_Data/HRDS011/Shape 4.png",
+    "../product_Data/HRDS011/Shape 4.exr",
+    "../product_Data/HRDS011/Shape 4.zip",
+    "../product_Data/HRDS011/Shape 4 Normal Map.png",
+    "Hard Surface Shape 011",
+    "Hard Surface",
+    3,
+    "https://www.artstation.com/a/11287322",
+    (Bundle = true)
+  );
+  createProduct(
+    "HRDS009",
+    "Hard Surface <br /> Shape 009",
+    "../product_Data/HRDS009/Shape 2.png",
+    "../product_Data/HRDS009/Shape 2.exr",
+    "../product_Data/HRDS009/Shape 2.zip",
+    "../product_Data/HRDS009/Shape 2 Normal Map.png",
+    "Hard Surface Shape 009",
+    "Hard Surface",
+    3,
+    "https://www.artstation.com/a/11287322",
+    (Bundle = true)
+  );
+  createProduct(
+    "HRDS008",
+    "Hard Surface <br /> Shape 008",
+    "../product_Data/HRDS008/Shape 1.png",
+    "../product_Data/HRDS008/Shape 1.exr",
+    "../product_Data/HRDS008/Shape 1.zip",
+    "../product_Data/HRDS008/Shape 1 Normal Map.png",
+    "Hard Surface Shape 008",
+    "Hard Surface ",
+    3,
+    "https://www.artstation.com/a/11287322",
+    (Bundle = true)
+  );
+  createProduct(
     "HRDS006",
     "Hard Surface <br /> Shape 006",
     "../product_Data/HRDS006/Shape 7.png",
