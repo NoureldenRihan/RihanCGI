@@ -87,7 +87,8 @@ function createProduct(
   download_name,
   product_desc = "No Description.",
   product_price = 0,
-  purchase_link = "No Link"
+  purchase_link = "No Link",
+  Bundle = false
 ) {
   catalog[product_id] = {
     name: product_name,
@@ -99,6 +100,7 @@ function createProduct(
     normal: product_normal,
     download_title: download_name,
     link: purchase_link,
+    bundle: Bundle,
   };
   let template;
   template = `<div class="${gridLayout} product_area card"> 
@@ -115,6 +117,28 @@ function createProduct(
 // function backToMarketplace clears the marketplace, recreates all available products and recreates the marketplace
 function backToMarketplace() {
   marketplace = ``;
+  createProduct(
+    "HRDS006",
+    "Hard Surface <br /> Shape 006",
+    "../product_Data/HRDS006/Shape 7.png",
+    "../product_Data/HRDS006/Shape 7.exr",
+    "../product_Data/HRDS006/Shape 7.zip",
+    "../product_Data/HRDS006/Shape 7 Normal Map.png",
+    "Hard Surface Shape 006",
+    "Hard Surface",
+    0
+  );
+  createProduct(
+    "HRDS005",
+    "Hard Surface <br /> Shape 005",
+    "../product_Data/HRDS005/Shape 6.png",
+    "../product_Data/HRDS005/Shape 6.exr",
+    "../product_Data/HRDS005/Shape 6.zip",
+    "../product_Data/HRDS005/Shape 6 Normal Map.png",
+    "Hard Surface Shape 005",
+    "Hard Surface",
+    0
+  );
   createProduct(
     "HRDS004",
     "Hard Surface <br /> Shape 004",
@@ -1412,12 +1436,16 @@ function viewProduct(product_id) {
     }.zip" ><button class="btn btn-success options_btn">ZIP</button></a>
     </div>`;
   } else {
-    finalPrice = `${price}$`;
+    if (itemInCatalog.bundle == true) {
+      finalPrice = `Sold in a Bundle For ${price}$`;
+    } else {
+      finalPrice = `${price}$`;
+    }
     downloadTemplate = `
-    <div class="btns">
-      <button class="btn btn-success options_btn"><a href="${itemInCatalog.link}" class="noDecor" 
-      target="_blank">Buy on Artstation</a></button>
-    </div>`;
+      <div class="btns">
+        <button class="btn btn-success options_btn"><a href="${itemInCatalog.link}" class="noDecor" 
+        target="_blank">Buy on Artstation</a></button>
+      </div>`;
   }
   let productViewTemplate;
   productViewTemplate = `<div class="productView">
