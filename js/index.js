@@ -118,6 +118,28 @@ function createProduct(
 function backToMarketplace() {
   marketplace = ``;
   createProduct(
+    "HRDS019",
+    "Hard Surface <br /> Shape 019",
+    "../product_Data/HRDS019/Shape 2.png",
+    "../product_Data/HRDS019/Shape 2.exr",
+    "../product_Data/HRDS019/Shape 2.zip",
+    "../product_Data/HRDS019/Shape 2 Normal Map.png",
+    "Hard Surface Shape 019",
+    "Hard Surface",
+    0
+  );
+  createProduct(
+    "HRDS018",
+    "Hard Surface <br /> Shape 018",
+    "../product_Data/HRDS018/Shape 1.png",
+    "../product_Data/HRDS018/Shape 1.exr",
+    "../product_Data/HRDS018/Shape 1.zip",
+    "../product_Data/HRDS018/Shape 1 Normal Map.png",
+    "Hard Surface Shape 018",
+    "Hard Surface ",
+    0
+  );
+  createProduct(
     "TILE114",
     "Tileable Texture <br /> 114",
     "../product_Data/TILE114/Tileable 12.png",
