@@ -118,6 +118,50 @@ function createProduct(
 function backToMarketplace() {
   marketplace = ``;
   createProduct(
+    "HRDS070",
+    "Hard Surface <br /> Shape 070",
+    "../product_Data/HRDS070/Shape4.png",
+    "../product_Data/HRDS070/Shape4.exr",
+    "../product_Data/HRDS070/Shape4.zip",
+    "../product_Data/HRDS070/Shape4 Normal Map.png",
+    "Hard Surface Shape 070",
+    "Hard Surface ",
+    0
+  );
+  createProduct(
+    "HRDS069",
+    "Hard Surface <br /> Shape 069",
+    "../product_Data/HRDS069/Shape3.png",
+    "../product_Data/HRDS069/Shape3.exr",
+    "../product_Data/HRDS069/Shape3.zip",
+    "../product_Data/HRDS069/Shape3 Normal Map.png",
+    "Hard Surface Shape 069",
+    "Hard Surface",
+    0
+  );
+  createProduct(
+    "HRDS068",
+    "Hard Surface <br /> Shape 068",
+    "../product_Data/HRDS068/Shape2.png",
+    "../product_Data/HRDS068/Shape2.exr",
+    "../product_Data/HRDS068/Shape2.zip",
+    "../product_Data/HRDS068/Shape2 Normal Map.png",
+    "Hard Surface Shape 068",
+    "Hard Surface",
+    0
+  );
+  createProduct(
+    "HRDS067",
+    "Hard Surface <br /> Shape 067",
+    "../product_Data/HRDS067/Shape1.png",
+    "../product_Data/HRDS067/Shape1.exr",
+    "../product_Data/HRDS067/Shape1.zip",
+    "../product_Data/HRDS067/Shape1 Normal Map.png",
+    "Hard Surface Shape 067",
+    "Hard Surface ",
+    0
+  );
+  createProduct(
     "HRDS019",
     "Hard Surface <br /> Shape 019",
     "../product_Data/HRDS019/Shape 2.png",
