@@ -118,6 +118,72 @@ function createProduct(
 function backToMarketplace() {
   marketplace = ``;
   createProduct(
+    "TERR005",
+    "Rock & Terrain <br /> 005",
+    "../product_Data/TERR005/Shape6.png",
+    "../product_Data/TERR005/Shape6.exr",
+    "../product_Data/TERR005/Shape6.zip",
+    "   ",
+    "Rock & Terrain 005",
+    "Rock & Terrain ",
+    0
+  );
+  createProduct(
+    "TERR004",
+    "Rock & Terrain <br /> 004",
+    "../product_Data/TERR004/Shape5.png",
+    "../product_Data/TERR004/Shape5.exr",
+    "../product_Data/TERR004/Shape5.zip",
+    "   ",
+    "Rock & Terrain 004",
+    "Rock & Terrain ",
+    0
+  );
+  createProduct(
+    "TERR003",
+    "Rock & Terrain <br /> 003",
+    "../product_Data/TERR003/Shape4.png",
+    "../product_Data/TERR003/Shape4.exr",
+    "../product_Data/TERR003/Shape4.zip",
+    "   ",
+    "Rock & Terrain 003",
+    "Rock & Terrain ",
+    0
+  );
+  createProduct(
+    "TERR002",
+    "Rock & Terrain <br /> 002",
+    "../product_Data/TERR002/Shape3.png",
+    "../product_Data/TERR002/Shape3.exr",
+    "../product_Data/TERR002/Shape3.zip",
+    "   ",
+    "Rock & Terrain 002",
+    "Rock & Terrain ",
+    0
+  );
+  createProduct(
+    "TERR001",
+    "Rock & Terrain <br /> 001",
+    "../product_Data/TERR001/Shape2.png",
+    "../product_Data/TERR001/Shape2.exr",
+    "../product_Data/TERR001/Shape2.zip",
+    "   ",
+    "Rock & Terrain 001",
+    "Rock & Terrain ",
+    0
+  );
+  createProduct(
+    "TERR000",
+    "Rock & Terrain <br /> 000",
+    "../product_Data/TERR000/Shape1.png",
+    "../product_Data/TERR000/Shape1.exr",
+    "../product_Data/TERR000/Shape1.zip",
+    "   ",
+    "Rock & Terrain 000",
+    "Rock & Terrain",
+    0
+  );
+  createProduct(
     "HRDS070",
     "Hard Surface <br /> Shape 070",
     "../product_Data/HRDS070/Shape4.png",
@@ -1746,7 +1812,7 @@ function viewProduct(product_id) {
       <a href="${itemInCatalog.normal}" download="${
       itemInCatalog.download_title
     }.png" class= "${
-      itemInCatalog.normal == "" ? "hidden" : ""
+      itemInCatalog.normal == "   " ? "hidden" : ""
     }"><button class="btn btn-success options_btn">Normal Map</button></a>
       <a href="${itemInCatalog.zip}" download="${
       itemInCatalog.download_title
