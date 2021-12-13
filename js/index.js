@@ -118,6 +118,28 @@ function createProduct(
 function backToMarketplace() {
   marketplace = ``;
   createProduct(
+    "SCRT003",
+    "Scratch <br /> 003",
+    "../product_Data/SCRT003/Wide Scratch.png",
+    "../product_Data/SCRT003/Wide Scratch.exr",
+    "../product_Data/SCRT003/Wide Scratch.zip",
+    "   ",
+    "Scratch 003",
+    "Scratch",
+    0
+  );
+  createProduct(
+    "SCRT002",
+    "Scratch <br /> 002",
+    "../product_Data/SCRT002/Medium Scratch.png",
+    "../product_Data/SCRT002/Medium Scratch.exr",
+    "../product_Data/SCRT002/Medium Scratch.zip",
+    "   ",
+    "Scratch 002",
+    "Scratch ",
+    0
+  );
+  createProduct(
     "TERR005",
     "Rock & Terrain <br /> 005",
     "../product_Data/TERR005/Shape6.png",
