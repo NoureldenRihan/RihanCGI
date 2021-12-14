@@ -118,6 +118,61 @@ function createProduct(
 function backToMarketplace() {
   marketplace = ``;
   createProduct(
+    "HRDS023",
+    "Cross Bolt <br /> 1",
+    "../product_Data/HRDS023/Cross Bolt.png",
+    "../product_Data/HRDS023/Cross Bolt.exr",
+    "../product_Data/HRDS023/Cross Bolt.zip",
+    "../product_Data/HRDS023/Cross Bolt  Normal Map.png",
+    "Cross Bolt 1",
+    "Hard Surface",
+    0
+  );
+  createProduct(
+    "HRDS022",
+    "Cross Bolt <br /> 2",
+    "../product_Data/HRDS022/Cross Bolt 2.png",
+    "../product_Data/HRDS022/Cross Bolt 2.exr",
+    "../product_Data/HRDS022/Cross Bolt 2.zip",
+    "../product_Data/HRDS022/Cross Bolt 2 Normal Map.png",
+    "Cross Bolt 2",
+    "Hard Surface",
+    0
+  );
+  createProduct(
+    "HRDS024",
+    "One Side Bolt <br /> 1",
+    "../product_Data/HRDS024/One Side Bolt .png",
+    "../product_Data/HRDS024/One Side Bolt .exr",
+    "../product_Data/HRDS024/One Side Bolt .zip",
+    "../product_Data/HRDS024/One Side Bolt Normal Map.png",
+    "One Side Bolt 1",
+    "Hard Surface ",
+    0
+  );
+  createProduct(
+    "HRDS025",
+    "One Side Bolt <br /> 2",
+    "../product_Data/HRDS025/One Side Bolt 2.png",
+    "../product_Data/HRDS025/One Side Bolt 2.exr",
+    "../product_Data/HRDS025/One Side Bolt 2.zip",
+    "../product_Data/HRDS025/One Side Bolt 2 Normal Map.png",
+    "One Side Bolt 2",
+    "Hard Surface",
+    0
+  );
+  createProduct(
+    "HRDS020",
+    "Normal Bolt <br /> 1",
+    "../product_Data/HRDS020/Normal Bolt.png",
+    "../product_Data/HRDS020/Normal Bolt.exr",
+    "../product_Data/HRDS020/Normal Bolt.zip",
+    "../product_Data/HRDS020/Normal Bolt Normal Map.png",
+    "Normal Bolt 1",
+    "Hard Surface",
+    0
+  );
+  createProduct(
     "SCRT003",
     "Scratch <br /> 003",
     "../product_Data/SCRT003/Wide Scratch.png",
