@@ -118,6 +118,61 @@ function createProduct(
 function backToMarketplace() {
   marketplace = ``;
   createProduct(
+    "GRID005",
+    "Grid <br /> 005",
+    "../product_Data/GRID005/Grid 5.png",
+    "../product_Data/GRID005/Grid 5.exr",
+    "../product_Data/GRID005/Grid 5.zip",
+    "../product_Data/GRID005/Grid 5 Normal Map.png",
+    "Grid 005",
+    "Grid ",
+    0
+  );
+  createProduct(
+    "GRID004",
+    "Grid <br /> 004",
+    "../product_Data/GRID004/Grid 4.png",
+    "../product_Data/GRID004/Grid 4.exr",
+    "../product_Data/GRID004/Grid 4.zip",
+    "../product_Data/GRID004/Grid 4  Normal Map.png",
+    "Grid 004",
+    "Grid ",
+    0
+  );
+  createProduct(
+    "GRID003",
+    "Grid <br /> 003",
+    "../product_Data/GRID003/Grid 3.png",
+    "../product_Data/GRID003/Grid 3.exr",
+    "../product_Data/GRID003/Grid 3.zip",
+    "../product_Data/GRID003/Grid 3 Normal Map.png",
+    "Grid 003",
+    "Grid ",
+    0
+  );
+  createProduct(
+    "GRID002",
+    "Grid <br /> 002",
+    "../product_Data/GRID002/Grid 2.png",
+    "../product_Data/GRID002/Grid 2.exr",
+    "../product_Data/GRID002/Grid 2.zip",
+    "../product_Data/GRID002/Grid 2 Normal Map.png",
+    "Grid 002",
+    "Grid",
+    0
+  );
+  createProduct(
+    "GRID001",
+    "Grid <br /> 001",
+    "../product_Data/GRID001/Grid 1.png",
+    "../product_Data/GRID001/Grid 1.exr",
+    "../product_Data/GRID001/Grid 1.zip",
+    "../product_Data/GRID001/Grid 1 Normal Map.png",
+    "Grid 001",
+    "Grid ",
+    0
+  );
+  createProduct(
     "HRDS023",
     "Cross Bolt <br /> 1",
     "../product_Data/HRDS023/Cross Bolt.png",
