@@ -118,6 +118,72 @@ function createProduct(
 function backToMarketplace() {
   marketplace = ``;
   createProduct(
+    "GRID016",
+    "Grid <br /> 016",
+    "../product_Data/GRID016/Grid 11.png",
+    "../product_Data/GRID016/Grid 11.exr",
+    "../product_Data/GRID016/Grid 11.zip",
+    "../product_Data/GRID016/Grid 11 Normal Map.png",
+    "Grid 016",
+    "Grid",
+    0
+  );
+  createProduct(
+    "GRID015",
+    "Grid <br /> 015",
+    "../product_Data/GRID015/Grid 10.png",
+    "../product_Data/GRID015/Grid 10.exr",
+    "../product_Data/GRID015/Grid 10.zip",
+    "../product_Data/GRID015/Grid 10 Normal Map.png",
+    "Grid 015",
+    "Grid",
+    0
+  );
+  createProduct(
+    "GRID014",
+    "Grid <br /> 014",
+    "../product_Data/GRID014/Grid 9.png",
+    "../product_Data/GRID014/Grid 9.exr",
+    "../product_Data/GRID014/Grid 9.zip",
+    "../product_Data/GRID014/Grid 9 Normal Map.png",
+    "Grid 014",
+    "Grid",
+    0
+  );
+  createProduct(
+    "GRID013",
+    "Grid <br /> 013",
+    "../product_Data/GRID013/Grid 8.png",
+    "../product_Data/GRID013/Grid 8.exr",
+    "../product_Data/GRID013/Grid 8.zip",
+    "../product_Data/GRID013/Grid 8 Normal Map.png",
+    "Grid 013",
+    "Grid",
+    0
+  );
+  createProduct(
+    "GRID012",
+    "Grid <br /> 012",
+    "../product_Data/GRID012/Grid 7.png",
+    "../product_Data/GRID012/Grid 7.exr",
+    "../product_Data/GRID012/Grid 7.zip",
+    "../product_Data/GRID012/Grid 7 Normal Map.png",
+    "Grid  012",
+    "Grid ",
+    0
+  );
+  createProduct(
+    "GRID011",
+    "Grid <br /> 011",
+    "../product_Data/GRID011/Grid 6.png",
+    "../product_Data/GRID011/Grid 6.exr",
+    "../product_Data/GRID011/Grid 6.zip",
+    "../product_Data/GRID011/Grid 6 Normal Map.png",
+    "Grid 011",
+    "Grid ",
+    0
+  );
+  createProduct(
     "GRID010",
     "Grid <br /> 010",
     "../product_Data/GRID010/Grid 15.png",
