@@ -118,6 +118,149 @@ function createProduct(
 function backToMarketplace() {
   marketplace = ``;
   createProduct(
+    "HRDS081",
+    "Hard Surface <br /> Shape 081",
+    "../product_Data/HRDS081/Shape 13.png",
+    "../product_Data/HRDS081/Shape 13.exr",
+    "../product_Data/HRDS081/Shape 13.zip",
+    "../product_Data/HRDS081/Shape 13 Normal Map.png",
+    "Hard Surface Shape 081",
+    "Hard Surface",
+    2,
+    "https://artstn.co/m/9nN3R",
+    (Bundle = true)
+  );
+  createProduct(
+    "HRDS080",
+    "Hard Surface <br /> Shape 080",
+    "../product_Data/HRDS080/Shape 12.png",
+    "../product_Data/HRDS080/Shape 12.exr",
+    "../product_Data/HRDS080/Shape 12.zip",
+    "../product_Data/HRDS080/Shape 12 Normal Map.png",
+    "Hard Surface Shape 080",
+    "Hard Surface",
+    2,
+    "https://artstn.co/m/9nN3R",
+    (Bundle = true)
+  );
+  createProduct(
+    "HRDS079",
+    "Hard Surface <br /> Shape 079",
+    "../product_Data/HRDS079/Shape 11.png",
+    "../product_Data/HRDS079/Shape 11.exr",
+    "../product_Data/HRDS079/Shape 11.zip",
+    "../product_Data/HRDS079/Shape 11 Normal Map.png",
+    "Hard Surface Shape 079",
+    "Hard Surface",
+    2,
+    "https://artstn.co/m/9nN3R",
+    (Bundle = true)
+  );
+  createProduct(
+    "HRDS078",
+    "Hard Surface <br /> Shape 078",
+    "../product_Data/HRDS078/Shape 10.png",
+    "../product_Data/HRDS078/Shape 10.exr",
+    "../product_Data/HRDS078/Shape 10.zip",
+    "../product_Data/HRDS078/Shape 10 Normal Map.png",
+    "Hard Surface Shape 078",
+    "Hard Surface",
+    2,
+    "https://artstn.co/m/9nN3R",
+    (Bundle = true)
+  );
+  createProduct(
+    "HRDS077",
+    "Hard Surface <br /> Shape 077",
+    "../product_Data/HRDS077/Shape 9.png",
+    "../product_Data/HRDS077/Shape 9.exr",
+    "../product_Data/HRDS077/Shape 9.zip",
+    "../product_Data/HRDS077/Shape 9 Normal Map.png",
+    "Hard Surface Shape 077",
+    "Hard Surface",
+    2,
+    "https://artstn.co/m/9nN3R",
+    (Bundle = true)
+  );
+  createProduct(
+    "HRDS076",
+    "Hard Surface <br /> Shape 076",
+    "../product_Data/HRDS076/Shape 8.png",
+    "../product_Data/HRDS076/Shape 8.exr",
+    "../product_Data/HRDS076/Shape 8.zip",
+    "../product_Data/HRDS076/Shape 8 Normal Map.png",
+    "Hard Surface Shape 076",
+    "Hard Surface ",
+    2,
+    "https://artstn.co/m/9nN3R",
+    (Bundle = true)
+  );
+  createProduct(
+    "HRDS075",
+    "Hard Surface <br /> Shape 075",
+    "../product_Data/HRDS075/Shape 7.png",
+    "../product_Data/HRDS075/Shape 7.exr",
+    "../product_Data/HRDS075/Shape 7.zip",
+    "../product_Data/HRDS075/Shape 7 Normal Map.png",
+    "Hard Surface Shape 075",
+    "Hard Surface",
+    2,
+    "https://artstn.co/m/9nN3R",
+    (Bundle = true)
+  );
+  createProduct(
+    "HRDS074",
+    "Hard Surface <br /> Shape 074",
+    "../product_Data/HRDS074/Shape 6.png",
+    "../product_Data/HRDS074/Shape 6.exr",
+    "../product_Data/HRDS074/Shape 6.zip",
+    "../product_Data/HRDS074/Shape 6 Normal Map.png",
+    "Hard Surface Shape 074",
+    "Hard Surface ",
+    2,
+    "https://artstn.co/m/9nN3R",
+    (Bundle = true)
+  );
+  createProduct(
+    "HRDS073",
+    "Hard Surface <br /> Shape 073",
+    "../product_Data/HRDS073/Shape 5.png",
+    "../product_Data/HRDS073/Shape 5.exr",
+    "../product_Data/HRDS073/Shape 5.zip",
+    "../product_Data/HRDS073/Shape 5 Normal Map.png",
+    "Hard Surface Shape 073",
+    "Hard Surface",
+    2,
+    "https://artstn.co/m/9nN3R",
+    (Bundle = true)
+  );
+  createProduct(
+    "HRDS072",
+    "Hard Surface <br /> Shape 072",
+    "../product_Data/HRDS072/Shape 4.png",
+    "../product_Data/HRDS072/Shape 4.exr",
+    "../product_Data/HRDS072/Shape 4.zip",
+    "../product_Data/HRDS072/Shape 4 Normal Map.png",
+    "Hard Surface Shape 072",
+    "Hard Surface",
+    2,
+    "https://artstn.co/m/9nN3R",
+    (Bundle = true)
+  );
+  createProduct(
+    "HRDS071",
+    "Hard Surface <br /> Shape 071",
+    "../product_Data/HRDS071/Shape 3.png",
+    "../product_Data/HRDS071/Shape 3.exr",
+    "../product_Data/HRDS071/Shape 3.zip",
+    "../product_Data/HRDS071/Shape 3 Normal Map.png",
+    "Hard Surface Shape 071",
+    "Hard Surface",
+    2,
+    "https://artstn.co/m/9nN3R",
+    (Bundle = true)
+  );
+  createProduct(
     "GRID016",
     "Grid <br /> 016",
     "../product_Data/GRID016/Grid 11.png",
