@@ -118,6 +118,39 @@ function createProduct(
 function backToMarketplace() {
   marketplace = ``;
   createProduct(
+    "HRDS028",
+    "Hard Surface <br /> Shape 028",
+    "../product_Data/HRDS028/Arrow Shape.png",
+    "../product_Data/HRDS028/Arrow Shape.exr",
+    "../product_Data/HRDS028/Arrow Shape.zip",
+    "../product_Data/HRDS028/Arrow Shape Normal Map.png",
+    "Hard Surface Shape 028",
+    "Hard Surface",
+    0
+  );
+  createProduct(
+    "HRDS027",
+    "Hard Surface <br /> Shape 027",
+    "../product_Data/HRDS027/Shape 1.png",
+    "../product_Data/HRDS027/Shape 1.exr",
+    "../product_Data/HRDS027/Shape 1.zip",
+    "../product_Data/HRDS027/Shape 1 Normal Map.png",
+    "Hard Surface Shape 027",
+    "Hard Surface",
+    0
+  );
+  createProduct(
+    "HRDS026",
+    "Hard Surface <br /> Shape 026",
+    "../product_Data/HRDS026/Shape 2.png",
+    "../product_Data/HRDS026/Shape 2.exr",
+    "../product_Data/HRDS026/Shape 2.zip",
+    "../product_Data/HRDS026/Shape 2 Normal Map.png",
+    "Hard Surface Shape 026",
+    "Hard Surface",
+    0
+  );
+  createProduct(
     "HRDS081",
     "Hard Surface <br /> Shape 081",
     "../product_Data/HRDS081/Shape 13.png",
