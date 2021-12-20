@@ -118,6 +118,171 @@ function createProduct(
 function backToMarketplace() {
   marketplace = ``;
   createProduct(
+    "HRDS096",
+    "Hard Surface <br /> Shape 096",
+    "../product_Data/HRDS096/HS Symbol 10.png",
+    "../product_Data/HRDS096/HS Symbol 10.exr",
+    "../product_Data/HRDS096/HS Symbol 10.zip",
+    "../product_Data/HRDS096/HS Symbol 10 Normal Map.png",
+    "Hard Surface Shape 096",
+    "Hard Surface",
+    0
+  );
+  createProduct(
+    "HRDS095",
+    "Hard Surface <br /> Shape 095",
+    "../product_Data/HRDS095/HS Symbol 9.png",
+    "../product_Data/HRDS095/HS Symbol 9.exr",
+    "../product_Data/HRDS095/HS Symbol 9.zip",
+    "../product_Data/HRDS095/HS Symbol 9 Normal Map.png",
+    "Hard Surface Shape 095",
+    "Hard Surface",
+    0
+  );
+  createProduct(
+    "HRDS094",
+    "Hard Surface <br /> Shape 094",
+    "../product_Data/HRDS094/HS Symbol 8.png",
+    "../product_Data/HRDS094/HS Symbol 8.exr",
+    "../product_Data/HRDS094/HS Symbol 8.zip",
+    "../product_Data/HRDS094/HS Symbol 8 Normal Map.png",
+    "Hard Surface Shape 094",
+    "Hard Surface",
+    0
+  );
+  createProduct(
+    "HRDS093",
+    "Hard Surface <br /> Shape 093",
+    "../product_Data/HRDS093/HS Symbol 7.png",
+    "../product_Data/HRDS093/HS Symbol 7.exr",
+    "../product_Data/HRDS093/HS Symbol 7.zip",
+    "../product_Data/HRDS093/HS Symbol 7 Normal Map.png",
+    "Hard Surface Shape 093",
+    "Hard Surface",
+    0
+  );
+  createProduct(
+    "HRDS092",
+    "Hard Surface <br /> Shape 092",
+    "../product_Data/HRDS092/HS Symbol 6.png",
+    "../product_Data/HRDS092/HS Symbol 6.exr",
+    "../product_Data/HRDS092/HS Symbol 6.zip",
+    "../product_Data/HRDS092/HS Symbol 6 Normal Map.png",
+    "Hard Surface Shape 092",
+    "Hard Surface",
+    0
+  );
+  createProduct(
+    "HRDS091",
+    "Hard Surface <br /> Shape 091",
+    "../product_Data/HRDS091/HS Symbol 5.png",
+    "../product_Data/HRDS091/HS Symbol 5.exr",
+    "../product_Data/HRDS091/HS Symbol 5.zip",
+    "../product_Data/HRDS091/HS Symbol 5 Normal Map.png",
+    "Hard Surface Shape 091",
+    "Hard Surface",
+    0
+  );
+  createProduct(
+    "HRDS090",
+    "Hard Surface <br /> Shape 090",
+    "../product_Data/HRDS090/HS Symbol 4.png",
+    "../product_Data/HRDS090/HS Symbol 4.exr",
+    "../product_Data/HRDS090/HS Symbol 4.zip",
+    "../product_Data/HRDS090/HS Symbol 4 Normal Map.png",
+    "Hard Surface Shape 090",
+    "Hard Surface",
+    0
+  );
+  createProduct(
+    "HRDS089",
+    "Hard Surface <br /> Shape 089",
+    "../product_Data/HRDS089/HS Symbol 3.png",
+    "../product_Data/HRDS089/HS Symbol 3.exr",
+    "../product_Data/HRDS089/HS Symbol 3.zip",
+    "../product_Data/HRDS089/HS Symbol 3 Normal Map.png",
+    "Hard Surface Shape 089",
+    "Hard Surface",
+    0
+  );
+  createProduct(
+    "HRDS088",
+    "Hard Surface <br /> Shape 088",
+    "../product_Data/HRDS088/HS Symbol 2.png",
+    "../product_Data/HRDS088/HS Symbol 2.exr",
+    "../product_Data/HRDS088/HS Symbol 2.zip",
+    "../product_Data/HRDS088/HS Symbol 2 Normal Map.png",
+    "Hard Surface Shape 088",
+    "Hard Surface ",
+    0
+  );
+  createProduct(
+    "HRDS087",
+    "Hard Surface <br /> Shape 087",
+    "../product_Data/HRDS087/HS Symbol 1.png",
+    "../product_Data/HRDS087/HS Symbol 1.exr",
+    "../product_Data/HRDS087/HS Symbol 1.zip",
+    "../product_Data/HRDS087/HS Symbol 1 Normal Map.png",
+    "Hard Surface Shape 087",
+    "Hard Surface ",
+    0
+  );
+  createProduct(
+    "HRDS086",
+    "Hard Surface <br /> Shape 086",
+    "../product_Data/HRDS086/Shape 15.png",
+    "../product_Data/HRDS086/Shape 15.exr",
+    "../product_Data/HRDS086/Shape 15.zip",
+    "../product_Data/HRDS086/Shape 15 Normal Map.png",
+    "Hard Surface Shape 086",
+    "Hard Surface",
+    0
+  );
+  createProduct(
+    "HRDS085",
+    "Hard Surface <br /> Shape 085",
+    "../product_Data/HRDS085/Shape 14.png",
+    "../product_Data/HRDS085/Shape 14.exr",
+    "../product_Data/HRDS085/Shape 14.zip",
+    "../product_Data/HRDS085/Shape 14 Normal Map.png",
+    "Hard Surface Shape 085",
+    "Hard Surface",
+    0
+  );
+  createProduct(
+    "HRDS084",
+    "Hard Surface <br /> Shape 084",
+    "../product_Data/HRDS084/Shape 13.png",
+    "../product_Data/HRDS084/Shape 13.exr",
+    "../product_Data/HRDS084/Shape 13.zip",
+    "../product_Data/HRDS084/Shape 13 Normal Map.png",
+    "Hard Surface Shape 084",
+    "Hard Surface ",
+    0
+  );
+  createProduct(
+    "HRDS083",
+    "Hard Surface <br /> Shape 083",
+    "../product_Data/HRDS083/Shape 12.png",
+    "../product_Data/HRDS083/Shape 12.exr",
+    "../product_Data/HRDS083/Shape 12.zip",
+    "../product_Data/HRDS083/Shape 12 Normal Map.png",
+    "Hard Surface Shape 083",
+    "Hard Surface",
+    0
+  );
+  createProduct(
+    "HRDS082",
+    "Hard Surface <br /> Shape 082",
+    "../product_Data/HRDS082/Shape 11.png",
+    "../product_Data/HRDS082/Shape 11.exr",
+    "../product_Data/HRDS082/Shape 11.zip",
+    "../product_Data/HRDS082/Shape 11 Normal Map.png",
+    "Hard Surface Shape 082",
+    "Hard Surface",
+    0
+  );
+  createProduct(
     "HRDS028",
     "Hard Surface <br /> Shape 028",
     "../product_Data/HRDS028/Arrow Shape.png",
