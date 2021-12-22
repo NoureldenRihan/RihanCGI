@@ -6,6 +6,21 @@ let marketplace = $("#marketplace").html();
 let gridLayout = `col-xs-12 col-md-6 col-lg-3`;
 let catalog = {};
 let totalProductNum = 0;
+let AD_sensor = 0;
+
+//Google Ads Snippet
+let ADs = `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5809703577382397"
+crossorigin="anonymous"></script>
+<!-- Mid-Products Ads -->
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-5809703577382397"
+data-ad-slot="7271845196"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>`;
 
 // function that Creates the NavBar in All Webpages that have a div with id "CreateNavBarHere"
 function createNavBar() {
@@ -112,6 +127,11 @@ function createProduct(
   marketplace += template;
   totalProductNum += 1;
   $("#totalProductNum").html(totalProductNum);
+  AD_sensor += 1;
+  if (AD_sensor == 20) {
+    marketplace += ADs;
+    AD_sensor = 0;
+  }
 }
 
 // function backToMarketplace clears the marketplace, recreates all available products and recreates the marketplace
