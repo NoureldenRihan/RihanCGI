@@ -138,6 +138,490 @@ function createProduct(
 function backToMarketplace() {
   marketplace = ``;
   createProduct(
+    "HAIR001",
+    "Hair <br /> Shape 001",
+    "../product_Data/HAIR001/Hair 1.png",
+    "../product_Data/HAIR001/Hair 1.exr",
+    "../product_Data/HAIR001/Hair 1.zip",
+    "   ",
+    "Hair Shape 001",
+    "Hair & Fur",
+    0
+  );
+  createProduct(
+    "HAIR002",
+    "Hair <br /> Shape 002",
+    "../product_Data/HAIR002/Hair 1D.png",
+    "../product_Data/HAIR002/Hair 1D.exr",
+    "../product_Data/HAIR002/Hair 1D.zip",
+    "   ",
+    "Hair Shape 002",
+    "Hair & Fur",
+    0
+  );
+  createProduct(
+    "HAIR003",
+    "Hair <br /> Shape 003",
+    "../product_Data/HAIR003/Hair 1F.png",
+    "../product_Data/HAIR003/Hair 1F.exr",
+    "../product_Data/HAIR003/Hair 1F.zip",
+    "   ",
+    "Hair Shape 003",
+    "Hair & Fur",
+    0
+  );
+  createProduct(
+    "HAIR004",
+    "Hair <br /> Shape 004",
+    "../product_Data/HAIR004/Hair 1S.png",
+    "../product_Data/HAIR004/Hair 1S.exr",
+    "../product_Data/HAIR004/Hair 1S.zip",
+    "   ",
+    "Hair Shape 004",
+    "Hair & Fur",
+    0
+  );
+  createProduct(
+    "HAIR005",
+    "Hair <br /> Shape 005",
+    "../product_Data/HAIR005/Hair 2.png",
+    "../product_Data/HAIR005/Hair 2.exr",
+    "../product_Data/HAIR005/Hair 2.zip",
+    "   ",
+    "Hair Shape 005",
+    "Hair & Fur",
+    0
+  );
+  createProduct(
+    "HAIR006",
+    "Hair <br /> Shape 006",
+    "../product_Data/HAIR006/Hair 2D.png",
+    "../product_Data/HAIR006/Hair 2D.exr",
+    "../product_Data/HAIR006/Hair 2D.zip",
+    "   ",
+    "Hair Shape 006",
+    "Hair & Fur",
+    0
+  );
+  createProduct(
+    "HAIR007",
+    "Hair <br /> Shape 007",
+    "../product_Data/HAIR007/Hair 2F.png",
+    "../product_Data/HAIR007/Hair 2F.exr",
+    "../product_Data/HAIR007/Hair 2F.zip",
+    "   ",
+    "Hair Shape 007",
+    "Hair & Fur",
+    0
+  );
+  createProduct(
+    "HAIR008",
+    "Hair <br /> Shape 008",
+    "../product_Data/HAIR008/Hair 2S.png",
+    "../product_Data/HAIR008/Hair 2S.exr",
+    "../product_Data/HAIR008/Hair 2S.zip",
+    "   ",
+    "Hair Shape 008",
+    "Hair & Fur",
+    0
+  );
+  createProduct(
+    "HAIR009",
+    "Hair <br /> Shape 009",
+    "../product_Data/HAIR009/Hair 3.png",
+    "../product_Data/HAIR009/Hair 3.exr",
+    "../product_Data/HAIR009/Hair 3.zip",
+    "   ",
+    "Hair Shape 009",
+    "Hair & Fur",
+    0
+  );
+  createProduct(
+    "HAIR010",
+    "Hair <br /> Shape 010",
+    "../product_Data/HAIR010/Hair 3D.png",
+    "../product_Data/HAIR010/Hair 3D.exr",
+    "../product_Data/HAIR010/Hair 3D.zip",
+    "   ",
+    "Hair Shape 010",
+    "Hair & Fur",
+    0
+  );
+  createProduct(
+    "HAIR011",
+    "Hair <br /> Shape 011",
+    "../product_Data/HAIR011/Hair 3F.png",
+    "../product_Data/HAIR011/Hair 3F.exr",
+    "../product_Data/HAIR011/Hair 3F.zip",
+    "   ",
+    "Hair Shape 011",
+    "Hair & Fur",
+    0
+  );
+  createProduct(
+    "HAIR012",
+    "Hair <br /> Shape 012",
+    "../product_Data/HAIR012/Hair 3S.png",
+    "../product_Data/HAIR012/Hair 3S.exr",
+    "../product_Data/HAIR012/Hair 3S.zip",
+    "   ",
+    "Hair Shape 012",
+    "Hair & Fur",
+    0
+  );
+  createProduct(
+    "HAIR013",
+    "Hair <br /> Shape 013",
+    "../product_Data/HAIR013/Hair 4.png",
+    "../product_Data/HAIR013/Hair 4.exr",
+    "../product_Data/HAIR013/Hair 4.zip",
+    "   ",
+    "Hair Shape 013",
+    "Hair & Fur",
+    0
+  );
+  createProduct(
+    "HAIR014",
+    "Hair <br /> Shape 014",
+    "../product_Data/HAIR014/Hair 4D.png",
+    "../product_Data/HAIR014/Hair 4D.exr",
+    "../product_Data/HAIR014/Hair 4D.zip",
+    "   ",
+    "Hair Shape 014",
+    "Hair & Fur",
+    0
+  );
+  createProduct(
+    "HAIR015",
+    "Hair <br /> Shape 015",
+    "../product_Data/HAIR015/Hair 4F.png",
+    "../product_Data/HAIR015/Hair 4F.exr",
+    "../product_Data/HAIR015/Hair 4F.zip",
+    "   ",
+    "Hair Shape 015",
+    "Hair & Fur",
+    0
+  );
+  createProduct(
+    "HAIR016",
+    "Hair <br /> Shape 016",
+    "../product_Data/HAIR016/Hair 4S.png",
+    "../product_Data/HAIR016/Hair 4S.exr",
+    "../product_Data/HAIR016/Hair 4S.zip",
+    "   ",
+    "Hair Shape 016",
+    "Hair & Fur",
+    0
+  );
+  createProduct(
+    "HAIR017",
+    "Hair <br /> Shape 017",
+    "../product_Data/HAIR017/Hair 5.png",
+    "../product_Data/HAIR017/Hair 5.exr",
+    "../product_Data/HAIR017/Hair 5.zip",
+    "   ",
+    "Hair Shape 017",
+    "Hair & Fur",
+    0
+  );
+  createProduct(
+    "HAIR018",
+    "Hair <br /> Shape 018",
+    "../product_Data/HAIR018/Hair 5D.png",
+    "../product_Data/HAIR018/Hair 5D.exr",
+    "../product_Data/HAIR018/Hair 5D.zip",
+    "   ",
+    "Hair Shape 018",
+    "Hair & Fur",
+    0
+  );
+  createProduct(
+    "HAIR019",
+    "Hair <br /> Shape 019",
+    "../product_Data/HAIR019/Hair 5F.png",
+    "../product_Data/HAIR019/Hair 5F.exr",
+    "../product_Data/HAIR019/Hair 5F.zip",
+    "   ",
+    "Hair Shape 019",
+    "Hair & Fur",
+    0
+  );
+  createProduct(
+    "HAIR020",
+    "Hair <br /> Shape 020",
+    "../product_Data/HAIR020/Hair 5S.png",
+    "../product_Data/HAIR020/Hair 5S.exr",
+    "../product_Data/HAIR020/Hair 5S.zip",
+    "   ",
+    "Hair Shape 020",
+    "Hair & Fur",
+    0
+  );
+  createProduct(
+    "HAIR021",
+    "Hair <br /> Shape 021",
+    "../product_Data/HAIR021/Hair 6.png",
+    "../product_Data/HAIR021/Hair 6.exr",
+    "../product_Data/HAIR021/Hair 6.zip",
+    "   ",
+    "Hair Shape 021",
+    "Hair & Fur",
+    0
+  );
+  createProduct(
+    "HAIR022",
+    "Hair <br /> Shape 022",
+    "../product_Data/HAIR022/Hair 6D.png",
+    "../product_Data/HAIR022/Hair 6D.exr",
+    "../product_Data/HAIR022/Hair 6D.zip",
+    "   ",
+    "Hair Shape 022",
+    "Hair & Fur",
+    0
+  );
+  createProduct(
+    "HAIR023",
+    "Hair <br /> Shape 023",
+    "../product_Data/HAIR023/Hair 6F.png",
+    "../product_Data/HAIR023/Hair 6F.exr",
+    "../product_Data/HAIR023/Hair 6F.zip",
+    "   ",
+    "Hair Shape 023",
+    "Hair & Fur",
+    0
+  );
+  createProduct(
+    "HAIR024",
+    "Hair <br /> Shape 024",
+    "../product_Data/HAIR024/Hair 6S.png",
+    "../product_Data/HAIR024/Hair 6S.exr",
+    "../product_Data/HAIR024/Hair 6S.zip",
+    "   ",
+    "Hair Shape 024",
+    "Hair & Fur",
+    0
+  );
+  createProduct(
+    "HAIR025",
+    "Hair <br /> Shape 025",
+    "../product_Data/HAIR025/Hair 7.png",
+    "../product_Data/HAIR025/Hair 7.exr",
+    "../product_Data/HAIR025/Hair 7.zip",
+    "   ",
+    "Hair Shape 025",
+    "Hair & Fur",
+    0
+  );
+  createProduct(
+    "HAIR026",
+    "Hair <br /> Shape 026",
+    "../product_Data/HAIR026/Hair 7D.png",
+    "../product_Data/HAIR026/Hair 7D.exr",
+    "../product_Data/HAIR026/Hair 7D.zip",
+    "   ",
+    "Hair Shape 026",
+    "Hair & Fur",
+    0
+  );
+  createProduct(
+    "HAIR027",
+    "Hair <br /> Shape 027",
+    "../product_Data/HAIR027/Hair 7F.png",
+    "../product_Data/HAIR027/Hair 7F.exr",
+    "../product_Data/HAIR027/Hair 7F.zip",
+    "   ",
+    "Hair Shape 027",
+    "Hair & Fur",
+    0
+  );
+  createProduct(
+    "HAIR028",
+    "Hair <br /> Shape 028",
+    "../product_Data/HAIR028/Hair 7S.png",
+    "../product_Data/HAIR028/Hair 7S.exr",
+    "../product_Data/HAIR028/Hair 7S.zip",
+    "   ",
+    "Hair Shape 028",
+    "Hair & Fur",
+    0
+  );
+  createProduct(
+    "HAIR029",
+    "Hair <br /> Shape 029",
+    "../product_Data/HAIR029/Hair 8.png",
+    "../product_Data/HAIR029/Hair 8.exr",
+    "../product_Data/HAIR029/Hair 8.zip",
+    "   ",
+    "Hair Shape 029",
+    "Hair & Fur",
+    0
+  );
+  createProduct(
+    "HAIR030",
+    "Hair <br /> Shape 030",
+    "../product_Data/HAIR030/Hair 8D.png",
+    "../product_Data/HAIR030/Hair 8D.exr",
+    "../product_Data/HAIR030/Hair 8D.zip",
+    "   ",
+    "Hair Shape 030",
+    "Hair & Fur",
+    0
+  );
+  createProduct(
+    "HAIR031",
+    "Hair <br /> Shape 031",
+    "../product_Data/HAIR031/Hair 8F.png",
+    "../product_Data/HAIR031/Hair 8F.exr",
+    "../product_Data/HAIR031/Hair 8F.zip",
+    "   ",
+    "Hair Shape 031",
+    "Hair & Fur",
+    0
+  );
+  createProduct(
+    "HAIR032",
+    "Hair <br /> Shape 032",
+    "../product_Data/HAIR032/Hair 8S.png",
+    "../product_Data/HAIR032/Hair 8S.exr",
+    "../product_Data/HAIR032/Hair 8S.zip",
+    "   ",
+    "Hair Shape 032",
+    "Hair & Fur",
+    0
+  );
+  createProduct(
+    "HAIR033",
+    "Hair <br /> Shape 033",
+    "../product_Data/HAIR033/Hair 9.png",
+    "../product_Data/HAIR033/Hair 9.exr",
+    "../product_Data/HAIR033/Hair 9.zip",
+    "   ",
+    "Hair Shape 033",
+    "Hair & Fur",
+    0
+  );
+  createProduct(
+    "HAIR034",
+    "Hair <br /> Shape 034",
+    "../product_Data/HAIR034/Hair 9D.png",
+    "../product_Data/HAIR034/Hair 9D.exr",
+    "../product_Data/HAIR034/Hair 9D.zip",
+    "   ",
+    "Hair Shape 034",
+    "Hair & Fur",
+    0
+  );
+  createProduct(
+    "HAIR035",
+    "Hair <br /> Shape 035",
+    "../product_Data/HAIR035/Hair 9F.png",
+    "../product_Data/HAIR035/Hair 9F.exr",
+    "../product_Data/HAIR035/Hair 9F.zip",
+    "   ",
+    "Hair Shape 035",
+    "Hair & Fur",
+    0
+  );
+  createProduct(
+    "HAIR036",
+    "Hair <br /> Shape 036",
+    "../product_Data/HAIR036/Hair 9S.png",
+    "../product_Data/HAIR036/Hair 9S.exr",
+    "../product_Data/HAIR036/Hair 9S.zip",
+    "   ",
+    "Hair Shape 036",
+    "Hair & Fur",
+    0
+  );
+  createProduct(
+    "HAIR037",
+    "Hair <br /> Shape 037",
+    "../product_Data/HAIR037/Hair 10.png",
+    "../product_Data/HAIR037/Hair 10.exr",
+    "../product_Data/HAIR037/Hair 10.zip",
+    "   ",
+    "Hair Shape 037",
+    "Hair & Fur",
+    0
+  );
+  createProduct(
+    "HAIR038",
+    "Hair <br /> Shape 038",
+    "../product_Data/HAIR038/Hair 10D.png",
+    "../product_Data/HAIR038/Hair 10D.exr",
+    "../product_Data/HAIR038/Hair 10D.zip",
+    "   ",
+    "Hair Shape 038",
+    "Hair & Fur",
+    0
+  );
+  createProduct(
+    "HAIR039",
+    "Hair <br /> Shape 039",
+    "../product_Data/HAIR039/Hair 10F.png",
+    "../product_Data/HAIR039/Hair 10F.exr",
+    "../product_Data/HAIR039/Hair 10F.zip",
+    "   ",
+    "Hair Shape 039",
+    "Hair & Fur",
+    0
+  );
+  createProduct(
+    "HAIR040",
+    "Hair <br /> Shape 040",
+    "../product_Data/HAIR040/Hair 10S.png",
+    "../product_Data/HAIR040/Hair 10S.exr",
+    "../product_Data/HAIR040/Hair 10S.zip",
+    "   ",
+    "Hair Shape 040",
+    "Hair & Fur",
+    0
+  );
+  createProduct(
+    "HAIR041",
+    "Hair <br /> Shape 041",
+    "../product_Data/HAIR041/Hair 11.png",
+    "../product_Data/HAIR041/Hair 11.exr",
+    "../product_Data/HAIR041/Hair 11.zip",
+    "   ",
+    "Hair Shape 041",
+    "Hair & Fur",
+    0
+  );
+  createProduct(
+    "HAIR042",
+    "Hair <br /> Shape 042",
+    "../product_Data/HAIR042/Hair 11D.png",
+    "../product_Data/HAIR042/Hair 11D.exr",
+    "../product_Data/HAIR042/Hair 11D.zip",
+    "   ",
+    "Hair Shape 042",
+    "Hair & Fur",
+    0
+  );
+  createProduct(
+    "HAIR043",
+    "Hair <br /> Shape 043",
+    "../product_Data/HAIR043/Hair 11F.png",
+    "../product_Data/HAIR043/Hair 11F.exr",
+    "../product_Data/HAIR043/Hair 11F.zip",
+    "   ",
+    "Hair Shape 043",
+    "Hair & Fur",
+    0
+  );
+  createProduct(
+    "HAIR044",
+    "Hair <br /> Shape 044",
+    "../product_Data/HAIR044/Hair 11S.png",
+    "../product_Data/HAIR044/Hair 11S.exr",
+    "../product_Data/HAIR044/Hair 11S.zip",
+    "   ",
+    "Hair Shape 044",
+    "Hair & Fur",
+    0
+  );
+  createProduct(
     "HRDS096",
     "Hard Surface <br /> Shape 096",
     "../product_Data/HRDS096/HS Symbol 10.png",
