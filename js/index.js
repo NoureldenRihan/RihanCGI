@@ -61,15 +61,25 @@ function createNavBar() {
               targetclass == 3 ? "active" : " "
             }" href="Search Guide.html">Search Guide</a>
           </li>
+          <li class="nav-item">
+          <a class="nav-link ${
+            targetclass == 4 ? "active" : " "
+          }" href="FAQs.htm">FAQs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://discord.gg/VRqpWzTNSQ"
+            >Discord</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://ko-fi.com/rihancgi"
+            >Buy us Coffee</a
+          >
+        </li>
         <li class="nav-item">
           <a class="nav-link" href="https://www.patreon.com/RihanCGI"
             >Patreon</a
           >
-        </li>
-        <li class="nav-item">
-          <a class="nav-link ${
-            targetclass == 4 ? "active" : " "
-          }" href="FAQs.htm">FAQs</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="PrivacyPolicy.html">Privacy Policy</a>
@@ -137,6 +147,270 @@ function createProduct(
 // function backToMarketplace clears the marketplace, recreates all available products and recreates the marketplace
 function backToMarketplace() {
   marketplace = ``;
+  createProduct(
+    "VIKG002",
+    "Norse <br /> Runes 002",
+    "../product_Data/VIKG002/Rune 1.png",
+    "../product_Data/VIKG002/Rune 1.exr",
+    "../product_Data/VIKG002/Rune 1.zip",
+    "../product_Data/VIKG002/Rune 1 Normal Map.png",
+    "Runes 002",
+    "Vikings",
+    0
+  );
+  createProduct(
+    "VIKG003",
+    "Norse <br /> Runes 003",
+    "../product_Data/VIKG003/Rune 2.png",
+    "../product_Data/VIKG003/Rune 2.exr",
+    "../product_Data/VIKG003/Rune 2.zip",
+    "../product_Data/VIKG003/Rune 2 Normal Map.png",
+    "Runes 003",
+    "Vikings",
+    0
+  );
+  createProduct(
+    "VIKG004",
+    "Norse <br /> Runes 004",
+    "../product_Data/VIKG004/Rune 3.png",
+    "../product_Data/VIKG004/Rune 3.exr",
+    "../product_Data/VIKG004/Rune 3.zip",
+    "../product_Data/VIKG004/Rune 3 Normal Map.png",
+    "Runes 004",
+    "Vikings",
+    0
+  );
+  createProduct(
+    "VIKG005",
+    "Norse <br /> Runes 005",
+    "../product_Data/VIKG005/Rune 4.png",
+    "../product_Data/VIKG005/Rune 4.exr",
+    "../product_Data/VIKG005/Rune 4.zip",
+    "../product_Data/VIKG005/Rune 4 Normal Map.png",
+    "Runes 005",
+    "Vikings",
+    0
+  );
+  createProduct(
+    "VIKG006",
+    "Norse <br /> Runes 006",
+    "../product_Data/VIKG006/Rune 5.png",
+    "../product_Data/VIKG006/Rune 5.exr",
+    "../product_Data/VIKG006/Rune 5.zip",
+    "../product_Data/VIKG006/Rune 5 Normal Map.png",
+    "Runes 006",
+    "Vikings",
+    0
+  );
+  createProduct(
+    "VIKG007",
+    "Norse <br /> Runes 007",
+    "../product_Data/VIKG007/Rune 6.png",
+    "../product_Data/VIKG007/Rune 6.exr",
+    "../product_Data/VIKG007/Rune 6.zip",
+    "../product_Data/VIKG007/Rune 6 Normal Map.png",
+    "Runes 007",
+    "Vikings",
+    0
+  );
+  createProduct(
+    "VIKG008",
+    "Norse <br /> Runes 008",
+    "../product_Data/VIKG008/Rune 7.png",
+    "../product_Data/VIKG008/Rune 7.exr",
+    "../product_Data/VIKG008/Rune 7.zip",
+    "../product_Data/VIKG008/Rune 7 Normal Map.png",
+    "Runes 008",
+    "Vikings",
+    0
+  );
+  createProduct(
+    "VIKG009",
+    "Norse <br /> Runes 009",
+    "../product_Data/VIKG009/Rune 8.png",
+    "../product_Data/VIKG009/Rune 8.exr",
+    "../product_Data/VIKG009/Rune 8.zip",
+    "../product_Data/VIKG009/Rune 8 Normal Map.png",
+    "Runes 009",
+    "Vikings",
+    0
+  );
+  createProduct(
+    "VIKG010",
+    "Norse <br /> Runes 010",
+    "../product_Data/VIKG010/Rune 9.png",
+    "../product_Data/VIKG010/Rune 9.exr",
+    "../product_Data/VIKG010/Rune 9.zip",
+    "../product_Data/VIKG010/Rune 9 Normal Map.png",
+    "Runes 010",
+    "Vikings",
+    0
+  );
+  createProduct(
+    "VIKG011",
+    "Norse <br /> Runes 011",
+    "../product_Data/VIKG011/Rune 10.png",
+    "../product_Data/VIKG011/Rune 10.exr",
+    "../product_Data/VIKG011/Rune 10.zip",
+    "../product_Data/VIKG011/Rune 10 Normal Map.png",
+    "Runes 011",
+    "Vikings",
+    0
+  );
+  createProduct(
+    "VIKG012",
+    "Norse <br /> Runes 012",
+    "../product_Data/VIKG012/Rune 11.png",
+    "../product_Data/VIKG012/Rune 11.exr",
+    "../product_Data/VIKG012/Rune 11.zip",
+    "../product_Data/VIKG012/Rune 11 Normal Map.png",
+    "Runes 012",
+    "Vikings",
+    0
+  );
+  createProduct(
+    "VIKG013",
+    "Norse <br /> Runes 013",
+    "../product_Data/VIKG013/Rune 12.png",
+    "../product_Data/VIKG013/Rune 12.exr",
+    "../product_Data/VIKG013/Rune 12.zip",
+    "../product_Data/VIKG013/Rune 12 Normal Map.png",
+    "Runes 013",
+    "Vikings",
+    0
+  );
+  createProduct(
+    "VIKG014",
+    "Norse <br /> Runes 014",
+    "../product_Data/VIKG014/Rune 13.png",
+    "../product_Data/VIKG014/Rune 13.exr",
+    "../product_Data/VIKG014/Rune 13.zip",
+    "../product_Data/VIKG014/Rune 13 Normal Map.png",
+    "Runes 014",
+    "Vikings",
+    0
+  );
+  createProduct(
+    "VIKG015",
+    "Norse <br /> Runes 015",
+    "../product_Data/VIKG015/Rune 14.png",
+    "../product_Data/VIKG015/Rune 14.exr",
+    "../product_Data/VIKG015/Rune 14.zip",
+    "../product_Data/VIKG015/Rune 14 Normal Map.png",
+    "Runes 015",
+    "Vikings",
+    0
+  );
+  createProduct(
+    "VIKG016",
+    "Norse <br /> Runes 016",
+    "../product_Data/VIKG016/Rune 15.png",
+    "../product_Data/VIKG016/Rune 15.exr",
+    "../product_Data/VIKG016/Rune 15.zip",
+    "../product_Data/VIKG016/Rune 15 Normal Map.png",
+    "Runes 016",
+    "Vikings",
+    0
+  );
+  createProduct(
+    "VIKG017",
+    "Norse <br /> Runes 017",
+    "../product_Data/VIKG017/Rune 16.png",
+    "../product_Data/VIKG017/Rune 16.exr",
+    "../product_Data/VIKG017/Rune 16.zip",
+    "../product_Data/VIKG017/Rune 16 Normal Map.png",
+    "Runes 017",
+    "Vikings",
+    0
+  );
+  createProduct(
+    "VIKG018",
+    "Norse <br /> Runes 018",
+    "../product_Data/VIKG018/Rune 17.png",
+    "../product_Data/VIKG018/Rune 17.exr",
+    "../product_Data/VIKG018/Rune 17.zip",
+    "../product_Data/VIKG018/Rune 17 Normal Map.png",
+    "Runes 018",
+    "Vikings",
+    0
+  );
+  createProduct(
+    "VIKG019",
+    "Norse <br /> Runes 019",
+    "../product_Data/VIKG019/Rune 18.png",
+    "../product_Data/VIKG019/Rune 18.exr",
+    "../product_Data/VIKG019/Rune 18.zip",
+    "../product_Data/VIKG019/Rune 18 Normal Map.png",
+    "Runes 019",
+    "Vikings",
+    0
+  );
+  createProduct(
+    "VIKG020",
+    "Norse <br /> Runes 020",
+    "../product_Data/VIKG020/Rune 19.png",
+    "../product_Data/VIKG020/Rune 19.exr",
+    "../product_Data/VIKG020/Rune 19.zip",
+    "../product_Data/VIKG020/Rune 19 Normal Map.png",
+    "Runes 020",
+    "Vikings",
+    0
+  );
+  createProduct(
+    "VIKG021",
+    "Norse <br /> Runes 021",
+    "../product_Data/VIKG021/Rune 20.png",
+    "../product_Data/VIKG021/Rune 20.exr",
+    "../product_Data/VIKG021/Rune 20.zip",
+    "../product_Data/VIKG021/Rune 20 Normal Map.png",
+    "Runes 021",
+    "Vikings",
+    0
+  );
+  createProduct(
+    "VIKG022",
+    "Norse <br /> Runes 022",
+    "../product_Data/VIKG022/Rune 21.png",
+    "../product_Data/VIKG022/Rune 21.exr",
+    "../product_Data/VIKG022/Rune 21.zip",
+    "../product_Data/VIKG022/Rune 21 Normal Map.png",
+    "Runes 022",
+    "Vikings",
+    0
+  );
+  createProduct(
+    "VIKG023",
+    "Norse <br /> Runes 023",
+    "../product_Data/VIKG023/Rune 22.png",
+    "../product_Data/VIKG023/Rune 22.exr",
+    "../product_Data/VIKG023/Rune 22.zip",
+    "../product_Data/VIKG023/Rune 22 Normal Map.png",
+    "Runes 023",
+    "Vikings",
+    0
+  );
+  createProduct(
+    "VIKG024",
+    "Norse <br /> Runes 024",
+    "../product_Data/VIKG024/Rune 23.png",
+    "../product_Data/VIKG024/Rune 23.exr",
+    "../product_Data/VIKG024/Rune 23.zip",
+    "../product_Data/VIKG024/Rune 23 Normal Map.png",
+    "Runes 024",
+    "Vikings",
+    0
+  );
+  createProduct(
+    "VIKG025",
+    "Norse <br /> Runes 025",
+    "../product_Data/VIKG025/Rune 24.png",
+    "../product_Data/VIKG025/Rune 24.exr",
+    "../product_Data/VIKG025/Rune 24.zip",
+    "../product_Data/VIKG025/Rune 24 Normal Map.png",
+    "Runes 025",
+    "Vikings",
+    0
+  );
   createProduct(
     "HAIR001",
     "Hair <br /> Shape 001",
