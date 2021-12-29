@@ -7,6 +7,7 @@ let gridLayout = `col-xs-12 col-md-6 col-lg-3`;
 let catalog = {};
 let totalProductNum = 0;
 let AD_sensor = 0;
+let searchGuideWord = [];
 
 //Google Ads Snippet
 let ADs = `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5809703577382397"
@@ -3324,6 +3325,13 @@ function resetPriceFilterClass() {
   $("#PriceAll").removeClass("btn-info").addClass("btn-outline-info");
   $("#PriceFree").removeClass("btn-info").addClass("btn-outline-info");
   $("#PricePaid").removeClass("btn-info").addClass("btn-outline-info");
+}
+
+// Function that Takes a Search Keyword from a Select Tag to Auto Search it on Market Place
+function autoSearch() {
+  let sel = document.getElementById("SearchSelection");
+  let selection = sel.options[sel.selectedIndex].value;
+  search(selection);
 }
 
 backToMarketplace();

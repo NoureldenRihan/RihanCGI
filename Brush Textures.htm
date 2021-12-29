@@ -31,8 +31,23 @@
       <div id="priceFilter"></div>
       <br>
       <div class="search">
-      <input type="search" id="userSearch"> <button class="btn btn-success" onclick="setSearch();">Search</button> <br> <span id="noSearchResult"></span></div>
-      <h4 class="info"><span id="totalProductNum"></span> Textures Available.</h4>
+        
+      <select id="SearchSelection" class="m-2" onclick="autoSearch();">
+        <option value="-- Select A Keyword --">-- Select A Keyword --</option>
+        <option value="GNRL">GNRL</option>
+        <option value="HRDS">HRDS</option>
+        <option value="GREK">GREK</option>
+        <option value="PHAR">PHAR</option>
+      </select> 
+      <br />
+      <input type="search" id="userSearch">
+      <button class="btn btn-success" onclick="setSearch();">Search</button> 
+      <br> 
+      <span id="noSearchResult"></span>
+    </div>
+      <h4 class="info">
+        <span id="totalProductNum">
+        </span> Textures Available.</h4>
       <br>
       <br>
       <div class="row" id="marketplace">
