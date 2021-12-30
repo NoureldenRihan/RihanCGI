@@ -8,6 +8,7 @@ let catalog = {};
 let totalProductNum = 0;
 let AD_sensor = 0;
 let searchGuideWord = [];
+let searchTag;
 
 //Google Ads Snippet
 let ADs = `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5809703577382397"
@@ -3212,9 +3213,28 @@ function viewProduct(product_id) {
 
 // Setting user Search to be upper case to match product Codes and Trims all excess spaces
 function setSearch() {
-  let searchTag = $("#userSearch").val();
+  searchTag = $("#userSearch").val();
   searchTag = searchTag.trim().toUpperCase();
+  $("#marketplace").html(
+    "<h1 class='centerText'>Gathering Search Results...</h1>"
+  );
+  setTimeout(preSearch, 2500);
+}
+
+//Delay Function Prior for Searching to Allow Loading Screen to Appear
+function preSearch() {
   search(searchTag);
+}
+
+// Function that Takes a Search Keyword from a Select Tag to Auto Search it on Market Place
+function autoSearch() {
+  let sel = document.getElementById("SearchSelection");
+  let selection = sel.options[sel.selectedIndex].value;
+  searchTag = selection;
+  $("#marketplace").html(
+    "<h1 class='centerText'>Gathering Search Results...</h1>"
+  );
+  setTimeout(preSearch, 2500);
 }
 
 // Implementing Search Function where user can type the product Code or some of it and it will preview all products that match this code.
@@ -3223,6 +3243,7 @@ function setSearch() {
 function search(searchWord) {
   let catalogkeys = Object.keys(catalog);
   let template;
+  let searchResultFound = false;
   resetPriceFilterClass();
   $("#noSearchResult").html(``);
   if (searchWord == "") {
@@ -3245,9 +3266,11 @@ function search(searchWord) {
       totalProductNum += 1;
       $("#marketplace").html(marketplace);
       $("#totalProductNum").html(totalProductNum);
+      $("#noSearchResult").html(`<h4>'${searchWord}' Results Found</h4>`);
+      searchResultFound = true;
     }
   }
-  if (totalProductNum == 0) {
+  if (!searchResultFound) {
     let result = `<h3>No Search Result Found</h3>`;
     $("#noSearchResult").html(result);
   }
@@ -3325,13 +3348,6 @@ function resetPriceFilterClass() {
   $("#PriceAll").removeClass("btn-info").addClass("btn-outline-info");
   $("#PriceFree").removeClass("btn-info").addClass("btn-outline-info");
   $("#PricePaid").removeClass("btn-info").addClass("btn-outline-info");
-}
-
-// Function that Takes a Search Keyword from a Select Tag to Auto Search it on Market Place
-function autoSearch() {
-  let sel = document.getElementById("SearchSelection");
-  let selection = sel.options[sel.selectedIndex].value;
-  search(selection);
 }
 
 backToMarketplace();
