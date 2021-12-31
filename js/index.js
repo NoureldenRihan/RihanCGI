@@ -149,6 +149,502 @@ function createProduct(
 // function backToMarketplace clears the marketplace, recreates all available products and recreates the marketplace
 function backToMarketplace() {
   marketplace = ``;
+
+  createProduct(
+    "PHAR743",
+    "Pharaonic <br /> Shape 743",
+    "../product_Data/PHAR743/Phar Tablet 1.png",
+    "../product_Data/PHAR743/Phar Tablet 1.exr",
+    "../product_Data/PHAR743/Phar Tablet 1.zip",
+    "../product_Data/PHAR743/Phar Tablet 1 Normal Map.png",
+    "Pharaonic Shape 743",
+    "Pharaonic",
+    0
+  );
+  createProduct(
+    "PHAR744",
+    "Pharaonic <br /> Shape 744",
+    "../product_Data/PHAR744/Phar Tablet 2.png",
+    "../product_Data/PHAR744/Phar Tablet 2.exr",
+    "../product_Data/PHAR744/Phar Tablet 2.zip",
+    "../product_Data/PHAR744/Phar Tablet 2 Normal Map.png",
+    "Pharaonic Shape 744",
+    "Pharaonic",
+    0
+  );
+  createProduct(
+    "PHAR700",
+    "Pharaonic <br /> Shape 700",
+    "../product_Data/PHAR700/Phar Char 1.png",
+    "../product_Data/PHAR700/Phar Char 1.exr",
+    "../product_Data/PHAR700/Phar Char 1.zip",
+    "../product_Data/PHAR700/Phar Char 1 Normal Map.png",
+    "Pharaonic Shape 700",
+    "Pharaonic",
+    0
+  );
+  createProduct(
+    "PHAR701",
+    "Pharaonic <br /> Shape 701",
+    "../product_Data/PHAR701/Phar Char 2.png",
+    "../product_Data/PHAR701/Phar Char 2.exr",
+    "../product_Data/PHAR701/Phar Char 2.zip",
+    "../product_Data/PHAR701/Phar Char 2 Normal Map.png",
+    "Pharaonic Shape 701",
+    "Pharaonic",
+    0
+  );
+  createProduct(
+    "PHAR702",
+    "Pharaonic <br /> Shape 702",
+    "../product_Data/PHAR702/Phar Char 3.png",
+    "../product_Data/PHAR702/Phar Char 3.exr",
+    "../product_Data/PHAR702/Phar Char 3.zip",
+    "../product_Data/PHAR702/Phar Char 3 Normal Map.png",
+    "Pharaonic Shape 702",
+    "Pharaonic",
+    0
+  );
+  createProduct(
+    "PHAR703",
+    "Pharaonic <br /> Shape 703",
+    "../product_Data/PHAR703/Phar Char 4.png",
+    "../product_Data/PHAR703/Phar Char 4.exr",
+    "../product_Data/PHAR703/Phar Char 4.zip",
+    "../product_Data/PHAR703/Phar Char 4 Normal Map.png",
+    "Pharaonic Shape 703",
+    "Pharaonic",
+    0
+  );
+  createProduct(
+    "PHAR704",
+    "Pharaonic <br /> Shape 704",
+    "../product_Data/PHAR704/Phar Char 5.png",
+    "../product_Data/PHAR704/Phar Char 5.exr",
+    "../product_Data/PHAR704/Phar Char 5.zip",
+    "../product_Data/PHAR704/Phar Char 5 Normal Map.png",
+    "Pharaonic Shape 704",
+    "Pharaonic",
+    0
+  );
+  createProduct(
+    "PHAR705",
+    "Pharaonic <br /> Shape 705",
+    "../product_Data/PHAR705/Phar Char 6.png",
+    "../product_Data/PHAR705/Phar Char 6.exr",
+    "../product_Data/PHAR705/Phar Char 6.zip",
+    "../product_Data/PHAR705/Phar Char 6 Normal Map.png",
+    "Pharaonic Shape 705",
+    "Pharaonic",
+    0
+  );
+  createProduct(
+    "PHAR706",
+    "Pharaonic <br /> Shape 706",
+    "../product_Data/PHAR706/Phar Char 7.png",
+    "../product_Data/PHAR706/Phar Char 7.exr",
+    "../product_Data/PHAR706/Phar Char 7.zip",
+    "../product_Data/PHAR706/Phar Char 7 Normal Map.png",
+    "Pharaonic Shape 706",
+    "Pharaonic",
+    0
+  );
+  createProduct(
+    "PHAR707",
+    "Pharaonic <br /> Shape 707",
+    "../product_Data/PHAR707/Phar Char 8.png",
+    "../product_Data/PHAR707/Phar Char 8.exr",
+    "../product_Data/PHAR707/Phar Char 8.zip",
+    "../product_Data/PHAR707/Phar Char 8 Normal Map.png",
+    "Pharaonic Shape 707",
+    "Pharaonic",
+    0
+  );
+  createProduct(
+    "PHAR708",
+    "Pharaonic <br /> Shape 708",
+    "../product_Data/PHAR708/Phar Char 9.png",
+    "../product_Data/PHAR708/Phar Char 9.exr",
+    "../product_Data/PHAR708/Phar Char 9.zip",
+    "../product_Data/PHAR708/Phar Char 9 Normal Map.png",
+    "Pharaonic Shape 708",
+    "Pharaonic",
+    0
+  );
+  createProduct(
+    "PHAR709",
+    "Pharaonic <br /> Shape 709",
+    "../product_Data/PHAR709/Phar Char 10.png",
+    "../product_Data/PHAR709/Phar Char 10.exr",
+    "../product_Data/PHAR709/Phar Char 10.zip",
+    "../product_Data/PHAR709/Phar Char 10 Normal Map.png",
+    "Pharaonic Shape 709",
+    "Pharaonic",
+    0
+  );
+  createProduct(
+    "PHAR710",
+    "Pharaonic <br /> Shape 710",
+    "../product_Data/PHAR710/Phar Char 11.png",
+    "../product_Data/PHAR710/Phar Char 11.exr",
+    "../product_Data/PHAR710/Phar Char 11.zip",
+    "../product_Data/PHAR710/Phar Char 11 Normal Map.png",
+    "Pharaonic Shape 710",
+    "Pharaonic",
+    0
+  );
+  createProduct(
+    "PHAR711",
+    "Pharaonic <br /> Shape 711",
+    "../product_Data/PHAR711/Phar Char 12.png",
+    "../product_Data/PHAR711/Phar Char 12.exr",
+    "../product_Data/PHAR711/Phar Char 12.zip",
+    "../product_Data/PHAR711/Phar Char 12 Normal Map.png",
+    "Pharaonic Shape 711",
+    "Pharaonic",
+    0
+  );
+  createProduct(
+    "PHAR712",
+    "Pharaonic <br /> Shape 712",
+    "../product_Data/PHAR712/Phar Char 13.png",
+    "../product_Data/PHAR712/Phar Char 13.exr",
+    "../product_Data/PHAR712/Phar Char 13.zip",
+    "../product_Data/PHAR712/Phar Char 13 Normal Map.png",
+    "Pharaonic Shape 712",
+    "Pharaonic",
+    0
+  );
+  createProduct(
+    "PHAR713",
+    "Pharaonic <br /> Shape 713",
+    "../product_Data/PHAR713/Phar Char 14.png",
+    "../product_Data/PHAR713/Phar Char 14.exr",
+    "../product_Data/PHAR713/Phar Char 14.zip",
+    "../product_Data/PHAR713/Phar Char 14 Normal Map.png",
+    "Pharaonic Shape 713",
+    "Pharaonic",
+    0
+  );
+  createProduct(
+    "PHAR714",
+    "Pharaonic <br /> Shape 714",
+    "../product_Data/PHAR714/Phar Char 15.png",
+    "../product_Data/PHAR714/Phar Char 15.exr",
+    "../product_Data/PHAR714/Phar Char 15.zip",
+    "../product_Data/PHAR714/Phar Char 15 Normal Map.png",
+    "Pharaonic Shape 714",
+    "Pharaonic",
+    0
+  );
+  createProduct(
+    "PHAR715",
+    "Pharaonic <br /> Shape 715",
+    "../product_Data/PHAR715/Phar Char 16.png",
+    "../product_Data/PHAR715/Phar Char 16.exr",
+    "../product_Data/PHAR715/Phar Char 16.zip",
+    "../product_Data/PHAR715/Phar Char 16 Normal Map.png",
+    "Pharaonic Shape 715",
+    "Pharaonic",
+    0
+  );
+  createProduct(
+    "PHAR716",
+    "Pharaonic <br /> Shape 716",
+    "../product_Data/PHAR716/Phar Char 17.png",
+    "../product_Data/PHAR716/Phar Char 17.exr",
+    "../product_Data/PHAR716/Phar Char 17.zip",
+    "../product_Data/PHAR716/Phar Char 17 Normal Map.png",
+    "Pharaonic Shape 716",
+    "Pharaonic",
+    0
+  );
+  createProduct(
+    "PHAR717",
+    "Pharaonic <br /> Shape 717",
+    "../product_Data/PHAR717/Phar Char 18.png",
+    "../product_Data/PHAR717/Phar Char 18.exr",
+    "../product_Data/PHAR717/Phar Char 18.zip",
+    "../product_Data/PHAR717/Phar Char 18 Normal Map.png",
+    "Pharaonic Shape 717",
+    "Pharaonic",
+    0
+  );
+  createProduct(
+    "PHAR718",
+    "Pharaonic <br /> Shape 718",
+    "../product_Data/PHAR718/Phar Char 19.png",
+    "../product_Data/PHAR718/Phar Char 19.exr",
+    "../product_Data/PHAR718/Phar Char 19.zip",
+    "../product_Data/PHAR718/Phar Char 19 Normal Map.png",
+    "Pharaonic Shape 718",
+    "Pharaonic",
+    0
+  );
+  createProduct(
+    "PHAR719",
+    "Pharaonic <br /> Shape 719",
+    "../product_Data/PHAR719/Phar Char 20.png",
+    "../product_Data/PHAR719/Phar Char 20.exr",
+    "../product_Data/PHAR719/Phar Char 20.zip",
+    "../product_Data/PHAR719/Phar Char 20 Normal Map.png",
+    "Pharaonic Shape 719",
+    "Pharaonic",
+    0
+  );
+  createProduct(
+    "PHAR720",
+    "Pharaonic <br /> Shape 720",
+    "../product_Data/PHAR720/Phar Char 21.png",
+    "../product_Data/PHAR720/Phar Char 21.exr",
+    "../product_Data/PHAR720/Phar Char 21.zip",
+    "../product_Data/PHAR720/Phar Char 21 Normal Map.png",
+    "Pharaonic Shape 720",
+    "Pharaonic",
+    0
+  );
+  createProduct(
+    "PHAR721",
+    "Pharaonic <br /> Shape 721",
+    "../product_Data/PHAR721/Phar Char 23.png",
+    "../product_Data/PHAR721/Phar Char 23.exr",
+    "../product_Data/PHAR721/Phar Char 23.zip",
+    "../product_Data/PHAR721/Phar Char 23 Normal Map.png",
+    "Pharaonic Shape 721",
+    "Pharaonic",
+    0
+  );
+  createProduct(
+    "PHAR722",
+    "Pharaonic <br /> Shape 722",
+    "../product_Data/PHAR722/Phar Char 25.png",
+    "../product_Data/PHAR722/Phar Char 25.exr",
+    "../product_Data/PHAR722/Phar Char 25.zip",
+    "../product_Data/PHAR722/Phar Char 25 Normal Map.png",
+    "Pharaonic Shape 722",
+    "Pharaonic",
+    0
+  );
+  createProduct(
+    "PHAR723",
+    "Pharaonic <br /> Shape 723",
+    "../product_Data/PHAR723/Phar Char 26.png",
+    "../product_Data/PHAR723/Phar Char 26.exr",
+    "../product_Data/PHAR723/Phar Char 26.zip",
+    "../product_Data/PHAR723/Phar Char 26 Normal Map.png",
+    "Pharaonic Shape 723",
+    "Pharaonic",
+    0
+  );
+  createProduct(
+    "PHAR724",
+    "Pharaonic <br /> Shape 724",
+    "../product_Data/PHAR724/Phar Char 27.png",
+    "../product_Data/PHAR724/Phar Char 27.exr",
+    "../product_Data/PHAR724/Phar Char 27.zip",
+    "../product_Data/PHAR724/Phar Char 27 Normal Map.png",
+    "Pharaonic Shape 724",
+    "Pharaonic",
+    0
+  );
+  createProduct(
+    "PHAR725",
+    "Pharaonic <br /> Shape 725",
+    "../product_Data/PHAR725/Phar Char 28.png",
+    "../product_Data/PHAR725/Phar Char 28.exr",
+    "../product_Data/PHAR725/Phar Char 28.zip",
+    "../product_Data/PHAR725/Phar Char 28 Normal Map.png",
+    "Pharaonic Shape 725",
+    "Pharaonic",
+    0
+  );
+  createProduct(
+    "PHAR726",
+    "Pharaonic <br /> Shape 726",
+    "../product_Data/PHAR726/Phar Char 29.png",
+    "../product_Data/PHAR726/Phar Char 29.exr",
+    "../product_Data/PHAR726/Phar Char 29.zip",
+    "../product_Data/PHAR726/Phar Char 29 Normal Map.png",
+    "Pharaonic Shape 726",
+    "Pharaonic",
+    0
+  );
+  createProduct(
+    "PHAR727",
+    "Pharaonic <br /> Shape 727",
+    "../product_Data/PHAR727/Phar Char 30.png",
+    "../product_Data/PHAR727/Phar Char 30.exr",
+    "../product_Data/PHAR727/Phar Char 30.zip",
+    "../product_Data/PHAR727/Phar Char 30 Normal Map.png",
+    "Pharaonic Shape 727",
+    "Pharaonic",
+    0
+  );
+  createProduct(
+    "PHAR728",
+    "Pharaonic <br /> Shape 728",
+    "../product_Data/PHAR728/Phar Char 31.png",
+    "../product_Data/PHAR728/Phar Char 31.exr",
+    "../product_Data/PHAR728/Phar Char 31.zip",
+    "../product_Data/PHAR728/Phar Char 31 Normal Map.png",
+    "Pharaonic Shape 728",
+    "Pharaonic",
+    0
+  );
+  createProduct(
+    "PHAR729",
+    "Pharaonic <br /> Shape 729",
+    "../product_Data/PHAR729/Phar Char 32.png",
+    "../product_Data/PHAR729/Phar Char 32.exr",
+    "../product_Data/PHAR729/Phar Char 32.zip",
+    "../product_Data/PHAR729/Phar Char 32 Normal Map.png",
+    "Pharaonic Shape 729",
+    "Pharaonic",
+    0
+  );
+  createProduct(
+    "PHAR730",
+    "Pharaonic <br /> Shape 730",
+    "../product_Data/PHAR730/Phar Char 33.png",
+    "../product_Data/PHAR730/Phar Char 33.exr",
+    "../product_Data/PHAR730/Phar Char 33.zip",
+    "../product_Data/PHAR730/Phar Char 33 Normal Map.png",
+    "Pharaonic Shape 730",
+    "Pharaonic",
+    0
+  );
+  createProduct(
+    "PHAR731",
+    "Pharaonic <br /> Shape 731",
+    "../product_Data/PHAR731/Phar Char 34.png",
+    "../product_Data/PHAR731/Phar Char 34.exr",
+    "../product_Data/PHAR731/Phar Char 34.zip",
+    "../product_Data/PHAR731/Phar Char 34 Normal Map.png",
+    "Pharaonic Shape 731",
+    "Pharaonic",
+    0
+  );
+  createProduct(
+    "PHAR732",
+    "Pharaonic <br /> Shape 732",
+    "../product_Data/PHAR732/Phar Char 35.png",
+    "../product_Data/PHAR732/Phar Char 35.exr",
+    "../product_Data/PHAR732/Phar Char 35.zip",
+    "../product_Data/PHAR732/Phar Char 35 Normal Map.png",
+    "Pharaonic Shape 732",
+    "Pharaonic",
+    0
+  );
+  createProduct(
+    "PHAR733",
+    "Pharaonic <br /> Shape 733",
+    "../product_Data/PHAR733/Phar Char 36.png",
+    "../product_Data/PHAR733/Phar Char 36.exr",
+    "../product_Data/PHAR733/Phar Char 36.zip",
+    "../product_Data/PHAR733/Phar Char 36 Normal Map.png",
+    "Pharaonic Shape 733",
+    "Pharaonic",
+    0
+  );
+  createProduct(
+    "PHAR734",
+    "Pharaonic <br /> Shape 734",
+    "../product_Data/PHAR734/Phar Char 37.png",
+    "../product_Data/PHAR734/Phar Char 37.exr",
+    "../product_Data/PHAR734/Phar Char 37.zip",
+    "../product_Data/PHAR734/Phar Char 37 Normal Map.png",
+    "Pharaonic Shape 734",
+    "Pharaonic",
+    0
+  );
+  createProduct(
+    "PHAR735",
+    "Pharaonic <br /> Shape 735",
+    "../product_Data/PHAR735/Phar Char 38.png",
+    "../product_Data/PHAR735/Phar Char 38.exr",
+    "../product_Data/PHAR735/Phar Char 38.zip",
+    "../product_Data/PHAR735/Phar Char 38 Normal Map.png",
+    "Pharaonic Shape 735",
+    "Pharaonic",
+    0
+  );
+  createProduct(
+    "PHAR736",
+    "Pharaonic <br /> Shape 736",
+    "../product_Data/PHAR736/Phar Char 39.png",
+    "../product_Data/PHAR736/Phar Char 39.exr",
+    "../product_Data/PHAR736/Phar Char 39.zip",
+    "../product_Data/PHAR736/Phar Char 39 Normal Map.png",
+    "Pharaonic Shape 736",
+    "Pharaonic",
+    0
+  );
+  createProduct(
+    "PHAR737",
+    "Pharaonic <br /> Shape 737",
+    "../product_Data/PHAR737/Phar Char 40.png",
+    "../product_Data/PHAR737/Phar Char 40.exr",
+    "../product_Data/PHAR737/Phar Char 40.zip",
+    "../product_Data/PHAR737/Phar Char 40 Normal Map.png",
+    "Pharaonic Shape 737",
+    "Pharaonic",
+    0
+  );
+  createProduct(
+    "PHAR738",
+    "Pharaonic <br /> Shape 738",
+    "../product_Data/PHAR738/Phar Char 41.png",
+    "../product_Data/PHAR738/Phar Char 41.exr",
+    "../product_Data/PHAR738/Phar Char 41.zip",
+    "../product_Data/PHAR738/Phar Char 41 Normal Map.png",
+    "Pharaonic Shape 738",
+    "Pharaonic",
+    0
+  );
+  createProduct(
+    "PHAR739",
+    "Pharaonic <br /> Shape 739",
+    "../product_Data/PHAR739/Phar Char 42.png",
+    "../product_Data/PHAR739/Phar Char 42.exr",
+    "../product_Data/PHAR739/Phar Char 42.zip",
+    "../product_Data/PHAR739/Phar Char 42 Normal Map.png",
+    "Pharaonic Shape 739",
+    "Pharaonic",
+    0
+  );
+  createProduct(
+    "PHAR740",
+    "Pharaonic <br /> Shape 740",
+    "../product_Data/PHAR740/Phar Char 43.png",
+    "../product_Data/PHAR740/Phar Char 43.exr",
+    "../product_Data/PHAR740/Phar Char 43.zip",
+    "../product_Data/PHAR740/Phar Char 43 Normal Map.png",
+    "Pharaonic Shape 740",
+    "Pharaonic",
+    0
+  );
+  createProduct(
+    "PHAR741",
+    "Pharaonic <br /> Shape 741",
+    "../product_Data/PHAR741/Phar Char 44.png",
+    "../product_Data/PHAR741/Phar Char 44.exr",
+    "../product_Data/PHAR741/Phar Char 44.zip",
+    "../product_Data/PHAR741/Phar Char 44 Normal Map.png",
+    "Pharaonic Shape 741",
+    "Pharaonic",
+    0
+  );
+  createProduct(
+    "PHAR742",
+    "Pharaonic <br /> Shape 742",
+    "../product_Data/PHAR742/Phar Char 45.png",
+    "../product_Data/PHAR742/Phar Char 45.exr",
+    "../product_Data/PHAR742/Phar Char 45.zip",
+    "../product_Data/PHAR742/Phar Char 45 Normal Map.png",
+    "Pharaonic Shape 742",
+    "Pharaonic",
+    0
+  );
   createProduct(
     "VIKG002",
     "Norse <br /> Runes 002",
@@ -3218,7 +3714,7 @@ function setSearch() {
   $("#marketplace").html(
     "<h1 class='centerText'>Gathering Search Results...</h1>"
   );
-  setTimeout(preSearch, 2500);
+  setTimeout(preSearch, 1500);
 }
 
 //Delay Function Prior for Searching to Allow Loading Screen to Appear
@@ -3234,7 +3730,7 @@ function autoSearch() {
   $("#marketplace").html(
     "<h1 class='centerText'>Gathering Search Results...</h1>"
   );
-  setTimeout(preSearch, 2500);
+  setTimeout(preSearch, 1500);
 }
 
 // Implementing Search Function where user can type the product Code or some of it and it will preview all products that match this code.
