@@ -149,7 +149,50 @@ function createProduct(
 // function backToMarketplace clears the marketplace, recreates all available products and recreates the marketplace
 function backToMarketplace() {
   marketplace = ``;
-
+  createProduct(
+    "HRDS101",
+    "Hard Surface <br /> Shape 101",
+    "../product_Data/HRDS101/Shape 4.png",
+    "../product_Data/HRDS101/Shape 4.exr",
+    "../product_Data/HRDS101/Shape 4.zip",
+    "../product_Data/HRDS101/Shape 4 Normal Map.png",
+    "Hard Surface Shape 101",
+    "Hard Surface",
+    0
+  );
+  createProduct(
+    "HRDS100",
+    "Hard Surface <br /> Shape 100",
+    "../product_Data/HRDS100/Shape 3.png",
+    "../product_Data/HRDS100/Shape 3.exr",
+    "../product_Data/HRDS100/Shape 3.zip",
+    "../product_Data/HRDS100/Shape 3 Normal Map.png",
+    "Hard Surface Shape 100",
+    "Hard Surface",
+    0
+  );
+  createProduct(
+    "HRDS098",
+    "Hard Surface <br /> Shape 098",
+    "../product_Data/HRDS098/Shape 2.png",
+    "../product_Data/HRDS098/Shape 2.exr",
+    "../product_Data/HRDS098/Shape 2.zip",
+    "../product_Data/HRDS098/Shape 2 Normal Map.png",
+    "Hard Surface Shape 098",
+    "Hard Surface",
+    0
+  );
+  createProduct(
+    "HRDS097",
+    "Hard Surface <br /> Shape 097",
+    "../product_Data/HRDS097/Shape 1.png",
+    "../product_Data/HRDS097/Shape 1.exr",
+    "../product_Data/HRDS097/Shape 1.zip",
+    "../product_Data/HRDS097/Shape 1 Normal Map.png",
+    "Hard Surface Shape 097",
+    "Hard Surface",
+    0
+  );
   createProduct(
     "PHAR743",
     "Pharaonic <br /> Shape 743",
