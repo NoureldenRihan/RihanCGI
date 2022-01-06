@@ -9,6 +9,73 @@ let totalProductNum = 0;
 let AD_sensor = 0;
 let searchGuideWord = [];
 let searchTag;
+let brushMainIDs = {
+  HRDS: {
+    code: "HRDS",
+    title: "Hard <br /> Surface ",
+    imgUrl: "../Images/HRDS.png",
+  },
+  PHAR: {
+    code: "PHAR",
+    title: "Ancient <br /> Egyptian",
+    imgUrl: "../Images/PHAR.png",
+  },
+  GREK: {
+    code: "GREK",
+    title: "Ancient <br /> Greek",
+    imgUrl: "../Images/GREK.png",
+  },
+  VIKG: {
+    code: "VIKG",
+    title: "Vikings <br /> .....",
+    imgUrl: "../Images/VIKG.png",
+  },
+  TERR: {
+    code: "TERR",
+    title: "Rocks & <br /> Terrain",
+    imgUrl: "../Images/TERR.png",
+  },
+  SCRT: {
+    code: "SCRT",
+    title: "Scratches  <br /> .....",
+    imgUrl: "../Images/SCRT.png",
+  },
+  GNRL: {
+    code: "GNRL",
+    title: "General  <br /> .....",
+    imgUrl: "../Images/GNRL.png",
+  },
+  CARV: {
+    code: "CARV",
+    title: "Carving  <br /> .....",
+    imgUrl: "../Images/CARV.png",
+  },
+  BLOB: {
+    code: "BLOB",
+    title: "Blobs  <br /> .....",
+    imgUrl: "../Images/BLOB.png",
+  },
+  TILE: {
+    code: "TILE",
+    title: "Tileables  <br /> .....",
+    imgUrl: "../Images/TILE.png",
+  },
+  GRID: {
+    code: "GRID",
+    title: "Grid  <br /> .....",
+    imgUrl: "../Images/GRID.png",
+  },
+  HAIR: {
+    code: "HAIR",
+    title: "Hair  <br /> .....",
+    imgUrl: "../Images/HAIR.png",
+  },
+  RIHAN: {
+    code: "RIHAN",
+    title: "RihanCGI <br /> Specials",
+    imgUrl: "../Images/RIHAN.png",
+  },
+};
 
 //Google Ads Snippet
 let ADs = `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5809703577382397"
@@ -100,6 +167,14 @@ function createFilterButtons() {
   <button id="PriceFree" class="priceFilterButton btn btn-outline-info" onclick="allOrFreeOrPaid('free');">Free</button>
   <button id="PricePaid" class="priceFilterButton btn btn-outline-info" onclick="allOrFreeOrPaid('paid');">Paid</button>`;
   $("#priceFilter").html(priceButtons);
+}
+
+// function That Creates the Preview Type Buttons
+function createpreviewTypeButtons() {
+  let previewTypeButton = `
+  <button id="previewSingle" class="priceFilterButton btn btn-outline-warning" onclick="marketplacePreviewType('single');">Single</button>
+  <button id="previewBundle" class="priceFilterButton btn btn-outline-warning" onclick="marketplacePreviewType('bundled');">Bundled</button>`;
+  $("#previewType").html(previewTypeButton);
 }
 
 // function CreateProduct takes a name and preview .PNG
@@ -3784,6 +3859,7 @@ function backToMarketplace() {
   // Creating Neccesary UI Elements
   createNavBar();
   createFilterButtons();
+  createpreviewTypeButtons();
 }
 
 // function viewProduct gives a more indetail view of a product and the ability to download .PNG and .EXR and .ZIP files
@@ -3986,6 +4062,55 @@ function resetPriceFilterClass() {
   $("#PriceAll").removeClass("btn-info").addClass("btn-outline-info");
   $("#PriceFree").removeClass("btn-info").addClass("btn-outline-info");
   $("#PricePaid").removeClass("btn-info").addClass("btn-outline-info");
+}
+
+// Groups the Textures into Bundles According to the ID and Displays these Bundles
+function marketplacePreviewType(state_choice) {
+  let catalogkeys = Object.keys(catalog);
+  let brushIDKeys = Object.keys(brushMainIDs);
+  let template;
+  marketplace = ``;
+  totalProductNum = 0;
+  if (state_choice == "single") {
+    backToMarketplace();
+  } else if (state_choice == "bundled") {
+    for (let i = 0; i < brushIDKeys.length; i++) {
+      let currentItem = brushMainIDs[brushIDKeys[i]];
+      template = `<div class="${gridLayout} product_area card">
+      <img class="thumbnail card" src="../Images/${currentItem.imgUrl}" alt="${currentItem.title}" loading="lazy"/>
+      <h1 class="product_title">${currentItem.title}</h1>
+      <button class="btn btn-primary" onclick="viewBundle('${currentItem.code}');">View Bundle!</button>
+      </div>
+      <br/>`;
+      marketplace += template;
+    }
+    $("#marketplace").html(marketplace);
+  }
+}
+
+// Displays Each Bundle's Items Grouped Together with only one download button that downloads the Zip File
+function viewBundle(bundleID) {
+  let catalogkeys = Object.keys(catalog);
+  let template;
+  marketplace = ``;
+  totalProductNum = 0;
+  for (let i = 0; i < Object.keys(catalog).length; i++) {
+    let item = catalog[catalogkeys[i]];
+    if (item.price == 0) {
+      if (catalogkeys[i].substring(0, 4) == bundleID.substring(0, 4)) {
+        template = `<div class="${gridLayout} product_area card centerDiv">
+      <img class="thumbnail card" src="${item.preview}" alt="${item.name}" loading="lazy"/>
+      <h1 class="product_title">${item.name}</h1>
+      <a href="${item.zip}" download="${item.download_title}"><button class="btn btn-success options_btn fullbtn">Download!</button></a>
+      </div>
+      <br/>`;
+        marketplace += template;
+        totalProductNum += 1;
+        $("#marketplace").html(marketplace);
+        $("#totalProductNum").html(totalProductNum);
+      }
+    }
+  }
 }
 
 backToMarketplace();

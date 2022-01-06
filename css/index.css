@@ -123,3 +123,9 @@ body {
 .centerText {
   text-align: center;
 }
+
+.centerDiv {
+  margin: auto;
+  overflow: hidden;
+  align-items: center;
+}
