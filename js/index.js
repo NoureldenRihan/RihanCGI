@@ -70,6 +70,11 @@ let brushMainIDs = {
     title: "Hair  <br /> .....",
     imgUrl: "../Images/HAIR.png",
   },
+  FBRC: {
+    code: "FBRC",
+    title: "Cloth & <br /> Fabric",
+    imgUrl: "../Images/FBRC.png",
+  },
   RIHAN: {
     code: "RIHAN",
     title: "RihanCGI <br /> Specials",
@@ -224,6 +229,39 @@ function createProduct(
 // function backToMarketplace clears the marketplace, recreates all available products and recreates the marketplace
 function backToMarketplace() {
   marketplace = ``;
+  createProduct(
+    "FBRC002",
+    "Fabric <br /> 002",
+    "../product_Data/FBRC002/Fabric 3.png",
+    "../product_Data/FBRC002/Fabric 3.exr",
+    "../product_Data/FBRC002/Fabric 3.zip",
+    "   ",
+    "Fabric 002",
+    "Cloth & Fabric",
+    0
+  );
+  createProduct(
+    "FBRC001",
+    "Fabric <br /> 001",
+    "../product_Data/FBRC001/Fabric 2.png",
+    "../product_Data/FBRC001/Fabric 2.exr",
+    "../product_Data/FBRC001/Fabric 2.zip",
+    "   ",
+    "Fabric 001",
+    "Cloth & Fabric",
+    0
+  );
+  createProduct(
+    "FBRC000",
+    "Fabric <br /> 000",
+    "../product_Data/FBRC000/Fabric 1.png",
+    "../product_Data/FBRC000/Fabric 1.exr",
+    "../product_Data/FBRC000/Fabric 1.zip",
+    "   ",
+    "Fabric 000",
+    "Cloth & Fabric",
+    0
+  );
   createProduct(
     "HRDS113",
     "Hard Surface <br /> Shape 113",
