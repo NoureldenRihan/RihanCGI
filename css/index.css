@@ -129,3 +129,15 @@ body {
   overflow: hidden;
   align-items: center;
 }
+
+.product_area:hover {
+  transform: scale(1.05);
+}
+
+.rihannav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100px;
+}

@@ -230,6 +230,28 @@ function createProduct(
 function backToMarketplace() {
   marketplace = ``;
   createProduct(
+    "GNRL005",
+    "Decorative <br /> 005",
+    "../product_Data/GNRL005/Shape 2.png",
+    "../product_Data/GNRL005/Shape 2.exr",
+    "../product_Data/GNRL005/Shape 2.zip",
+    "../product_Data/GNRL005/Shape 2 Normal Map.png",
+    "Decorative 005",
+    "Decorative Shapes",
+    0
+  );
+  createProduct(
+    "GNRL004",
+    "Decorative <br /> 004",
+    "../product_Data/GNRL004/Shape 1.png",
+    "../product_Data/GNRL004/Shape 1.exr",
+    "../product_Data/GNRL004/Shape 1.zip",
+    "../product_Data/GNRL004/Shape 1 Normal Map.png",
+    "Decorative 004",
+    "Decorative Shapes",
+    0
+  );
+  createProduct(
     "FBRC002",
     "Fabric <br /> 002",
     "../product_Data/FBRC002/Fabric 3.png",
