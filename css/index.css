@@ -127,7 +127,7 @@ body {
 .centerDiv {
   margin: auto;
   overflow: hidden;
-  align-items: center;
+  text-align: center;
 }
 
 .product_area:hover {
@@ -140,4 +140,18 @@ body {
   top: 0;
   left: 0;
   height: 100px;
+}
+
+.formRightSide {
+  float: right;
+}
+
+.formMain {
+  box-shadow: 7px 7px 2px #38b6ff, -2px -2px 2px #38b6ff;
+}
+
+.form-btn {
+  min-width: none;
+  width: 200px;
+  margin: 10px;
 }

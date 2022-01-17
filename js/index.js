@@ -106,6 +106,7 @@ function createNavBar() {
       src="./Images/rihan-cgi-logo-cropped.png"
       alt="Rihan CGI Logo"
       class="navbar-brand Logo"
+      id='navLogo'
     />
     <button
       class="navbar-toggler"

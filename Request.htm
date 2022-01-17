@@ -13,7 +13,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rihan CGI</title>
+    <title>Rihan CGI - Request Textures</title>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/index.css" />
     <link rel="shortcut icon" href="./Images/rihan-cgi-logo-cropped.png">
@@ -23,8 +23,30 @@
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <main id='mainPart'>
-    <div id="CreateNavBarHere" >3</div>
+    <div id="CreateNavBarHere" >1</div>
+    <br />
     <div class="container">
+        <div class="centerDiv formMain">
+            <br />
+            <h1 class="headtitle">Request Textures Form</h1>
+            <br />
+            <form action="https://formsubmit.co/rihancgi@gmail.com" method="POST">
+                <label for="name">Name: &nbsp;<input class="form-control formRightSide" type="text" name="name" placeholder="Name" required /></label>
+                <br /><br />
+                <label for="email">Email: &nbsp;<input class="form-control formRightSide" type="email" name="email" placeholder="Email Address" required /></label>
+                <br /><br />
+                <label for="message">Message: &nbsp;<textarea class="form-control formRightSide" name="message" cols="30" rows="3" placeholder="Provide a Link to The Shape's Image" required></textarea></label>
+                <br /><br />
+                <input type="hidden" name="_subject" value="New Brush Request!" />
+                <input
+                  type="hidden"
+                  name="_next"
+                  value="https://rihan-cgi.web.app/thanks.htm"
+                />
+                <input type="hidden" name="_template" value="table">
+                <button type="submit" class="btn btn-outline-info form-btn">Submit</button>
+              </form>
+        </div>
     </div>
     <br />
     <br />
