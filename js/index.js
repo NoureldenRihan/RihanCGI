@@ -231,6 +231,72 @@ function createProduct(
 function backToMarketplace() {
   marketplace = ``;
   createProduct(
+    "HRDS114",
+    "Hard Surface <br /> Shape 114",
+    "../product_Data/HRDS114/Shape 1.png",
+    "../product_Data/HRDS114/Shape 1.exr",
+    "../product_Data/HRDS114/Shape 1.zip",
+    "../product_Data/HRDS114/Shape 1 Normal Map.png",
+    "Hard Surface Shape 114",
+    "Hard Surface",
+    0
+  );
+  createProduct(
+    "HRDS115",
+    "Hard Surface <br /> Shape 115",
+    "../product_Data/HRDS115/Shape 2.png",
+    "../product_Data/HRDS115/Shape 2.exr",
+    "../product_Data/HRDS115/Shape 2.zip",
+    "../product_Data/HRDS115/Shape 2 Normal Map.png",
+    "Hard Surface Shape 115",
+    "Hard Surface",
+    0
+  );
+  createProduct(
+    "HRDS116",
+    "Hard Surface <br /> Shape 116",
+    "../product_Data/HRDS116/Shape 3.png",
+    "../product_Data/HRDS116/Shape 3.exr",
+    "../product_Data/HRDS116/Shape 3.zip",
+    "../product_Data/HRDS116/Shape 3 Normal Map.png",
+    "Hard Surface Shape 116",
+    "Hard Surface",
+    0
+  );
+  createProduct(
+    "HRDS118",
+    "Hard Surface <br /> Shape 118",
+    "../product_Data/HRDS118/Shape 4.png",
+    "../product_Data/HRDS118/Shape 4.exr",
+    "../product_Data/HRDS118/Shape 4.zip",
+    "../product_Data/HRDS118/Shape 4 Normal Map.png",
+    "Hard Surface Shape 118",
+    "Hard Surface",
+    0
+  );
+  createProduct(
+    "HRDS119",
+    "Hard Surface <br /> Shape 119",
+    "../product_Data/HRDS119/Shape 5.png",
+    "../product_Data/HRDS119/Shape 5.exr",
+    "../product_Data/HRDS119/Shape 5.zip",
+    "../product_Data/HRDS119/Shape 5 Normal Map.png",
+    "Hard Surface Shape 119",
+    "Hard Surface",
+    0
+  );
+  createProduct(
+    "HRDS121",
+    "Hard Surface <br /> Shape 121",
+    "../product_Data/HRDS121/Shape 6.png",
+    "../product_Data/HRDS121/Shape 6.exr",
+    "../product_Data/HRDS121/Shape 6.zip",
+    "../product_Data/HRDS121/Shape 6 Normal Map.png",
+    "Hard Surface Shape 121",
+    "Hard Surface",
+    0
+  );
+  createProduct(
     "GNRL005",
     "Decorative <br /> 005",
     "../product_Data/GNRL005/Shape 2.png",
