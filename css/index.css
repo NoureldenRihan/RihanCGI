@@ -8,6 +8,12 @@ body {
   max-width: 9%;
   min-height: 9%;
   max-height: 9%;
+  border-radius: 50%;
+  transition: transform 2s;
+}
+
+.Logo:hover {
+  transform: rotate(360deg);
 }
 
 .answer {
