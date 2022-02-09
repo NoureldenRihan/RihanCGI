@@ -231,6 +231,17 @@ function createProduct(
 function backToMarketplace() {
   marketplace = ``;
   createProduct(
+    "PHAR998",
+    "Pharaonic <br /> Shape 998",
+    "../product_Data/PHAR998/Phar Tablet 3.png",
+    "../product_Data/PHAR998/Phar Tablet 3.exr",
+    "../product_Data/PHAR998/Phar Tablet 3.zip",
+    "../product_Data/PHAR998/Phar Tablet 3 Normal Map.png",
+    "Pharaonic Shape 998",
+    "Pharaonic",
+    0
+  );
+  createProduct(
     "HRDS122",
     "Hard Surface <br /> Shape 122",
     "../product_Data/HRDS122/Shape 2.png",
