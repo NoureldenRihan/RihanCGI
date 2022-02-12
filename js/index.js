@@ -81,6 +81,7 @@ let brushMainIDs = {
     imgUrl: "../Images/RIHAN.png",
   },
 };
+let dark = false;
 
 //Google Ads Snippet
 let ADs = `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5809703577382397"
@@ -96,11 +97,11 @@ data-full-width-responsive="true"></ins>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>`;
 
-// function that Creates the NavBar in All Webpages that have a div with id "CreateNavBarHere"
+// function that Creates the NavBar in All Webpages that have a div with id "CreateNavBarHere" and also Creates the Dark Mode Switch
 function createNavBar() {
   let targetDiv = document.getElementById("CreateNavBarHere");
   let targetclass = targetDiv.innerHTML;
-  let navBar = `<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  let navBar = `<nav class="navbar navbar-expand-lg navbar-light bg-light" >
   <div class="container-fluid">
     <img
       src="./Images/rihan-cgi-logo-cropped.png"
@@ -122,48 +123,82 @@ function createNavBar() {
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link ${
+          <a id="navitemlink" class="nav-link ${
             targetclass == 1 ? "active" : " "
           } " aria-current="page" href="index.html">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link ${
+          <a id="navitemlink" class="nav-link ${
             targetclass == 2 ? "active" : " "
           }" href="Brush Textures.htm">Brush Textures</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link ${
+            <a id="navitemlink" class="nav-link ${
               targetclass == 3 ? "active" : " "
             }" href="Search Guide.html">Search Guide</a>
           </li>
           <li class="nav-item">
-          <a class="nav-link ${
+          <a id="navitemlink" class="nav-link ${
             targetclass == 4 ? "active" : " "
           }" href="FAQs.htm">FAQs</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="https://discord.gg/VRqpWzTNSQ"
+          <a id="navitemlink" class="nav-link" href="https://discord.gg/VRqpWzTNSQ"
             >Discord</a
           >
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="https://ko-fi.com/rihancgi"
+          <a id="navitemlink" class="nav-link" href="https://ko-fi.com/rihancgi"
             >Buy us Coffee</a
           >
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="https://www.patreon.com/RihanCGI"
+          <a id="navitemlink" class="nav-link" href="https://www.patreon.com/RihanCGI"
             >Patreon</a
           >
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="PrivacyPolicy.html">Privacy Policy</a>
+          <a id="navitemlink" class="nav-link" href="PrivacyPolicy.html">Privacy Policy</a>
         </li>
       </ul>
     </div>
   </div>
-</nav>`;
+</nav>
+<div class="colorModes">
+      <div class="colorModesIcon" onclick="darkWhite_Mode();">
+      <svg xmlns="http://www.w3.org/2000/svg" id="darkWhite_Mode" width="30" height="30" fill="currentColor" class="bi bi-circle-half" viewBox="0 0 16 16">
+      <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
+    </svg></div>
+  <h3>Dark Mode <span id="darkWhite_Mode_text">Off</span> &nbsp;</h3>
+  </div>`;
   targetDiv.innerHTML = navBar;
+}
+
+//function that toggles Dark Mode On & Off
+function darkWhite_Mode() {
+  let body = document.body;
+  body.classList.toggle("dark-mode");
+  dark = !dark;
+  if (dark == true) {
+    $("#darkWhite_Mode_text").html("On");
+    $(".navbar").addClass("bg-dark navbar-dark");
+    $(".product").addClass("text-white bg-dark");
+  } else if (dark == false) {
+    $("#darkWhite_Mode_text").html("Off");
+    $(".navbar").removeClass("bg-dark navbar-dark");
+    $(".product").removeClass("text-white bg-dark");
+  }
+}
+
+//function that fixes the dark/white Mode
+function fixDarkWhite_Mode() {
+  if (dark == true) {
+    $(".navbar").addClass("bg-dark navbar-dark");
+    $(".product").addClass("text-white bg-dark");
+  } else if (dark == false) {
+    $(".navbar").removeClass("bg-dark navbar-dark");
+    $(".product").removeClass("text-white bg-dark");
+  }
 }
 
 // function That Creates the Price Filter Buttons
@@ -211,7 +246,7 @@ function createProduct(
     bundle: Bundle,
   };
   let template;
-  template = `<div class="${gridLayout} product_area card"> 
+  template = `<div class="${gridLayout} product_area card product"> 
   <img class="thumbnail card" src="${product_Prv}" alt="${product_name}" loading="lazy" />
   <h1 class="product_title">${product_name}</h1>
   <button class="btn btn-primary" onclick="viewProduct('${product_id}');">Check Texture!</button>
@@ -4020,6 +4055,7 @@ function backToMarketplace() {
   createNavBar();
   createFilterButtons();
   createpreviewTypeButtons();
+  fixDarkWhite_Mode();
 }
 
 // function viewProduct gives a more indetail view of a product and the ability to download .PNG and .EXR and .ZIP files
@@ -4130,7 +4166,7 @@ function search(searchWord) {
   for (let i = 0; i < Object.keys(catalog).length; i++) {
     if (catalogkeys[i].includes(searchWord)) {
       let item = catalog[catalogkeys[i]];
-      template = `<div class="${gridLayout} product_area card">
+      template = `<div class="${gridLayout} product_area card product">
       <img class="thumbnail card" src="${item.preview}" alt="${item.name}" loading="lazy"/>
       <h1 class="product_title">${item.name}</h1>
       <button class="btn btn-primary" onclick="viewProduct('${catalogkeys[i]}');">Check Texture!</button>
@@ -4148,6 +4184,7 @@ function search(searchWord) {
     let result = `<h3>No Search Result Found</h3>`;
     $("#noSearchResult").html(result);
   }
+  fixDarkWhite_Mode();
 }
 
 // funtion that Checks Which Price Filter is Applied & displays the Products that have these requirements applied
@@ -4162,7 +4199,7 @@ function allOrFreeOrPaid(state_choice) {
     if (state_choice == "free") {
       priceFilterClass(state_choice);
       if (item.price <= 0) {
-        template = `<div class="${gridLayout} product_area card">
+        template = `<div class="${gridLayout} product_area card product">
       <img class="thumbnail card" src="${item.preview}" alt="${item.name}" loading="lazy"/>
       <h1 class="product_title">${item.name}</h1>
       <button class="btn btn-primary" onclick="viewProduct('${catalogkeys[i]}');">Check Texture!</button>
@@ -4176,7 +4213,7 @@ function allOrFreeOrPaid(state_choice) {
     } else if (state_choice == "paid") {
       priceFilterClass(state_choice);
       if (item.price > 0) {
-        template = `<div class="${gridLayout} product_area card">
+        template = `<div class="${gridLayout} product_area card product">
       <img class="thumbnail card" src="${item.preview}" alt="${item.name}" loading="lazy"/>
       <h1 class="product_title">${item.name}</h1>
       <button class="btn btn-primary" onclick="viewProduct('${catalogkeys[i]}');">Check Texture!</button>
@@ -4197,6 +4234,7 @@ function allOrFreeOrPaid(state_choice) {
     $("#marketplace").html(marketplace);
     $("#totalProductNum").html(totalProductNum);
   }
+  fixDarkWhite_Mode();
   // endLoop
 }
 
@@ -4236,7 +4274,7 @@ function marketplacePreviewType(state_choice) {
   } else if (state_choice == "bundled") {
     for (let i = 0; i < brushIDKeys.length; i++) {
       let currentItem = brushMainIDs[brushIDKeys[i]];
-      template = `<div class="${gridLayout} product_area card">
+      template = `<div class="${gridLayout} product_area card product">
       <img class="thumbnail card" src="../Images/${currentItem.imgUrl}" alt="${currentItem.title}" loading="lazy"/>
       <h1 class="product_title">${currentItem.title}</h1>
       <button class="btn btn-primary" onclick="viewBundle('${currentItem.code}');">View Bundle!</button>
@@ -4246,6 +4284,7 @@ function marketplacePreviewType(state_choice) {
     }
     $("#marketplace").html(marketplace);
   }
+  fixDarkWhite_Mode();
 }
 
 // Displays Each Bundle's Items Grouped Together with only one download button that downloads the Zip File
@@ -4258,7 +4297,7 @@ function viewBundle(bundleID) {
     let item = catalog[catalogkeys[i]];
     if (item.price == 0) {
       if (catalogkeys[i].substring(0, 4) == bundleID.substring(0, 4)) {
-        template = `<div class="${gridLayout} product_area card centerDiv">
+        template = `<div class="${gridLayout} product_area card centerDiv product">
       <img class="thumbnail card" src="${item.preview}" alt="${item.name}" loading="lazy"/>
       <h1 class="product_title">${item.name}</h1>
       <a href="${item.zip}" download="${item.download_title}"><button class="btn btn-success options_btn fullbtn">Download!</button></a>
@@ -4271,6 +4310,7 @@ function viewBundle(bundleID) {
       }
     }
   }
+  fixDarkWhite_Mode();
 }
 
 backToMarketplace();

@@ -1,5 +1,18 @@
+.root {
+  --whiteModeTitleColor: #38b6ff;
+  --whiteModeTextColor: #002486;
+  --darkModeTitleColor: white;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
 body {
   padding: 10px;
+  background-color: white;
+  color: black;
 }
 
 .Logo {
@@ -13,7 +26,7 @@ body {
 }
 
 .Logo:hover {
-  transform: rotate(360deg);
+  transform: rotate(360deg) scale(1.1);
 }
 
 .answer {
@@ -160,4 +173,9 @@ body {
   min-width: none;
   width: 200px;
   margin: 10px;
+}
+
+.colorModes {
+  display: flex;
+  flex-direction: row-reverse;
 }
