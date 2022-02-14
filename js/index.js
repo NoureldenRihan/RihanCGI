@@ -266,6 +266,61 @@ function createProduct(
 function backToMarketplace() {
   marketplace = ``;
   createProduct(
+    "HRDS128",
+    "Hard Surface <br /> Shape 128",
+    "../product_Data/HRDS128/Shape 5.png",
+    "../product_Data/HRDS128/Shape 5.exr",
+    "../product_Data/HRDS128/Shape 5.zip",
+    "../product_Data/HRDS128/Shape 5 Normal Map.png",
+    "Hard Surface Shape 128",
+    "Hard Surface",
+    0
+  );
+  createProduct(
+    "HRDS127",
+    "Hard Surface <br /> Shape 127",
+    "../product_Data/HRDS127/Shape 4.png",
+    "../product_Data/HRDS127/Shape 4.exr",
+    "../product_Data/HRDS127/Shape 4.zip",
+    "../product_Data/HRDS127/Shape 4 Normal Map.png",
+    "Hard Surface Shape 127",
+    "Hard Surface",
+    0
+  );
+  createProduct(
+    "HRDS126",
+    "Hard Surface <br /> Shape 126",
+    "../product_Data/HRDS126/Shape 3.png",
+    "../product_Data/HRDS126/Shape 3.exr",
+    "../product_Data/HRDS126/Shape 3.zip",
+    "../product_Data/HRDS126/Shape 3 Normal Map.png",
+    "Hard Surface Shape 126",
+    "Hard Surface",
+    0
+  );
+  createProduct(
+    "HRDS125",
+    "Hard Surface <br /> Shape 125",
+    "../product_Data/HRDS125/Shape 2.png",
+    "../product_Data/HRDS125/Shape 2.exr",
+    "../product_Data/HRDS125/Shape 2.zip",
+    "../product_Data/HRDS125/Shape 2 Normal Map.png",
+    "Hard Surface Shape 125",
+    "Hard Surface",
+    0
+  );
+  createProduct(
+    "HRDS124",
+    "Hard Surface <br /> Shape 124",
+    "../product_Data/HRDS124/Shape 1.png",
+    "../product_Data/HRDS124/Shape 1.exr",
+    "../product_Data/HRDS124/Shape 1.zip",
+    "../product_Data/HRDS124/Shape 1 Normal Map.png",
+    "Hard Surface Shape 124",
+    "Hard Surface",
+    0
+  );
+  createProduct(
     "PHAR998",
     "Pharaonic <br /> Shape 998",
     "../product_Data/PHAR998/Phar Tablet 3.png",
