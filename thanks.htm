@@ -12,9 +12,18 @@
   <body>
     <div class="container">
       <h1 class="headtitle text-center">Thank you for Submitting the Form.</h1>
+      <h1 class="headtitle text-center">Redirecting Now...</h1>
       <h3 class="headtitle text-center">
-        Click <a href="https://rihan-cgi.web.app">here</a> to get back.
+        You can click <a href="https://rihan-cgi.web.app">here</a> to get back.
       </h3>
     </div>
+    <div id="v2">
+      <a href="https://rihan-cgi.web.app" id="Rlink"></a>
+    </div>
+    <script>
+      setTimeout(() => {
+        document.getElementById("Rlink").click();
+      }, 500);
+    </script>
   </body>
 </html>

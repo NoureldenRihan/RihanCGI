@@ -7,6 +7,7 @@ let gridLayout = `col-xs-12 col-md-6 col-lg-3`;
 let catalog = {};
 let totalProductNum = 0;
 let AD_sensor = 0;
+let loadMore_Mark = 0;
 let searchGuideWord = [];
 let searchTag;
 let brushMainIDs = {
@@ -82,6 +83,7 @@ let brushMainIDs = {
   },
 };
 let dark = false;
+let loadMoreCounter = 1;
 
 //Google Ads Snippet
 let ADs = `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5809703577382397"
@@ -165,11 +167,16 @@ function createNavBar() {
   </div>
 </nav>
 <div class="colorModes">
-      <div class="colorModesIcon" onclick="darkWhite_Mode();">
-      <svg xmlns="http://www.w3.org/2000/svg" id="darkWhite_Mode" width="30" height="30" fill="currentColor" class="bi bi-circle-half" viewBox="0 0 16 16">
-      <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
-    </svg></div>
-  <h3>Dark Mode <span id="darkWhite_Mode_text">Off</span> &nbsp;</h3>
+      <div class="colorModes-inner">
+        <div class="colorModesIcon" onclick="darkWhite_Mode();">
+          <svg xmlns="http://www.w3.org/2000/svg" id="darkWhite_Mode" width="30" height="30" fill="currentColor" class="bi bi-circle-half" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
+          </svg></div>
+        <h3>Dark Mode <span id="darkWhite_Mode_text">Off</span> &nbsp;</h3>
+      </div>
+      <div class="more-tools">
+          <a href="http://www.toxictuba.net/?page=Links-Blender">More 3D Tools</a>
+      </div>
   </div>`;
   targetDiv.innerHTML = navBar;
 }
@@ -213,8 +220,8 @@ function createFilterButtons() {
 // function That Creates the Preview Type Buttons
 function createpreviewTypeButtons() {
   let previewTypeButton = `
-  <button id="previewSingle" class="priceFilterButton btn btn-outline-warning" onclick="marketplacePreviewType('single');">Single</button>
-  <button id="previewBundle" class="priceFilterButton btn btn-outline-warning" onclick="marketplacePreviewType('bundled');">Bundled</button>`;
+  <button id="previewSingle" class="priceFilterButton btn btn-outline-danger" onclick="marketplacePreviewType('single');">Single</button>
+  <button id="previewBundle" class="priceFilterButton btn btn-outline-danger" onclick="marketplacePreviewType('bundled');">Bundled</button>`;
   $("#previewType").html(previewTypeButton);
 }
 
@@ -255,12 +262,52 @@ function createProduct(
   marketplace += template;
   totalProductNum += 1;
   $("#totalProductNum").html(totalProductNum);
-  AD_sensor += 1;
-  if (AD_sensor == 20) {
-    marketplace += ADs;
-    AD_sensor = 0;
-  }
+  // Google Ads Setup
+  // AD_sensor += 1;
+  // if (AD_sensor == 20) {
+  //   marketplace += ADs;
+  //   AD_sensor = 0;
+  // }
+  // Seting up Load More Button
+  // loadMore_Mark += 1;
+  // if (loadMore_Mark == 8) {
+  //   loadMore_Mark = 0;
+  //   loadMoreCounter += 1;
+  //   let loadMore_button = `<button class=' btn btn-info' onclick="loadMoreData(${loadMoreCounter});">Load More ...</button>`;
+  //   marketplace += loadMore_button;
+  // }
 }
+
+//function that loads 52 more Product on Marketplace by incresing marketplace height by specified Multiplier
+// function loadMoreData(multiplier) {
+//   // Some Dimension to keep in Mind:
+//   // 1) 1200+ px screen
+//   // A card without a loaded Picture is 200px
+//   // A card with a loaded Picture is 466px
+//   // 2) 1200-1000 px screen
+//   // A card with a loaded Picture is 416px
+//   // 3) 1000-765 px screen
+//   // A card with a loaded Picture is 476px
+//   // 4) 765-0 px screen
+//   // A card with a loaded Picture is 643px
+
+//   // LoadMore Button is 38px High
+
+//   let currentheight = 0;
+
+//   if (window.outerWidth >= 1198) {
+//     currentheight = 466 * 13 + 38;
+//   } else if (window.outerWidth >= 1000) {
+//     currentheight = 416 * 13 + 38;
+//   } else if (window.outerWidth >= 765) {
+//     currentheight = 476 * 26 + 38;
+//   } else {
+//     currentheight = 643 * 52 + 38;
+//   }
+
+//   let newheight = currentheight * multiplier;
+//   $("#marketplace").css("height", `${newheight}px`);
+// }
 
 // function backToMarketplace clears the marketplace, recreates all available products and recreates the marketplace
 function backToMarketplace() {
@@ -4192,15 +4239,7 @@ function preSearch() {
 }
 
 // Function that Takes a Search Keyword from a Select Tag to Auto Search it on Market Place
-function autoSearch() {
-  let sel = document.getElementById("SearchSelection");
-  let selection = sel.options[sel.selectedIndex].value;
-  searchTag = selection;
-  $("#marketplace").html(
-    "<h1 class='centerText'>Gathering Search Results...</h1>"
-  );
-  setTimeout(preSearch, 1500);
-}
+// danger
 
 // Implementing Search Function where user can type the product Code or some of it and it will preview all products that match this code.
 // if no products found it leaves the products on page and displays a small msg showing that no search result was found.

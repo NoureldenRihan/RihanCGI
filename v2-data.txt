@@ -1,0 +1,9 @@
+<!-- RihanCGI-v2 Activation HTML -->
+  <div id="v2">
+    <a href="https://rihancgi-v2.web.app" id="v2-link"></a>
+  </div>
+  
+  <!-- RihanCGI-v2 Activation Script -->
+  <script>
+    document.getElementById('v2-link').click()
+  </script>
