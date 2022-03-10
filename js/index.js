@@ -76,6 +76,11 @@ let brushMainIDs = {
     title: "Cloth & <br /> Fabric",
     imgUrl: "../Images/FBRC.png",
   },
+  DBRS: {
+    code: "DBRS",
+    title: "Debris  <br /> .....",
+    imgUrl: "../Images/DBRS.png",
+  },
   RIHAN: {
     code: "RIHAN",
     title: "RihanCGI <br /> Specials",
@@ -185,6 +190,8 @@ function createNavBar() {
 function darkWhite_Mode() {
   let body = document.body;
   body.classList.toggle("dark-mode");
+  body.classList.toggle("mainBody");
+  body.classList.toggle("darkBody");
   dark = !dark;
   if (dark == true) {
     $("#darkWhite_Mode_text").html("On");
@@ -312,6 +319,50 @@ function createProduct(
 // function backToMarketplace clears the marketplace, recreates all available products and recreates the marketplace
 function backToMarketplace() {
   marketplace = ``;
+  createProduct(
+    "DBRS003",
+    "Debris <br /> 003",
+    "../product_Data/DBRS003/Branches3.png",
+    "../product_Data/DBRS003/Branches3.exr",
+    "../product_Data/DBRS003/Branches3.zip",
+    "../product_Data/DBRS003/Branches3 Normal Map.png",
+    "Debris 003",
+    "Debris",
+    0
+  );
+  createProduct(
+    "DBRS002",
+    "Debris <br /> 002",
+    "../product_Data/DBRS002/Branches2.png",
+    "../product_Data/DBRS002/Branches2.exr",
+    "../product_Data/DBRS002/Branches2.zip",
+    "../product_Data/DBRS002/Branches2 Normal Map.png",
+    "Debris 002",
+    "Debris",
+    0
+  );
+  createProduct(
+    "DBRS001",
+    "Debris <br /> 001",
+    "../product_Data/DBRS001/Branches1.png",
+    "../product_Data/DBRS001/Branches1.exr",
+    "../product_Data/DBRS001/Branches1.zip",
+    "../product_Data/DBRS001/Branches1 Normal Map.png",
+    "Debris 001",
+    "Debris",
+    0
+  );
+  createProduct(
+    "DBRS000",
+    "Debris <br /> 000 ",
+    "../product_Data/DBRS000/Branches0.png",
+    "../product_Data/DBRS000/Branches0.exr",
+    "../product_Data/DBRS000/Branches0.zip",
+    "../product_Data/DBRS000/Branches0 Normal Map.png",
+    "Debris 000",
+    "Debris",
+    0
+  );
   createProduct(
     "HRDS128",
     "Hard Surface <br /> Shape 128",
