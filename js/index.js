@@ -322,10 +322,10 @@ function backToMarketplace() {
   createProduct(
     "DBRS003",
     "Debris <br /> 003",
-    "../product_Data/DBRS003/Branches3.png",
-    "../product_Data/DBRS003/Branches3.exr",
-    "../product_Data/DBRS003/Branches3.zip",
-    "../product_Data/DBRS003/Branches3 Normal Map.png",
+    "/product_Data/DBRS003/Branches3.png",
+    "/product_Data/DBRS003/Branches3.exr",
+    "/product_Data/DBRS003/Branches3.zip",
+    "/product_Data/DBRS003/Branches3 Normal Map.png",
     "Debris 003",
     "Debris",
     0
